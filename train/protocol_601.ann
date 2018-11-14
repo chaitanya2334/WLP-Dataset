@@ -1,0 +1,26 @@
+T1	Action 294 303	Autoclave
+E1	Action:T1 Acts-on:T7 Acts-on2:T8
+T2	Action 344 351	Combine
+E2	Action:T2 Acts-on:T4 Acts-on2:T5
+T3	Action 381 384	Add
+E3	Action:T3 Acts-on:T15
+T4	Reagent 352 362	Solution I
+T5	Reagent 367 378	Solution II
+T6	Modifier 331 341	separately
+T7	Reagent 304 314	Solution I
+T8	Reagent 319 330	Solution II
+T9	Amount 272 278	500 mL
+T10	Amount 102 108	500 mL
+T11	Action 93 101	Bring to
+E4	Action:T11 Acts-on:T13
+T12	Action 263 271	Bring to
+E5	Action:T12 Acts-on:T14
+T13	Reagent 109 121	MilliQ water
+T14	Reagent 279 291	MilliQ water
+R1	Measure Arg1:T13 Arg2:T10	
+R2	Measure Arg1:T14 Arg2:T9	
+R3	Mod-Link Arg1:E1 Arg2:T6	
+T15	Reagent 385 407	trace Metals Solutions
+T16	Reagent 412 428	Vitamin Solution
+T17	Action 408 411	Add
+E6	Action:T17 Acts-on:T16

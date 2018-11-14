@@ -1,0 +1,162 @@
+T1	Action 46 53	Prepare
+E1	Action:T1 Creates:T34
+T2	Action 164 173	resuspend
+E2	Action:T2 Acts-on:T35 Using:T36 Site:T38
+T3	Action 271 275	Keep
+E3	Action:T3 Acts-on:T40
+T4	Action 326 332	Filter
+E4	Action:T4 Acts-on:T42 Using:T44
+T5	Action 371 381	centrifuge
+E5	Action:T5 Acts-on:T42
+T6	Action 412 421	resuspend
+E6	Action:T6 Using:T47 Acts-on:T42
+T7	Action 467 472	Count
+E7	Action:T7 Acts-on:T49
+T8	Action 477 483	adjust
+E8	Action:T8 Measure-Type-Link:T50
+T9	Action 528 535	Aliquot
+E9	Action:T9 Acts-on:T53 Site:T54
+T10	Action 591 594	Add
+E10	Action:T10 Acts-on:T56
+T11	Action 640 643	mix
+E11	Action:T11 
+T12	Action 653 661	incubate
+E12	Action:T12 
+T14	Action 941 950	Resuspend
+E14	Action:T14 Acts-on:T13 Using:T60 Count:T61
+T15	Action 1035 1038	add
+E15	Action:T15 Acts-on:T64
+T16	Action 1059 1062	mix
+E16	Action:T16 
+T17	Action 1072 1080	incubate
+E17	Action:T17 
+T19	Action 1281 1290	Resuspend
+E19	Action:T19 Acts-on:T18 Using:T69
+T20	Action 1330 1335	Place
+E20	Action:T20 Acts-on:T70 Site:T72
+T21	Action 1374 1381	Collect
+E21	Action:T21 Acts-on:T73 Site:T74
+T22	Action 1465 1475	Centrifuge
+E22	Action:T22 
+T23	Action 1523 1532	Resuspend
+E23	Action:T23 Using:T78 Using2:T79
+T24	Action 1579 1588	Resuspend
+E24	Action:T24 Acts-on:T80 Using:T81 Count:T83
+T25	Action 1647 1650	Add
+E25	Action:T25 Acts-on:T85
+T26	Action 1684 1692	incubate
+E26	Action:T26 
+T27	Action 1671 1674	mix
+E27	Action:T27 
+T29	Action 1896 1899	Add
+E29	Action:T29 Acts-on:T89
+T30	Action 1926 1931	Place
+E30	Action:T30 Acts-on:T90 Site:T91
+T31	Action 1970 1978	Pour out
+E31	Action:T31 Acts-on:T93
+T32	Action 1991 1998	Recover
+E32	Action:T32 Acts-on:T94
+T33	Action 2012 2021	resuspend
+E33	Action:T33 Acts-on:T95 Using:T96
+T34	Reagent 54 59	cells
+T35	Reagent 178 183	cells
+T36	Reagent 187 203	MojoSort™ Buffer
+T37	Amount 220 223	4mL
+T38	Location 247 263	polystyrene tube
+T39	Size 229 246	5 mL (12 x 75 mm)
+R1	Measure Arg1:T38 Arg2:T39	
+R2	Measure Arg1:T36 Arg2:T37	
+T40	Reagent 276 292	MojoSort™ Buffer
+T41	Temperature 296 299	ice
+R3	Setting Arg1:E3 Arg2:T41	
+T42	Reagent 337 342	cells
+T43	Size 350 355	70 μm
+T44	Device 356 369	cell strainer
+R4	Setting Arg1:T44 Arg2:T43	
+T45	Speed 385 392	300 x g
+T46	Time 397 406	5 minutes
+R5	Setting Arg1:E5 Arg2:T45	
+R6	Setting Arg1:E5 Arg2:T46	
+T47	Reagent 449 465	MojoSort™ Buffer
+T48	Generic-Measure 427 445	appropriate volume
+R7	Measure Arg1:T47 Arg2:T48	
+T49	Reagent 488 492	cell
+T50	Measure-Type 493 506	concentration
+T51	Concentration 510 526	1 x 108 cells/mL
+R8	Measure Arg1:T49 Arg2:T51	
+T52	Amount 536 542	100 μL
+T53	Reagent 546 561	cell suspension
+R9	Measure Arg1:T53 Arg2:T52	
+T54	Location 581 589	new tube
+T55	Amount 595 599	5 μL
+T56	Reagent 607 638	biotin anti-human CD14 antibody
+R10	Measure Arg1:T56 Arg2:T55	
+T57	Modifier 644 648	well
+T58	Temperature 665 668	ice
+T59	Time 673 683	15 minutes
+R11	Mod-Link Arg1:E11 Arg2:T57	
+R12	Setting Arg1:E12 Arg2:T58	
+R13	Setting Arg1:E12 Arg2:T59	
+T13	Reagent 955 977	Streptavidin Nanobeads
+T60	Method 981 990	vortexing
+T61	Numerical 1007 1016	5 touches
+T62	Generic-Measure 992 1005	maximum speed
+R14	Setting Arg1:E14 Arg2:T62	
+T63	Amount 1039 1044	10 μL
+T64	Reagent 1048 1057	Nanobeads
+T65	Modifier 1063 1067	well
+T66	Temperature 1084 1087	ice
+T67	Temperature 1092 1102	15 minutes
+R15	Setting Arg1:E17 Arg2:T66	
+R16	Setting Arg1:E17 Arg2:T67	
+R17	Mod-Link Arg1:E16 Arg2:T65	
+R18	Measure Arg1:T64 Arg2:T63	
+T18	Reagent 1295 1300	cells
+T68	Amount 1304 1308	3 mL
+T69	Reagent 1312 1328	MojoSort™ Buffer
+R19	Measure Arg1:T69 Arg2:T68	
+T70	Location 1340 1344	tube
+T71	Time 1363 1372	5 minutes
+T72	Device 1352 1358	magnet
+R20	Setting Arg1:E20 Arg2:T71	
+T73	Reagent 1386 1392	liquid
+T74	Location 1398 1406	new tube
+T75	Speed 1479 1486	300 x g
+T76	Time 1491 1500	5 minutes
+R21	Setting Arg1:E22 Arg2:T75	
+R22	Setting Arg1:E22 Arg2:T76	
+T77	Amount 1551 1557	100 uL
+T78	Reagent 1561 1577	MojoSort™ buffer
+R23	Measure Arg1:T78 Arg2:T77	
+T79	Method 1536 1544	flicking
+R24	Or Arg1:T79 Arg2:T78	
+T80	Reagent 1593 1606	CD4 Nanobeads
+T81	Method 1610 1619	vortexing
+T82	Generic-Measure 1621 1634	maximum speed
+T83	Numerical 1636 1645	5 touches
+R25	Setting Arg1:E24 Arg2:T82	
+T84	Amount 1651 1656	10 μL
+T85	Reagent 1660 1669	Nanobeads
+T86	Modifier 1675 1679	well
+T87	Temperature 1696 1699	ice
+T88	Time 1704 1714	15 minutes
+R26	Measure Arg1:T85 Arg2:T84	
+R27	Mod-Link Arg1:E27 Arg2:T86	
+R28	Setting Arg1:E26 Arg2:T87	
+R29	Setting Arg1:E26 Arg2:T88	
+T28	Amount 1900 1904	3 mL
+T89	Reagent 1908 1924	MojoSort™ Buffer
+R30	Measure Arg1:T89 Arg2:T28	
+T90	Location 1936 1940	tube
+T91	Device 1948 1954	magnet
+T92	Time 1959 1968	5 minutes
+R31	Setting Arg1:E30 Arg2:T92	
+T93	Reagent 1983 1989	liquid
+T94	Location 2003 2007	tube
+T95	Reagent 2026 2031	cells
+T96	Reagent 2057 2063	buffer
+T97	Generic-Measure 2035 2053	appropriate amount
+R32	Measure Arg1:T96 Arg2:T97	
+T98	Action 2093 2099	Repeat
+E13	Action:T98 Count:T99
+T99	Numerical 2138 2150	2 more times

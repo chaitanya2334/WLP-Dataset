@@ -1,0 +1,299 @@
+T1	Action 207 214	applied
+E1	Action:T1 Site:T2 Acts-on:T4 Creates:T5
+T2	Location 218 225	surface
+T3	Location 148 171	apple juice agar plates
+R1	Meronym Arg1:T2 Arg2:T3
+T4	Reagent 195 206	yeast paste
+T5	Reagent 118 128	Collection
+T6	Action 257 266	conducted
+E2	Action:T6 Acts-on:T8
+T7	Temperature 270 282	25 degrees C
+T8	Reagent 231 242	collections
+R2	Setting Arg1:E2 Arg2:T7
+T9	Action 347 351	Wash
+E3	Action:T9 Acts-on:T10 Site:T11 Site2:T12 Using:T13 Using2:T14
+T10	Reagent 352 359	embryos
+T11	Location 365 387	apple juice agar plate
+T12	Location 400 418	embryo wash basket
+T13	Device 427 443	small paintbrush
+T14	Reagent 448 468	embryo wash solution
+T15	Action 470 475	Place
+E4	Action:T15 Acts-on:T16 Site:T17
+T16	Location 476 487	wash basket
+T17	Location 495 505	small tray
+T18	Action 510 514	pour
+E5	Action:T18 Acts-on:T19 Site:T193
+T19	Reagent 515 531	household bleach
+T20	Reagent 546 553	embryos
+T21	Action 584 587	sit
+E6	Action:T21 
+T22	Time 592 601	3 minutes
+T23	Action 605 611	remove
+E7	Action:T23 Acts-on:T24 Using:E6
+T24	Reagent 612 619	chorion
+R3	Setting Arg1:E6 Arg2:T22
+T25	Action 621 626	Rinse
+E8	Action:T25 Acts-on:T26 Site:T27 Acts-on2:T28
+T26	Reagent 627 633	bleach
+T27	Location 639 650	wash basket
+T28	Reagent 655 662	embryos
+T29	Action 688 696	transfer
+E9	Action:T29 Acts-on:T30 Site:T31
+T30	Reagent 697 704	embryos
+T31	Location 708 717	container
+T32	Concentration 729 731	4%
+T33	Reagent 732 748	paraformaldehyde
+T34	Reagent 753 760	heptane
+R4	Or Arg1:T32 Arg2:T33
+R5	Or Arg1:T32 Arg2:T34
+R6	Meronym Arg1:T33 Arg2:T31
+R7	Meronym Arg1:T34 Arg2:T31
+T35	Action 761 766	Shake
+E10	Action:T35 Site:T36
+T36	Device 770 785	orbital rotator
+T37	Speed 789 795	150rpm
+T38	Time 800 807	20 mins
+R8	Setting Arg1:E10 Arg2:T37
+R9	Setting Arg1:E10 Arg2:T38
+T40	Reagent 827 834	heptane
+T41	Reagent 839 842	PFA
+T39	Action 846 854	separate
+E11	Action:T39 Acts-on:T40 Acts-on2:T41
+T42	Action 856 862	Remove
+E12	Action:T42 Acts-on:T43
+T43	Reagent 877 880	PFA
+T44	Action 886 893	dispose
+E13	Action:T44 Acts-on:T43
+T45	Action 989 992	Add
+E14	Action:T45 Acts-on:T46 Site:T47
+T46	Reagent 993 1001	Methanol
+T47	Reagent 1035 1042	heptane
+T48	Action 1044 1049	Shake
+E15	Action:T48 
+T49	Time 1065 1075	20 seconds
+T50	Action 1097 1103	settle
+E16	Action:T50 Site:T52 Acts-on:T51
+T51	Reagent 1086 1093	embryos
+T52	Location 1111 1134	bottom of the container
+R10	Setting Arg1:E15 Arg2:T49
+T53	Action 1136 1142	Remove
+E17	Action:T53 Acts-on:T54 Site:T55 Acts-on2:T56
+T54	Reagent 1143 1150	heptane
+T55	Location 1160 1169	top layer
+T56	Reagent 1186 1194	methanol
+T57	Action 1196 1199	Add
+E18	Action:T57 Acts-on:T58
+T58	Reagent 1200 1208	methanol
+T59	Action 1213 1219	remove
+E19	Action:T59 Count:T60
+T60	Numerical 1220 1234	two more times
+T61	Action 1235 1243	Transfer
+E20	Action:T61 Acts-on:T62 Site:T63
+T62	Reagent 1244 1263	embryos in methanol
+T63	Location 1278 1291	culture tubes
+T64	Action 1326 1332	Remove
+E21	Action:T64 Acts-on:T65
+T65	Reagent 1333 1341	methanol
+T66	Action 1400 1405	Rinse
+E22	Action:T66 Acts-on:T67 Acts-on2:T69 Count:T70
+T67	Reagent 1406 1413	embryos
+T68	Amount 1419 1424	750ul
+T69	Reagent 1428 1445	blocking solution
+T70	Numerical 1447 1451	once
+T71	Action 1499 1505	Remove
+E23	Action:T71 Acts-on:T72
+T72	Reagent 1506 1523	blocking solution
+T73	Action 1528 1533	rinse
+E24	Action:T73 Count:T74 Acts-on:T76
+T74	Numerical 1534 1539	twice
+T75	Concentration 1545 1547	1X
+T76	Reagent 1548 1551	PBS
+T77	Action 1552 1558	Remove
+E25	Action:T77 Acts-on:T79
+T78	Concentration 1559 1561	1X
+T79	Reagent 1562 1565	PBS
+T80	Action 1570 1573	add
+E26	Action:T80 Acts-on:T82
+T81	Amount 1574 1579	750ul
+T82	Reagent 1583 1600	blocking solution
+T83	Location 1606 1610	tube
+T84	Seal 1616 1624	parafilm
+T85	Action 1601 1605	Seal
+E27	Action:T85 Acts-on2:T83 Using:T84
+T86	Action 1629 1633	rock
+E28	Action:T86 
+T87	Time 1645 1655	30 minutes
+R15	Setting Arg1:E28 Arg2:T87
+T88	Action 1657 1663	Remove
+E29	Action:T88 Acts-on:T89
+T89	Reagent 1664 1681	blocking solution
+T90	Action 1686 1691	rinse
+E30	Action:T90 Count:T91 Using:T93
+T91	Numerical 1692 1696	once
+T92	Concentration 1702 1704	1X
+T93	Reagent 1705 1708	PBS
+T94	Action 1710 1716	Remove
+E31	Action:T94 Acts-on:T96
+T95	Concentration 1717 1719	1X
+T96	Reagent 1720 1723	PBS
+T97	Action 1728 1731	add
+E32	Action:T97 Acts-on:T98
+T98	Reagent 1732 1749	blocking solution
+T99	Action 1751 1754	Add
+E33	Action:T99 Acts-on:T100
+T100	Reagent 1755 1773	primary antibodies
+T101	Action 1918 1922	Wrap
+E34	Action:T101 Acts-on:T102 Using:T103
+T102	Location 1923 1927	tube
+T103	Seal 1933 1941	parafilm
+T104	Action 1946 1950	rock
+E35	Action:T104 
+T105	Time 1951 1960	overnight
+T106	Temperature 1964 1981	4 degrees Celsius
+R18	Setting Arg1:E35 Arg2:T105
+R19	Setting Arg1:E35 Arg2:T106
+T107	Action 1983 1989	Remove
+E36	Action:T107 Acts-on:T108
+T108	Reagent 1990 2031	blocking solution with primary antibodies
+T109	Action 2032 2037	Rinse
+E37	Action:T109 Count:T110 Acts-on:T112
+T110	Numerical 2038 2043	three
+T112	Reagent 2058 2061	PBS
+T113	Action 2063 2069	Remove
+E39	Action:T113 Acts-on:T115
+T114	Concentration 2070 2072	1X
+T111	Concentration 2055 2057	1X
+T115	Reagent 2073 2076	PBS
+T116	Action 2081 2084	add
+E38	Action:T116 Acts-on:T118
+T117	Amount 2085 2090	750ul
+T118	Reagent 2094 2111	blocking solution
+T119	Action 2113 2117	Wrap
+E40	Action:T119 Acts-on:T120 Using:T121
+T120	Location 2118 2122	tube
+T121	Seal 2128 2136	parafilm
+T122	Action 2141 2145	rock
+E41	Action:T122 
+T123	Temperature 2149 2165	room temperature
+T124	Time 2170 2180	30 minutes
+R23	Setting Arg1:E41 Arg2:T123
+R24	Setting Arg1:E41 Arg2:T124
+T125	Action 2182 2188	Remove
+E42	Action:T125 Acts-on:T126
+T126	Reagent 2189 2206	blocking solution
+T127	Action 2211 2216	rinse
+E43	Action:T127 Count:T128 Acts-on:T130
+T128	Numerical 2217 2221	once
+T129	Concentration 2227 2229	1X
+T130	Reagent 2230 2233	PBS
+T131	Action 2235 2241	Remove
+E44	Action:T131 Acts-on:T133
+T132	Concentration 2242 2244	1X
+T133	Reagent 2245 2248	PBS
+T134	Action 2253 2256	add
+E45	Action:T134 Acts-on:T135
+T135	Reagent 2261 2278	blocking solution
+T136	Action 2280 2283	Add
+E46	Action:T136 Acts-on:T137
+T137	Reagent 2284 2304	secondary antibodies
+T138	Concentration 2308 2332	optimized concentrations
+T139	Action 2376 2380	Wrap
+E47	Action:T139 Acts-on:T140 Using:T141 Using2:T142
+T140	Location 2381 2385	tube
+T141	Seal 2391 2399	parafilm
+T142	Seal 2404 2408	foil
+T143	Action 2410 2414	Rock
+E48	Action:T143 
+T144	Time 2426 2435	2-3 hours
+T145	Temperature 2439 2455	room temperature
+R28	Setting Arg1:E48 Arg2:T144
+R29	Setting Arg1:E48 Arg2:T145
+T146	Action 2457 2463	Remove
+E49	Action:T146 Acts-on:T147
+T147	Reagent 2464 2507	blocking solution with secondary antibodies
+T148	Action 2509 2514	Rinse
+E50	Action:T148 Count:T149 Acts-on:T151
+T149	Numerical 2515 2520	three
+T151	Reagent 2535 2538	PBS
+T150	Concentration 2532 2534	1X
+T152	Action 2540 2543	Add
+E51	Action:T152 Acts-on:T154
+T153	Amount 2544 2549	750ul
+T154	Reagent 2553 2570	blocking solution
+T155	Action 2571 2575	Wrap
+E52	Action:T155 Acts-on:T156 Using:T157 Using2:T158
+T156	Location 2576 2580	tube
+T157	Seal 2586 2594	parafilm
+T158	Seal 2599 2603	foil
+T159	Time 2614 2624	30 minutes
+T160	Action 2626 2632	Remove
+E53	Action:T160 Acts-on:T161
+T161	Reagent 2633 2650	blocking solution
+T162	Action 2655 2660	rinse
+E54	Action:T162 Count:T163 Acts-on:T165
+T163	Numerical 2661 2665	once
+T164	Concentration 2671 2673	1X
+T165	Reagent 2674 2677	PBS
+T166	Action 2688 2694	remove
+E55	Action:T166 Acts-on:T167 Using:T168
+T167	Reagent 2695 2702	embryos
+T168	Device 2710 2723	glass pipette
+T169	Action 2738 2744	rinsed
+E56	Action:T169 Acts-on2:T168 Using:T170
+T170	Reagent 2750 2767	blocking solution
+T171	Action 2772 2780	transfer
+E57	Action:T171 Site:T172 Acts-on:T167
+T172	Location 2786 2802	microscope slide
+T173	Action 2836 2845	wick away
+E58	Action:T173 Acts-on:T176
+T174	Concentration 2853 2855	1X
+T175	Amount 2846 2852	excess
+T176	Reagent 2856 2859	PBS
+T177	Action 2860 2863	Add
+E59	Action:T177 Acts-on:T179
+T178	Amount 2864 2868	35ul
+T179	Reagent 2872 2886	mounting media
+T180	Action 2891 2896	cover
+E60	Action:T180 Acts-on:T181
+T181	Seal 2902 2911	coverslip
+T182	Action 2913 2917	Seal
+E61	Action:T182 Using:T183
+T183	Seal 2923 2934	nail polish
+R11	Measure Arg1:T69 Arg2:T68	
+R12	Measure Arg1:T76 Arg2:T75	
+R13	Measure Arg1:T79 Arg2:T78	
+R14	Measure Arg1:T82 Arg2:T81	
+R16	Measure Arg1:T93 Arg2:T92	
+R17	Measure Arg1:T96 Arg2:T95	
+R20	Measure Arg1:T112 Arg2:T111	
+R22	Measure Arg1:T115 Arg2:T114	
+R21	Measure Arg1:T118 Arg2:T117	
+R25	Measure Arg1:T130 Arg2:T129	
+R26	Measure Arg1:T133 Arg2:T132	
+R27	Measure Arg1:T137 Arg2:T138	
+R30	Measure Arg1:T151 Arg2:T150	
+R31	Measure Arg1:T154 Arg2:T153	
+R32	Measure Arg1:T165 Arg2:T164	
+R33	Measure Arg1:T176 Arg2:T174	
+R34	Measure Arg1:T176 Arg2:T175	
+R35	Measure Arg1:T179 Arg2:T178	
+T184	Action 1342 1360	without disturbing
+E62	Action:T184 Acts-on:T185 Site:T186
+T185	Reagent 1365 1372	embryos
+T186	Location 1380 1386	bottom
+T187	Location 1394 1398	tube
+R36	Meronym Arg1:T186 Arg2:T187	
+T188	Action 1469 1475	settle
+E63	Action:T188 Site:T189 Acts-on:T191
+T189	Location 1483 1489	bottom
+T190	Location 1493 1497	tube
+R37	Meronym Arg1:T189 Arg2:T190	
+T191	Reagent 1458 1465	embryos
+T192	Modifier 1634 1640	gently
+R38	Mod-Link Arg1:E28 Arg2:T192	
+T193	Location 535 538	top
+R39	Meronym Arg1:T193 Arg2:T20	
+T194	Modifier 2678 2687	Carefully
+R40	Mod-Link Arg1:E55 Arg2:T194	
+T195	Modifier 2826 2835	carefully
+R41	Mod-Link Arg1:E58 Arg2:T195	

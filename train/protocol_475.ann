@@ -1,0 +1,139 @@
+T1	Action 37 44	Harvest
+E1	Action:T1 Creates:T20 Acts-on:T21
+T2	Action 139 144	Tease
+E2	Action:T2 Acts-on:T22 Using:T25 Creates:T28
+T3	Action 289 298	Resuspend
+E3	Action:T3 Acts-on:T31 Site:T32
+T5	Action 375 383	Checkout
+E5	Action:T5 
+T6	Action 430 435	plate
+E6	Action:T6 Acts-on:T4
+T7	Action 477 484	Culture
+E7	Action:T7 Acts-on:T38 Site:T41
+T8	Action 640 647	harvest
+E8	Action:T8 Acts-on:T50
+T9	Action 662 666	wash
+E9	Action:T9 Acts-on:T51 Count:T52
+T10	Action 679 683	Seed
+E10	Action:T10 Acts-on:T37 Acts-on2:T55
+T11	Action 809 813	coat
+E11	Action:T11 Acts-on:T58 Using:T59
+T12	Action 919 927	Incubate
+E12	Action:T12 Using:T66
+T13	Action 971 975	wash
+E13	Action:T13 Acts-on:T68 Using:T69
+T14	Action 1043 1050	Harvest
+E14	Action:T14 Acts-on:T70 Site:T71
+T15	Action 1105 1109	Wash
+E15	Action:T15 Acts-on:T72
+T16	Action 1132 1136	Wash
+E16	Action:T16 Acts-on:T73
+T17	Action 1159 1163	Seed
+E17	Action:T17 Using:T76 Using2:T78
+T18	Action 1274 1282	Incubate
+E18	Action:T18 Using:T84
+T19	Action 1365 1373	staining
+E19	Action:T19 Acts-on:T85
+T20	Reagent 45 56	lymph nodes
+T21	Reagent 133 137	mice
+T22	Reagent 145 156	lymph nodes
+T23	Modifier 167 174	sterile
+T24	Size 175 180	70-µm
+T25	Device 181 200	nylon cell strainer
+T26	Modifier 211 234	single-cell suspensions
+T27	Modifier 235 245	incomplete
+T28	Reagent 246 250	RPMI
+T29	Concentration 262 265	10%
+T30	Reagent 266 269	FCS
+R1	Measure Arg1:T30 Arg2:T29	
+R2	Mod-Link Arg1:T28 Arg2:T27	
+R3	Setting Arg1:T25 Arg2:T24	
+R4	Mod-Link Arg1:T25 Arg2:T23	
+R5	Mod-Link Arg1:T28 Arg2:T26	
+R6	Meronym Arg1:T30 Arg2:T28	
+T31	Reagent 299 304	cells
+T32	Reagent 308 323	complete medium
+T33	Method 332 352	your favorite method
+T34	Action 356 363	isolate
+E20	Action:T34 Acts-on:T35 Using:T33
+T35	Reagent 364 373	CD4+cells
+T4	Reagent 436 446	CD4+ cells
+T36	Generic-Measure 450 475	30 x106 /30 ml/T-75 flask
+R7	Setting Arg1:E6 Arg2:T36	
+T38	Reagent 485 490	cells
+T39	Time 495 501	3 days
+T40	Modifier 505 513	complete
+T41	Reagent 514 518	RPMI
+T42	Concentration 530 533	10%
+T43	Reagent 534 537	FCS
+T44	Reagent 539 544	Con A
+T45	Concentration 546 553	5 µg/mL
+T46	Reagent 556 578	recombinant mouse IL-2
+T47	Concentration 580 588	20 ng/ml
+T48	Reagent 595 617	recombinant mouse IL-4
+T49	Concentration 619 627	50 ng/ml
+R8	Measure Arg1:T46 Arg2:T47	
+R9	Measure Arg1:T48 Arg2:T49	
+R10	Measure Arg1:T44 Arg2:T45	
+R11	Measure Arg1:T43 Arg2:T42	
+R12	Mod-Link Arg1:T41 Arg2:T40	
+R13	Setting Arg1:E7 Arg2:T39	
+R14	Meronym Arg1:T43 Arg2:T41	
+R15	Meronym Arg1:T44 Arg2:T41	
+R16	Meronym Arg1:T46 Arg2:T41	
+R17	Meronym Arg1:T48 Arg2:T41	
+T50	Reagent 652 657	cells
+T51	Reagent 667 672	cells
+T52	Numerical 673 677	once
+T53	Generic-Measure 684 714	15 x106 cells/30 ml/T-75 flask
+T37	Reagent 726 748	recombinant mouse IL-2
+T54	Concentration 750 758	20 ng/ml
+T55	Reagent 764 786	recombinant mouse IL-4
+T56	Concentration 788 796	50 ng/ml
+R18	Measure Arg1:T55 Arg2:T56	
+R19	Measure Arg1:T37 Arg2:T54	
+R20	Setting Arg1:E10 Arg2:T53	
+T57	Size 816 826	60 x 15 mm
+T58	Location 827 852	tissue culture petri dish
+T59	Reagent 858 873	anti-mouse CD3ε
+T60	Action 875 880	clone
+E4	Action:T60 Creates:T59 Using:T63
+T61	Generic-Measure 881 889	145-2C11
+T62	Concentration 891 899	10 µg/mL
+T63	Reagent 903 906	PBS
+T64	Generic-Measure 908 917	5 ml/dish
+R21	Measure Arg1:T58 Arg2:T57	
+R22	Setting Arg1:E4 Arg2:T61	
+R23	Measure Arg1:T63 Arg2:T62	
+R24	Setting Arg1:E4 Arg2:T64	
+T65	Temperature 933 936	4°C
+T66	Device 937 949	refrigerator
+T67	Time 950 959	overnight
+R25	Setting Arg1:E12 Arg2:T65	
+R26	Setting Arg1:E12 Arg2:T67	
+T68	Location 980 1032	anti-mouse CD3ε pre-coated tissue culture petri dish
+T69	Reagent 1038 1041	PBS
+T70	Reagent 1055 1060	cells
+T71	Location 1070 1075	flask
+T72	Reagent 1114 1119	cells
+T73	Reagent 1141 1146	cells
+T74	Generic-Measure 1167 1192	20 x106 /10 ml/petri dish
+R27	Setting Arg1:E17 Arg2:T74	
+T75	Amount 1204 1209	10 µl
+T76	Reagent 1213 1221	monensin
+R28	Measure Arg1:T76 Arg2:T75	
+T77	Generic-Measure 1223 1228	1000x
+R29	Measure Arg1:T76 Arg2:T77	
+T78	Reagent 1234 1249	anti-mouse CD28
+T79	Action 1251 1256	clone
+E21	Action:T79 Creates:T78
+T80	Generic-Measure 1257 1262	37.51
+T81	Generic-Measure 1264 1271	5 µg/ml
+R30	Setting Arg1:E21 Arg2:T80	
+R31	Setting Arg1:E21 Arg2:T81	
+T82	Time 1287 1294	6 hours
+T83	Temperature 1298 1302	37°C
+T84	Device 1308 1322	CO2 incubator.
+R32	Setting Arg1:E18 Arg2:T82	
+R33	Setting Arg1:E18 Arg2:T83	
+T85	Reagent 1345 1350	cells

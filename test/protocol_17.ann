@@ -1,0 +1,208 @@
+T1	Action 38 47	Resuspend
+E1	Action:T1 Acts-on:T2 Site:T4
+T2	Reagent 48 72	pelleted bacterial cells
+T3	Amount 76 81	250μl
+T4	Reagent 82 91	Buffer P1
+T5	Action 96 104	transfer
+E2	Action:T5 Site:T6
+T6	Location 110 131	micro-centrifuge tube
+T7	Action 162 167	added
+E3	Action:T7 Acts-on:T9 Site:T8
+T8	Reagent 171 180	Buffer P1
+T9	Reagent 145 152	RNase A
+T12	Action 309 314	shake
+E4	Action:T12 Acts-on:T13
+T13	Location 319 332	buffer bottle
+T14	Reagent 392 400	bacteria
+T15	Action 411 422	resuspended
+E5	Action:T15 Using:T16 Acts-on:T14
+T17	Method 450 471	pipetting up and down
+T16	Method 437 446	vortexing
+T19	Action 501 504	Add
+E6	Action:T19 Acts-on:T21
+T20	Amount 505 511	250 μl
+T21	Reagent 512 521	Buffer P2
+T22	Action 526 529	mix
+E7	Action:T22 Using:T23 Acts-on:T24 Count:T25
+T23	Method 544 553	inverting
+T24	Location 558 562	tube
+T25	Numerical 563 566	4–6
+T26	Action 574 577	Mix
+E8	Action:T26 Using:T27 Acts-on:T28
+T27	Method 588 597	inverting
+T28	Location 602 606	tube
+T32	Action 936 942	Mixing
+E9	Action:T32 Creates:T33
+T33	Reagent 962 994	homogeneously colored suspension
+T35	Action 1106 1112	mixing
+E10	Action:T35 Acts-on:T36 Creates:T37
+T36	Reagent 1117 1125	solution
+T37	Reagent 1134 1166	homogeneously colored suspension
+T38	Action 1180 1183	Add
+E11	Action:T38 Acts-on:T40
+T39	Amount 1184 1190	350 μl
+T40	Reagent 1191 1200	Buffer N3
+T41	Action 1205 1208	mix
+E12	Action:T41 Using:E43
+T43	Location 1253 1257	tube
+T44	Numerical 1258 1261	4–6
+R3	Measure Arg1:T40 Arg2:T39
+T45	Action 1303 1306	mix
+E13	Action:T45 Acts-on:T46
+T46	Reagent 1311 1319	solution
+T48	Reagent 1362 1371	Buffer N3
+T50	Reagent 1520 1530	suspension
+T51	Action 1541 1546	mixed
+E15	Action:T51 Acts-on:T50
+T55	Action 1708 1718	Centrifuge
+E16	Action:T55 Site:T59
+T56	Time 1723 1729	10 min
+T57	Speed 1733 1743	13,000 rpm
+T58	Speed 1745 1756	~17,900 x g
+T59	Device 1763 1788	table-top microcentrifuge
+R5	Setting Arg1:E16 Arg2:T56
+R6	Setting Arg1:E16 Arg2:T57
+T61	Reagent 1834 1846	supernatants
+T62	Location 1866 1885	QIAprep spin column
+T63	Method 1889 1898	decanting
+T64	Method 1902 1911	pipetting
+T65	Action 1824 1829	Apply
+E17	Action:T65 Acts-on:T61 Site:T62 Using:T63
+T66	Action 1913 1923	Centrifuge
+E18	Action:T66 
+T67	Time 1928 1935	30–60 s
+R8	Setting Arg1:E18 Arg2:T67
+T68	Action 1937 1942	Place
+E19	Action:T68 Acts-on:T69 Site:T70
+T69	Reagent 1943 1955	flow through
+T70	Location 1970 1981	spin column
+T71	Action 1983 1993	Centrifuge
+E20	Action:T71 
+T72	Time 1998 2005	30–60 s
+R9	Setting Arg1:E20 Arg2:T72
+T73	Action 2007 2014	Discard
+E21	Action:T73 Acts-on:T74
+T74	Reagent 2019 2031	flow-through
+T75	Action 2033 2037	Wash
+E22	Action:T75 Using:E23 Acts-on:T76 Using2:E24
+T76	Location 2042 2061	QIAprep spin column
+T77	Action 2065 2071	adding
+E23	Action:T77 Acts-on:T79
+T78	Amount 2072 2078	0.5 ml
+T79	Reagent 2079 2088	Buffer PB
+T80	Action 2093 2105	centrifuging
+E24	Action:T80 
+T81	Time 2110 2117	30–60 s
+R11	Setting Arg1:E24 Arg2:T81
+T82	Action 2119 2126	Discard
+E25	Action:T82 Acts-on:T83
+T83	Reagent 2131 2143	flow-through
+T84	Action 2459 2463	Wash
+E26	Action:T84 Acts-on:T85 Using:E27
+T85	Location 2464 2483	QIAprep spin column
+T86	Action 2487 2493	adding
+E27	Action:T86 Acts-on:T88
+T87	Amount 2494 2501	0.75 ml
+T88	Reagent 2502 2511	Buffer PE
+T89	Action 2516 2528	centrifuging
+E28	Action:T89 
+T90	Time 2533 2540	30–60 s
+R13	Setting Arg1:E28 Arg2:T90
+T91	Action 2542 2549	Discard
+E29	Action:T91 Acts-on:T92
+T92	Reagent 2554 2566	flow-through
+T93	Action 2572 2582	centrifuge
+E30	Action:T93 Using:E31
+T94	Speed 2586 2596	full speed
+T95	Time 2615 2620	1 min
+T96	Action 2624 2630	remove
+E31	Action:T96 Acts-on:T97
+T97	Reagent 2631 2651	residual wash buffer
+R14	Setting Arg1:E30 Arg2:T94
+R15	Setting Arg1:E30 Arg2:T95
+T98	Action 2868 2873	Place
+E32	Action:T98 Acts-on:T99 Site:T101
+T99	Location 2878 2892	QIAprep column
+T100	Amount 2904 2910	1.5 ml
+T101	Location 2911 2931	microcentrifuge tube
+T102	Action 2936 2941	elute
+E33	Action:T102 Using:E34 Acts-on:T103 Using2:E35 Using3:E36
+T103	Reagent 2942 2945	DNA
+T104	Action 2947 2950	add
+E34	Action:T104 Acts-on:T106 Site:T107
+T105	Amount 2951 2956	20 μl
+T106	Reagent 2957 2962	water
+T107	Location 2970 3004	center of each QIAprep spin column
+T108	Action 3010 3015	stand
+E35	Action:T108 
+T109	Time 3020 3025	1 min
+R18	Setting Arg1:E35 Arg2:T109
+T110	Action 3031 3041	centrifuge
+E36	Action:T110 
+T111	Time 3046 3051	1 min
+R19	Setting Arg1:E36 Arg2:T111
+T112	Action 3053 3058	Elute
+E37	Action:T112 Acts-on:T113 Using:E38 Using2:E39 Using3:E40
+T113	Reagent 3059 3062	DNA
+T114	Action 3064 3067	add
+E38	Action:T114 Acts-on:T116 Site:T117
+T115	Amount 3068 3073	30 μl
+T116	Reagent 3074 3079	water
+T117	Location 3087 3121	center of each QIAprep spin column
+T118	Action 3127 3132	stand
+E39	Action:T118 
+T119	Action 3148 3158	centrifuge
+E40	Action:T119 
+T120	Time 3137 3142	1 min
+T121	Time 3163 3168	1 min
+R20	Setting Arg1:E39 Arg2:T120
+R21	Setting Arg1:E40 Arg2:T121
+R1	Measure Arg1:T4 Arg2:T3	
+R2	Measure Arg1:T21 Arg2:T20	
+R4	Or Arg1:T63 Arg2:T64	
+R10	Measure Arg1:T79 Arg2:T78	
+R12	Measure Arg1:T88 Arg2:T87	
+R16	Measure Arg1:T101 Arg2:T100	
+R17	Measure Arg1:T106 Arg2:T105	
+R22	Measure Arg1:T116 Arg2:T115	
+T10	Modifier 298 308	vigorously
+R23	Mod-Link Arg1:E4 Arg2:T10	
+T11	Modifier 423 433	completely
+R24	Mod-Link Arg1:E5 Arg2:T11	
+R25	Or Arg1:T16 Arg2:T17	
+T18	Action 493 499	remain
+E14	Action:T18 Acts-on:T47 Using:E5
+T47	Reagent 481 492	cell clumps
+T122	Modifier 478 480	no
+R26	Mod-Link Arg1:E14 Arg2:T122	
+T123	Modifier 530 540	thoroughly
+R27	Mod-Link Arg1:E7 Arg2:T123	
+T124	Modifier 578 584	gently
+R28	Mod-Link Arg1:E8 Arg2:T124	
+T29	Modifier 685 693	continue
+T30	Action 694 703	inverting
+E41	Action:T30 Acts-on:T125
+T125	Location 708 712	tube
+T126	Reagent 723 731	solution
+T127	Action 761 766	clear
+E42	Action:T127 Acts-on:T126 Using:E41
+T129	Modifier 752 760	slightly
+R29	Mod-Link Arg1:E42 Arg2:T129	
+R30	Mod-Link Arg1:E41 Arg2:T29	
+T31	Modifier 1209 1220	immediately
+T34	Modifier 1225 1235	thoroughly
+R31	Mod-Link Arg1:E12 Arg2:T31	
+R32	Mod-Link Arg1:E12 Arg2:T34	
+T42	Action 1239 1248	inverting
+E43	Action:T42 Acts-on:T43 Count:T44
+T128	Modifier 1320 1330	thoroughly
+R33	Mod-Link Arg1:E13 Arg2:T128	
+T130	Action 1350 1358	addition
+E44	Action:T130 Acts-on:T48
+T131	Modifier 1332 1343	immediately
+R34	Mod-Link Arg1:E13 Arg2:T131	
+R7	Or Arg1:T57 Arg2:T58	
+T49	Modifier 2604 2614	additional
+R35	Mod-Link Arg1:T95 Arg2:T49	
+T52	Modifier 2898 2903	clean
+R36	Mod-Link Arg1:T101 Arg2:T52	

@@ -1,0 +1,19 @@
+T1	Action 96 99	Add
+E1	Action:T1 Acts-on:T5
+T2	Action 174 177	Add
+E2	Action:T2 Acts-on:T10
+T3	Action 199 203	Fill
+E3	Action:T3 Using:T7
+T4	Generic-Measure 100 106	144.2g
+T5	Reagent 107 126	glycine pH solution
+T6	Amount 207 209	1L
+T7	Reagent 215 219	dH20
+R1	Setting Arg1:E3 Arg2:T6	
+R2	Measure Arg1:T5 Arg2:T4	
+T8	Modifier 135 171	after disolution of tris and glycine
+R3	Mod-Link Arg1:E1 Arg2:T8	
+T9	Generic-Measure 178 181	10g
+T10	Reagent 182 185	SDS
+T11	Concentration 187 189	1%
+R4	Measure Arg1:T10 Arg2:T11	
+R5	Measure Arg1:T10 Arg2:T9	

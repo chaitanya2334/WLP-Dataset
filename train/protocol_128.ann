@@ -1,0 +1,158 @@
+T1	Action 42 49	Prepare
+E1	Action:T1 Acts-on:T29 Site:T30 Using:E29
+T2	Action 160 169	resuspend
+E2	Action:T2 Acts-on:T33 Site:T34 Using:E3
+T3	Action 203 209	adding
+E3	Action:T3 Site:T37
+T4	Action 323 329	Filter
+E4	Action:T4 Acts-on:T38 Using:T39
+T5	Action 368 378	centrifuge
+E5	Action:T5 
+T6	Action 409 418	resuspend
+E6	Action:T6 Site:T43
+T7	Action 465 470	Count
+E7	Action:T7 Acts-on:T44
+T8	Action 475 481	adjust
+E8	Action:T8 Acts-on:T44
+T9	Action 526 533	Aliquot
+E9	Action:T9 Acts-on:T47 Site:T48
+T10	Action 589 598	Resuspend
+E10	Action:T10 Acts-on:T49 Using:E11
+T11	Action 612 622	vortexing,
+E11	Action:T11 
+T12	Action 649 652	Add
+E12	Action:T12 Acts-on:T53
+T13	Action 673 676	mix
+E13	Action:T13 Acts-on:T53
+T14	Action 686 694	incubate
+E14	Action:T14 Site:T55
+T17	Action 895 898	Add
+E17	Action:T17 Acts-on:T64
+T18	Action 931 941	centrifuge
+E18	Action:T18 Acts-on:T67
+T19	Action 978 987	Resuspend
+E19	Action:T19 Acts-on:T72 Site:T74
+T20	Action 1037 1041	Take
+E20	Action:T20 
+T21	Action 1120 1125	Place
+E21	Action:T21 Acts-on:T79 Site:T80
+T22	Action 1060 1067	placing
+E22	Action:T22 Acts-on:T76 Site:T77
+T24	Action 1185 1194	Resuspend
+E24	Action:T24 Acts-on:T84 Site:T86
+T26	Action 1352 1356	Take
+E26	Action:T26 
+T27	Action 1414 1418	pool
+E27	Action:T27 Acts-on:T91
+T28	Action 1447 1454	process
+E28	Action:T28 Acts-on:T94
+T15	Action 718 726	Scale up
+E15	Action:T15 
+T23	Action 1164 1172	Pour out
+E23	Action:T23 Acts-on:T82
+T29	Reagent 50 55	cells
+T30	Location 61 84	your tissue of interest
+T31	Action 85 99	without lysing
+E29	Action:T31 Acts-on:T32
+T32	Reagent 100 112	erythrocytes
+T33	Reagent 174 179	cells
+T34	Location 183 199	MojoSort™ Buffer
+T35	Modifier 210 215	up to
+T36	Amount 216 220	4 mL
+T37	Location 226 260	5 mL (12 x 75 mm) polystyrene tube
+R1	Mod-Link Arg1:T36 Arg2:T35	
+R2	Setting Arg1:E3 Arg2:T36	
+T38	Reagent 334 339	cells
+T39	Device 347 366	70 μm cell strainer
+T40	Speed 382 389	300 x g
+T41	Time 394 404	5 minutes,
+T43	Location 447 463	MojoSort™ Buffer
+R3	Setting Arg1:E5 Arg2:T40	
+R4	Setting Arg1:E5 Arg2:T41	
+T42	Amount 425 443	appropriate volume
+R5	Measure Arg1:T43 Arg2:T42	
+T44	Reagent 486 504	cell concentration
+T45	Concentration 508 524	1 x 108 cells/mL
+R6	Setting Arg1:E8 Arg2:T45	
+T46	Amount 534 540	100 μL
+T47	Reagent 544 559	cell suspension
+T48	Location 579 587	new tube
+R7	Measure Arg1:T47 Arg2:T46	
+T49	Reagent 603 608	beads
+T50	Action 640 647	touches
+E30	Action:T50 Count:T51
+T51	Numerical 638 639	5
+T52	Amount 653 658	10 μL
+T53	Reagent 662 671	Nanobeads
+R8	Measure Arg1:T53 Arg2:T52	
+T54	Modifier 677 681	well
+R9	Mod-Link Arg1:E13 Arg2:T54	
+T55	Location 698 701	ice
+T56	Time 706 716	15 minutes
+R10	Setting Arg1:E14 Arg2:T56	
+T16	Amount 731 737	volume
+T57	Action 753 763	separating
+E16	Action:T57 Acts-on:T58
+T58	Reagent 769 774	cells
+T59	Modifier 764 768	more
+R11	Setting Arg1:E15 Arg2:T16	
+R12	Mod-Link Arg1:T58 Arg2:T59	
+T60	Action 824 831	working
+E31	Action:T60 Acts-on:T61
+T61	Reagent 851 856	cells
+T62	Modifier 837 846	less than
+T63	Amount 847 850	107
+T64	Reagent 899 915	MojoSort™ Buffer
+T65	Amount 922 926	4 mL
+T66	Modifier 916 921	up to
+T67	Reagent 946 951	cells
+T68	Speed 955 962	300 x g
+T69	Time 967 976	5 minutes
+T70	Modifier 862 871	indicated
+T71	Amount 872 879	volumes
+R13	Mod-Link Arg1:T63 Arg2:T62	
+R14	Measure Arg1:T61 Arg2:T63	
+R15	Mod-Link Arg1:T71 Arg2:T70	
+T72	Reagent 992 997	cells
+T73	Amount 1001 1005	3 mL
+R16	Mod-Link Arg1:T65 Arg2:T66	
+R17	Measure Arg1:T64 Arg2:T65	
+R18	Setting Arg1:E18 Arg2:T68	
+R19	Setting Arg1:E18 Arg2:T69	
+T74	Location 1009 1024	MojoSort™ Buffe
+R20	Measure Arg1:T72 Arg2:T73	
+R21	Measure Arg1:T74 Arg2:T73	
+T75	Size 1045 1052	aliquot
+T76	Device 1072 1076	tube
+T77	Location 1084 1090	magnet
+T78	Action 1094 1101	monitor
+E32	Action:T78 Measure-Type-Link:T25
+T79	Device 1130 1134	tube
+T80	Location 1142 1148	magnet
+T81	Time 1153 1162	5 minutes
+T82	Reagent 1177 1183	liquid
+T83	Modifier 1199 1206	labeled
+T84	Reagent 1207 1212	cells
+R23	Mod-Link Arg1:T84 Arg2:T83	
+R24	Setting Arg1:E21 Arg2:T81	
+T86	Location 1238 1244	buffer
+T25	Measure-Type 1102 1118	purity and yield
+R22	Setting Arg1:E20 Arg2:T75	
+T85	Modifier 1359 1364	small
+T87	Size 1365 1372	aliquot
+T88	Action 1376 1383	monitor
+E25	Action:T88 Measure-Type-Link:T89
+T89	Measure-Type 1384 1400	purity and yield
+R25	Setting Arg1:E26 Arg2:T87	
+R26	Mod-Link Arg1:T87 Arg2:T85	
+T90	Modifier 1423 1432	unlabeled
+T91	Reagent 1433 1442	fractions
+T92	Modifier 1455 1469	simultaneously
+R27	Mod-Link Arg1:E28 Arg2:T92	
+T93	Modifier 1479 1495	positive labeled
+T94	Reagent 1496 1501	cells
+T95	Action 1507 1516	assessing
+E33	Action:T95 Measure-Type-Link:T96
+T96	Measure-Type 1517 1533	purity and yield
+R28	Mod-Link Arg1:T91 Arg2:T90	
+R29	Mod-Link Arg1:T94 Arg2:T93	

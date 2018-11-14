@@ -1,0 +1,46 @@
+T1	Action 129 135	Dilute
+E1	Action:T1 Acts-on:T22 Site:T24
+T2	Action 177 194	EB 	Electroporate
+E2	Action:T2 
+T3	Action 362 365	mix
+E3	Action:T3 
+T4	Action 377 385	incubate
+E4	Action:T4 
+T5	Action 406 409	Add
+E5	Action:T5 
+T6	Action 456 459	mix
+E6	Action:T6 
+T7	Action 479 487	transfer
+E7	Action:T7 
+T8	Action 528 541	Electroporate
+E8	Action:T8 
+T9	Action 599 607	Transfer
+E9	Action:T9 
+T10	Action 675 679	Wash
+E10	Action:T10 
+T11	Action 737 745	Incubate
+E11	Action:T11 
+T12	Action 775 780	Plate
+E12	Action:T12 
+T13	Action 804 809	Plate
+E13	Action:T13 
+T14	Action 880 888	Incubate
+E14	Action:T14 
+T15	Action 913 920	Collect
+E15	Action:T15 
+T16	Action 973 978	elute
+E16	Action:T16 
+T17	Action 1071 1074	PCR
+E17	Action:T17 
+T18	Action 1122 1126	Pool
+E18	Action:T18 
+T19	Action 1228 1235	measure
+E19	Action:T19 
+T20	Action 1265 1271	dilute
+E20	Action:T20 
+T21	Action 1298 1301	Run
+E21	Action:T21 
+T22	Reagent 141 152	sub-library
+T23	Concentration 156 164	50 ng/ul
+T24	Reagent 168 173	water
+R1	Setting Arg1:E1 Arg2:T23	

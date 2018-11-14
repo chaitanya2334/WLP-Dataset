@@ -1,0 +1,71 @@
+T5	Action 648 651	Mix
+E5	Action:T5 Acts-on:T3 Acts-on2:T16
+T6	Action 701 709	Incubate
+E6	Action:T6 Acts-on:T17
+T7	Action 839 842	Mix
+E7	Action:T7 Acts-on:T25
+T8	Action 995 1003	Incubate
+E8	Action:T8 
+T9	Action 1026 1034	Incubate
+E9	Action:T9 
+T10	Action 1057 1065	Incubate
+E10	Action:T10 
+T11	Action 1088 1096	Incubate
+E11	Action:T11 
+T12	Action 1119 1127	Incubate
+E12	Action:T12 
+T13	Action 1265 1274	Transform
+E13	Action:T13 
+T14	Action 1279 1285	spread
+E14	Action:T14 Site:T37
+T1	Amount 652 655	1µl
+T2	Concentration 656 661	100µM
+T3	Reagent 662 667	stock
+R1	Measure Arg1:T3 Arg2:T2	
+R2	Measure Arg1:T3 Arg2:T1	
+T4	Amount 678 682	20µl
+T15	Concentration 683 685	1x
+T16	Reagent 686 698	NEB buffer 2
+R3	Measure Arg1:T16 Arg2:T15	
+R4	Measure Arg1:T16 Arg2:T4	
+T17	Reagent 714 721	mixture
+T18	Temperature 734 739	95 °C
+T19	Time 744 749	5 min
+T20	Temperature 764 769	50 °C
+T21	Temperature 785 790	50 °C
+T22	Time 795 801	10 min
+T23	Temperature 811 815	4 °C
+R5	Setting Arg1:E6 Arg2:T18	
+R6	Setting Arg1:E6 Arg2:T19	
+R7	Setting Arg1:E6 Arg2:T20	
+R8	Setting Arg1:E6 Arg2:T21	
+R9	Setting Arg1:E6 Arg2:T22	
+R10	Setting Arg1:E6 Arg2:T23	
+T24	Generic-Measure 819 836	normal ramp speed
+R11	Setting Arg1:E6 Arg2:T24	
+T25	Reagent 847 867	following components
+T26	Temperature 1007 1012	37 °C
+T27	Time 1017 1023	20 min
+R12	Setting Arg1:E8 Arg2:T26	
+R13	Setting Arg1:E8 Arg2:T27	
+T28	Temperature 1038 1043	16 °C
+R14	Setting Arg1:E9 Arg2:T28	
+T29	Time 1048 1054	15 min
+R15	Setting Arg1:E9 Arg2:T29	
+T30	Temperature 1069 1074	37 °C
+T31	Time 1079 1085	10 min
+R16	Setting Arg1:E10 Arg2:T30	
+R17	Setting Arg1:E10 Arg2:T31	
+T32	Temperature 1100 1105	55 °C
+T33	Time 1110 1116	15 min
+R18	Setting Arg1:E11 Arg2:T32	
+R19	Setting Arg1:E11 Arg2:T33	
+T34	Temperature 1131 1136	80 °C
+T35	Time 1141 1147	15 min
+R20	Setting Arg1:E12 Arg2:T34	
+R21	Setting Arg1:E12 Arg2:T35	
+T36	Reagent 1291 1304	spectinomycin
+T37	Location 1315 1321	plates
+T38	Concentration 1306 1313	50µg/ml
+R22	Measure Arg1:T36 Arg2:T38	
+R23	Meronym Arg1:T36 Arg2:T37	

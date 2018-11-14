@@ -1,0 +1,63 @@
+T1	Action 149 156	Prepare
+E1	Action:T1 Acts-on:T13
+T2	Action 382 390	Incubate
+E2	Action:T2 
+T3	Action 422 426	Take
+E3	Action:T3 Acts-on:T14
+T4	Action 484 487	Add
+E4	Action:T4 Acts-on:T33
+T5	Action 783 786	Add
+E5	Action:T5 Acts-on:T39 Site:T40
+T6	Action 923 926	Use
+E6	Action:T6 Acts-on:T21
+T7	Action 989 998	Resuspend
+E7	Action:T7 Site:T23
+T9	Temperature 394 397	72º
+T10	Time 402 404	3m
+T11	Action 406 412	return
+E9	Action:T11 Site:T31
+T12	Amount 427 432	4.3µL
+T13	Reagent 157 159	RT
+T14	Reagent 436 459	hybridized oligo-dT+RNA
+T15	Action 464 467	put
+E10	Action:T15 Acts-on:T14 Site:T16
+T16	Location 471 482	strip tubes
+T17	Amount 787 791	15µL
+T18	Amount 810 814	10µL
+T19	Numerical 927 930	0.6
+T20	Measure-Type 931 938	volumes
+R1	Of-Type Arg1:T19 Arg2:T20	
+T21	Device 942 947	beads
+R2	Measure Arg1:T21 Arg2:T19	
+T22	Amount 1002 1008	15.5µL
+T23	Reagent 1009 1011	EB
+T24	Action 1018 1025	measure
+E11	Action:T24 Using:T25
+T25	Method 1047 1052	qubit
+R3	Measure Arg1:T23 Arg2:T22	
+T26	Amount 488 493	5.7µL
+T27	Action 18 27	Wipe down
+E12	Action:T27 Acts-on:T28 Using:T29 Using2:T32
+T28	Location 28 33	bench
+T29	Reagent 39 48	RNase zap
+T30	Reagent 60 86	Dilute oligo-dT30VN primer
+R4	Or Arg1:T29 Arg2:T30	
+R5	Setting Arg1:E2 Arg2:T9	
+R6	Setting Arg1:E2 Arg2:T10	
+T31	Location 416 419	ice
+T32	Method 90 146	adding 37µL of 100µM primer to 63µL of nuclease free H20
+R7	Measure Arg1:T14 Arg2:T12	
+T33	Reagent 494 565	RT mix RTNum CycleGroupTempTime1xA4290m10xB502m B422m1xC7015mholdD4hold
+R8	Measure Arg1:T33 Arg2:T26	
+T34	Action 566 572	Dilute
+E13	Action:T34 Acts-on:T35
+T35	Reagent 573 586	ISPCR primers
+T36	Generic-Measure 587 592	1:100
+T37	Action 593 600	Prepare
+E14	Action:T37 Acts-on:T38
+T38	Reagent 601 611	PCR preamp
+R9	Setting Arg1:E13 Arg2:T36	
+T39	Reagent 792 806	PCR preamp mix
+T40	Reagent 815 817	RT
+R10	Measure Arg1:T39 Arg2:T17	
+R11	Measure Arg1:T40 Arg2:T18	

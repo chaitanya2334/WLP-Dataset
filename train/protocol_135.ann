@@ -1,0 +1,56 @@
+T1	Action 81 87	melted
+E1	Action:T1 Acts-on:T11 Site:T12
+T3	Action 165 172	removed
+E3	Action:T3 Acts-on:T17 Acts-on2:T18
+T4	Action 260 265	added
+E4	Action:T4 Acts-on:T19 Acts-on2:T21 Acts-on3:T20
+T5	Action 295 300	mixed
+E5	Action:T5 Acts-on:T22 Using:T24 Site:T25
+T6	Action 389 396	emptied
+E6	Action:T6 Acts-on:T26 Site:T28
+T7	Action 440 446	spread
+E7	Action:T7 Acts-on:T29 Site:T31 Using:E8
+T8	Action 472 479	sliding
+E8	Action:T8 Acts-on:T32 Site:T33 Using:T34
+T9	Action 563 569	harden
+E9	Action:T9 
+T10	Action 626 635	incubated
+E10	Action:T10 Acts-on:T36
+T11	Device 53 76	Soft agar overlay tubes
+T2	Modifier 91 98	boiling
+T12	Reagent 99 104	water
+T13	Action 109 115	placed
+E2	Action:T13 Acts-on:T15
+T14	Modifier 123 127	47°C
+T15	Location 128 138	water bath
+R1	Mod-Link Arg1:T12 Arg2:T2	
+R2	Mod-Link Arg1:T15 Arg2:T14	
+T16	Amount 140 143	One
+T17	Device 144 148	tube
+T18	Location 182 192	water bath
+R3	Measure Arg1:T17 Arg2:T16	
+T19	Reagent 194 213	1.0 mL host culture
+T20	Mention 225 228	1.0
+T21	Reagent 232 256	0.1 mL viral concentrate
+T22	Reagent 271 279	contents
+T23	Modifier 301 305	well
+T24	Method 309 331	rolling back and forth
+T25	Location 332 349	between two hands
+R4	Mod-Link Arg1:E5 Arg2:T23	
+T26	Reagent 359 372	tube contents
+T27	Modifier 377 388	immediately
+T28	Location 405 415	agar plate
+R5	Mod-Link Arg1:E6 Arg2:T27	
+T29	Reagent 421 429	top agar
+T30	Modifier 433 439	gently
+T31	Location 456 468	agar surface
+T32	Device 484 489	plate
+T33	Location 497 510	bench surface
+T34	Method 519 534	circular motion
+R6	Mod-Link Arg1:E7 Arg2:T30	
+T35	Reagent 540 548	top agar
+T36	Device 615 621	plates
+T37	Time 657 666	overnight
+T38	Time 670 674	48 h
+R7	Setting Arg1:E10 Arg2:T37	
+R8	Setting Arg1:E10 Arg2:T38	

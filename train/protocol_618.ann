@@ -1,0 +1,79 @@
+T1	Action 49 58	Inoculate
+E1	Action:T1 Creates:T25 Using:E19
+T5	Action 389 398	Determine
+E5	Action:T5 Measure-Type-Link:T2 Acts-on:T3
+T6	Action 480 489	Calculate
+E6	Action:T6 
+T7	Action 540 545	Pipet
+E7	Action:T7 Acts-on:T27 Site:T29
+T8	Action 579 582	Add
+E8	Action:T8 Acts-on:T31 Site:T32
+T9	Action 710 716	dilute
+E9	Action:T9 Acts-on:T37 Site2:T41 Using:T39
+T10	Action 908 916	Continue
+E10	Action:T10 Acts-on:T42 Using:T43
+T11	Action 954 959	Store
+E11	Action:T11 Acts-on:T45
+T12	Action 1004 1009	count
+E12	Action:T12 Acts-on:T47 Site:T49
+T13	Action 1285 1290	Count
+E13	Action:T13 
+T14	Action 1316 1325	Calculate
+E14	Action:T14 Measure-Type-Link:T18 Acts-on:T53 Acts-on2:T54
+T17	Action 1205 1210	count
+E17	Action:T17 Acts-on:T52
+T19	Action 78 82	pick
+E19	Action:T19 Acts-on:T20 Site:T22
+T20	Reagent 85 91	colony
+T21	Modifier 99 102	new
+T22	Location 103 108	flask
+T23	Amount 120 125	10 ml
+T24	Reagent 129 138	MLB media
+R1	Measure Arg1:T24 Arg2:T23	
+R2	Mod-Link Arg1:T22 Arg2:T21	
+R3	Meronym Arg1:T24 Arg2:T22	
+T25	Reagent 61 72	new culture
+T2	Measure-Type 403 416	concentration
+T3	Reagent 425 432	culture
+T4	Measure-Type 494 500	volume
+T26	Reagent 504 516	host culture
+T27	Reagent 551 557	amount
+T28	Amount 565 571	1.5 ml
+T29	Location 572 576	tube
+R4	Measure Arg1:T29 Arg2:T28	
+T30	Numerical 583 586	107
+T31	Reagent 587 593	phages
+T32	Location 601 605	tube
+T33	Time 631 641	15 minutes
+T34	Action 665 671	adsorb
+E2	Action:T34 Acts-on2:T35 Using:T36
+T35	Reagent 679 689	host cells
+T36	Reagent 655 661	phages
+R5	Measure Arg1:T31 Arg2:T30	
+R6	Setting Arg1:E2 Arg2:T33	
+T37	Reagent 721 730	infection
+T38	Generic-Measure 731 737	1:1000
+T39	Reagent 741 750	MLB media
+T40	Amount 756 762	250 ml
+T41	Location 763 768	flask
+R7	Measure Arg1:T41 Arg2:T40	
+R8	Setting Arg1:E9 Arg2:T38	
+T42	Reagent 917 925	sampling
+T43	Method 929 937	this way
+T44	Time 942 949	8 hours
+R9	Setting Arg1:E10 Arg2:T44	
+T45	Reagent 964 980	filtered samples
+T46	Temperature 984 987	4°C
+R10	Setting Arg1:E11 Arg2:T46	
+T47	Reagent 1014 1021	plaques
+T48	Modifier 1025 1028	all
+T49	Location 1029 1035	plates
+R11	Mod-Link Arg1:T49 Arg2:T48	
+T50	Modifier 1211 1214	any
+T51	Modifier 1215 1218	new
+T52	Reagent 1219 1226	plaques
+R12	Mod-Link Arg1:T52 Arg2:T51	
+R13	Mod-Link Arg1:T52 Arg2:T50	
+T18	Measure-Type 1326 1332	PFU/ml
+T53	Reagent 1365 1376	centrifuged
+T54	Reagent 1399 1414	not centrifuged

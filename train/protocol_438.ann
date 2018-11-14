@@ -1,0 +1,68 @@
+T1	Amount 498 503	15 μl
+T2	Amount 433 438	15 μl
+T3	Action 429 432	Add
+E1	Action:T3 Acts-on:T11 Site:T18
+T4	Action 494 497	Add
+E2	Action:T4 Acts-on:T12 Site:T13
+T5	Time 583 589	20 min
+T6	Time 546 553	2-4 sec
+T7	Time 485 492	2-4 sec
+T8	Action 378 385	Prepare
+E3	Action:T8 Acts-on:T20
+T9	Action 297 300	add
+E4	Action:T9 Acts-on:T29
+T10	Modifier 285 296	Immediately
+T11	Reagent 439 459	ammonium thiocyanate
+T12	Reagent 504 520	ferrous chloride
+T13	Location 528 533	tubes
+T14	Modifier 524 527	all
+R1	Mod-Link Arg1:T13 Arg2:T14	
+R2	Measure Arg1:T12 Arg2:T1	
+R3	Measure Arg1:T11 Arg2:T2	
+T15	Action 478 484	vortex
+E5	Action:T15 
+T16	Action 539 545	vortex
+E6	Action:T16 
+R4	Setting Arg1:E6 Arg2:T6	
+R5	Setting Arg1:E5 Arg2:T7	
+T17	Modifier 463 466	all
+T18	Location 467 472	tubes
+T19	Modifier 388 393	blank
+T20	Device 394 398	tube
+R6	Mod-Link Arg1:T20 Arg2:T19	
+T21	Action 22 27	Weigh
+E7	Action:T21 Acts-on:T27 Site:T25
+T22	Action 59 65	record
+E8	Action:T22 Acts-on:T23
+T23	Device 72 78	weight
+T24	Modifier 66 71	exact
+T25	Location 45 54	test tube
+T26	Amount 28 35	0.01 mg
+T27	Reagent 36 39	oil
+T28	Amount 301 305	3 mL
+R7	Measure Arg1:T27 Arg2:T26	
+R8	Mod-Link Arg1:T23 Arg2:T24	
+R9	Mod-Link Arg1:E4 Arg2:T10	
+T29	Reagent 306 321	working solvent
+T30	Action 326 332	vortex
+E9	Action:T30 Acts-on:T29
+R10	Measure Arg1:T29 Arg2:T28	
+R11	Mod-Link Arg1:T18 Arg2:T17	
+T31	Action 555 558	Let
+E10	Action:T31 Using:E11
+T32	Action 559 562	sit
+E11	Action:T32 
+T33	Temperature 566 582	room temperature
+R12	Setting Arg1:E11 Arg2:T33	
+R13	Setting Arg1:E11 Arg2:T5	
+T34	Action 617 621	Read
+E12	Action:T34 Acts-on:T35 Using:T36
+T35	Device 622 632	absorbance
+T36	Device 636 653	spectrophotometer
+T37	Action 654 657	set
+E13	Action:T37 Acts-on:T35
+T38	Size 661 667	510 nm
+R14	Setting Arg1:E13 Arg2:T38	
+T39	Action 669 678	Determine
+E14	Action:T39 Acts-on:T40
+T40	Device 679 681	PV

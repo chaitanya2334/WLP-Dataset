@@ -1,0 +1,159 @@
+T1	Action 1049 1052	Mix
+E1	Action:T1 Acts-on:T50
+T2	Action 1136 1139	Mix
+E2	Action:T2 Acts-on:T53 Acts-on2:T55 Acts-on3:T57
+T3	Action 1271 1279	Incubate
+E3	Action:T3 
+T4	Action 1333 1342	Transform
+E4	Action:T4 Acts-on:T61
+T5	Action 1521 1528	Prepare
+E5	Action:T5 Creates:T63
+T6	Action 1988 1995	Prepare
+E6	Action:T6 Creates:T70 Acts-on:T71
+T7	Action 2092 2098	Inject
+E7	Action:T7 Site:T72
+T8	Action 2204 2212	Transfer
+E8	Action:T8 Site:T75 Acts-on:T74
+T9	Action 2304 2307	Use
+E9	Action:T9 Acts-on:T76
+T10	Action 2476 2479	Put
+E10	Action:T10 Acts-on:T78
+T11	Action 2558 2565	Prepare
+E11	Action:T11 Acts-on:T80
+T12	Action 2570 2576	filter
+E12	Action:T12 Acts-on:T80
+T13	Action 2674 2679	pipet
+E13	Action:T13 Acts-on:T87
+T14	Action 2841 2846	Swirl
+E14	Action:T14 
+T15	Action 2932 2935	Put
+E15	Action:T15 
+T16	Action 2960 2967	Examine
+E16	Action:T16 
+T17	Action 3391 3395	Pick
+E17	Action:T17 Acts-on:T91
+T18	Action 3739 3745	Return
+E18	Action:T18 
+T19	Action 3615 3625	Heat shock
+E19	Action:T19 Acts-on:T92
+T20	Action 506 512	Digest
+E20	Action:T20 Acts-on:T38
+T21	Action 626 632	Purify
+E21	Action:T21 Using:T41
+T22	Action 688 694	remove
+E22	Action:T22 Acts-on:T42
+T23	Action 708 715	Process
+E23	Action:T23 Acts-on:T43
+T24	Action 758 772	do not attempt
+E24	Action:T24 
+T25	Action 842 848	stored
+E25	Action:T25 
+T26	Action 896 905	construct
+E26	Action:T26 Creates:T46
+T27	Action 933 941	Generate
+E27	Action:T27 Creates:T47 Using:T49
+T28	Action 1078 1084	purify
+E28	Action:T28 
+T29	Action 1393 1400	Isolate
+E29	Action:T29 Acts-on:T62
+T30	Action 1425 1433	sequence
+E30	Action:T30 
+T31	Action 2357 2361	make
+E31	Action:T31 Acts-on:T77
+T32	Action 2503 2506	let
+E32	Action:T32 
+T33	Action 2927 2930	dry
+E33	Action:T33 
+T34	Action 2875 2881	covers
+E34	Action:T34 
+T35	Action 3460 3467	perform
+E35	Action:T35 
+T36	Action 3707 3726	activate expression
+E36	Action:T36 
+T37	Action 3774 3778	Pick
+E37	Action:T37 
+T38	Reagent 535 548	FP–SEC vector
+T39	Amount 523 531	miniprep
+R1	Measure Arg1:T38 Arg2:T39	
+T40	Temperature 562 566	37°C
+R2	Setting Arg1:E20 Arg2:T40	
+T41	Device 661 684	PCR cleanup spin column
+T42	Reagent 699 706	enzymes
+T43	Reagent 727 742	digested vector
+T44	Temperature 852 855	4°C
+R3	Setting Arg1:E25 Arg2:T44	
+T45	Time 871 881	few months
+R4	Setting Arg1:E25 Arg2:T45	
+T46	Reagent 915 931	repair templates
+T47	Reagent 946 958	PCR products
+T48	Amount 942 945	two
+R5	Measure Arg1:T47 Arg2:T48	
+T49	Reagent 985 996	genomic DNA
+T50	Reagent 1061 1073	PCR products
+T51	Amount 1057 1060	two
+R6	Measure Arg1:T50 Arg2:T51	
+T52	Amount 1140 1144	1 µL
+T53	Reagent 1148 1154	vector
+R7	Measure Arg1:T53 Arg2:T52	
+T54	Amount 1156 1160	4 µL
+T55	Reagent 1164 1177	homology arms
+R8	Measure Arg1:T55 Arg2:T54	
+T56	Amount 1182 1186	5 µL
+T57	Reagent 1190 1219	isothemal assembly enzyme mix
+R9	Measure Arg1:T57 Arg2:T56	
+T58	Time 1280 1282	1h
+R10	Setting Arg1:E3 Arg2:T58	
+T59	Temperature 1283 1289	@ 50°C
+R11	Setting Arg1:E3 Arg2:T59	
+T60	Amount 1343 1347	2 µL
+T61	Reagent 1355 1363	reaction
+R12	Measure Arg1:T61 Arg2:T60	
+T62	Reagent 1401 1404	DNA
+T63	Reagent 1532 1545	injection mix
+T64	Amount 1572 1580	10 ng/µL
+T65	Reagent 1581 1607	homologous repair template
+R13	Measure Arg1:T65 Arg2:T64	
+T67	Reagent 1618 1628	Cas9-sgRNA
+T66	Amount 1609 1617	50 ng/µL
+R14	Measure Arg1:T67 Arg2:T66	
+T68	Reagent 1747 1751	pGH8
+T69	Amount 1738 1746	10 ng/µL
+R15	Measure Arg1:T68 Arg2:T69	
+T70	Reagent 1996 2007	plasmid DNA
+T71	Device 2014 2050	Invitrogen’s PureLink mini-prep kit,
+T72	Reagent 2136 2153	young adult worms
+T73	Amount 2130 2135	50-60
+R16	Measure Arg1:T72 Arg2:T73	
+T74	Reagent 2217 2231	injected worms
+T75	Device 2239 2252	seeded plates
+T76	Device 2316 2326	NGM plates
+T77	Device 2364 2377	control plate
+T78	Device 2484 2490	plates
+T79	Temperature 2494 2498	25°C
+R17	Setting Arg1:E10 Arg2:T79	
+T80	Reagent 2597 2616	hygromycin solution
+T81	Amount 2589 2596	5 mg/mL
+R18	Measure Arg1:T80 Arg2:T81	
+T82	Generic-Measure 2631 2635	6 cm
+T83	Device 2636 2642	plates
+R19	Measure Arg1:T83 Arg2:T82	
+T84	Modifier 2655 2660	10 mL
+T85	Device 2661 2672	agar plates
+R20	Mod-Link Arg1:T85 Arg2:T84	
+T86	Amount 2680 2686	500 µL
+T87	Reagent 2690 2694	drug
+R21	Measure Arg1:T87 Arg2:T86	
+T88	Concentration 2765 2775	~250 µg/mL
+R22	Measure Arg1:T87 Arg2:T88	
+T89	Temperature 2954 2958	25ºC
+R23	Setting Arg1:E15 Arg2:T89	
+T90	Amount 3396 3399	6-8
+T91	Reagent 3400 3412	L1/L2 larvae
+R24	Measure Arg1:T91 Arg2:T90	
+T92	Device 3630 3636	plates
+T93	Temperature 3640 3644	34°C
+T94	Time 3649 3656	4 hours
+R25	Setting Arg1:T92 Arg2:T94	
+R26	Setting Arg1:T92 Arg2:T93	
+T95	Temperature 3760 3772	20°C or 25°C
+R27	Setting Arg1:E18 Arg2:T95	

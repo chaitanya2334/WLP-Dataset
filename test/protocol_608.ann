@@ -1,0 +1,7 @@
+T1	Action 50 57	Collect
+E1	Action:T1 Acts-on:T3 Site:T4
+T2	Action 389 398	Designate
+E2	Action:T2 Using:T5
+T3	Reagent 58 66	seawater
+T4	Location 84 100	desired location
+T5	Method 401 418	control treatment

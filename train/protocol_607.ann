@@ -1,0 +1,114 @@
+T2	Action 330 336	Remove
+E2	Action:T2 Acts-on:T21 Acts-on2:T23 Site:T24
+T3	Action 467 474	Connect
+E3	Action:T3 Acts-on:T1 Acts-on2:T20
+T4	Action 511 517	Attach
+E4	Action:T4 Acts-on:T25
+T5	Action 588 593	Place
+E5	Action:T5 Acts-on:T27 Site:T28
+T6	Action 811 816	Place
+E6	Action:T6 Acts-on:T30 Site:T32
+T7	Action 1002 1007	Clamp
+E7	Action:T7 Acts-on:T33 Site:T34
+T8	Action 1042 1045	Add
+E8	Action:T8 Acts-on:T35
+T9	Action 1241 1247	remove
+E9	Action:T9 Acts-on:T41
+T10	Action 1639 1646	Prepare
+E10	Action:T10 Acts-on:T52
+T11	Action 1983 1986	Dry
+E11	Action:T11 Using:T50
+T12	Action 2051 2056	Place
+E12	Action:T12 
+T13	Action 2101 2106	Place
+E13	Action:T13 Acts-on:T56 Site:T57
+T15	Action 2299 2306	Examine
+E15	Action:T15 Acts-on:T62 Site:T63
+T16	Action 2370 2375	Count
+E16	Action:T16 Acts-on:T67
+T17	Action 2676 2684	Multiply
+E17	Action:T17 Using:T72
+T18	Action 2776 2782	Divide
+E18	Action:T18 Using:T73
+T1	Device 479 490	glass flask
+T20	Device 498 509	vacuum pump
+T21	Reagent 345 349	SYBR
+T22	Concentration 341 344	10%
+R1	Measure Arg1:T21 Arg2:T22	
+T23	Reagent 354 370	phenylenediamine
+T24	Device 380 387	freezer
+T25	Device 522 535	filter holder
+T26	Size 596 602	0.8 µm
+T27	Device 603 609	filter
+T28	Location 613 629	top of the grout
+R2	Measure Arg1:T27 Arg2:T26	
+T29	Size 821 828	0.02 µm
+T30	Device 829 835	filter
+T31	Size 850 856	0.8 µm
+T32	Location 857 863	filter
+R3	Measure Arg1:T30 Arg2:T29	
+R4	Measure Arg1:T32 Arg2:T31	
+T33	Device 1012 1018	funnel
+T34	Location 1033 1040	filters
+T35	Reagent 1050 1056	sample
+T36	Action 1061 1068	turn on
+E1	Action:T36 Acts-on:T37
+T37	Mention 1073 1077	pump
+T38	Action 1220 1228	Turn off
+E20	Action:T38 Acts-on:T39
+T39	Device 1233 1239	vacuum
+T40	Size 1248 1255	0.02 µm
+T41	Device 1256 1262	filter
+R6	Measure Arg1:T41 Arg2:T40	
+T19	Action 1315 1323	Blot out
+E19	Action:T19 Acts-on:T42 Site:T46 Using:T44
+T42	Reagent 1328 1336	seawater
+T43	Modifier 1344 1350	bottom
+T44	Device 1381 1388	kimwipe
+T45	Modifier 1358 1361	top
+T46	Location 1362 1373	plastic rim
+R8	Mod-Link Arg1:T46 Arg2:T43	
+R9	Mod-Link Arg1:T46 Arg2:T45	
+T47	Amount 1649 1655	100 µL
+T48	Modifier 1987 1997	completely
+R10	Mod-Link Arg1:E11 Arg2:T48	
+T49	Action 1786 1789	Lay
+E21	Action:T49 
+T50	Method 2004 2013	steps 7-8
+T51	Size 1794 1798	0.02
+T52	Reagent 1664 1668	SYBR
+T53	Modifier 1656 1660	drop
+R11	Mod-Link Arg1:T52 Arg2:T53	
+R12	Measure Arg1:T52 Arg2:T47	
+T54	Location 2088 2099	glass slide
+T55	Amount 2107 2112	30 µL
+T56	Reagent 2116 2124	antifade
+T57	Location 2130 2140	cover slip
+R13	Measure Arg1:T56 Arg2:T55	
+T58	Action 2147 2153	invert
+E22	Action:T58 Acts-on:T59
+T59	Mention 2154 2158	slip
+R14	Coreference-Link Arg1:T59 Arg2:T57	
+T60	Action 2163 2168	place
+E23	Action:T60 Acts-on:T59 Site:T61
+T61	Location 2172 2189	top of the filter
+T62	Location 2320 2326	fields
+T63	Device 2334 2344	microscope
+T66	Numerical 2385 2388	200
+T67	Reagent 2389 2396	viruses
+T68	Reagent 2400 2408	bacteria
+R17	Measure Arg1:T67 Arg2:T66	
+T65	Modifier 2376 2384	at least
+R18	Mod-Link Arg1:E16 Arg2:T65	
+R19	Or Arg1:T67 Arg2:T68	
+T14	Numerical 2316 2319	ten
+T64	Modifier 2307 2315	at least
+R15	Mod-Link Arg1:E15 Arg2:T64	
+R16	Measure Arg1:T62 Arg2:T14	
+T69	Action 2606 2610	Find
+E14	Action:T69 Acts-on:T70
+T70	Reagent 2615 2629	average number
+T71	Concentration 2633 2655	particles per quadrant
+R20	Measure Arg1:T70 Arg2:T71	
+T72	Device 2695 2723	scaling factor of 1.26 x 105
+T73	Device 2795 2806	volume used

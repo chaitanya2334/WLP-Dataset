@@ -1,0 +1,320 @@
+T1	Action 170 181	equilibrate
+E1	Action:T1 
+T2	Action 124 128	Thaw
+E2	Action:T2 
+T3	Action 242 250	Pre-heat
+E3	Action:T3 
+T4	Action 282 290	pre-heat
+E4	Action:T4 
+T5	Action 336 344	Denature
+E5	Action:T5 
+T6	Action 363 373	assembling
+E6	Action:T6 
+T7	Action 469 475	Vortex
+E7	Action:T7 
+T8	Action 495 503	incubate
+E8	Action:T8 
+T9	Action 534 539	place
+E9	Action:T9 
+T10	Action 557 563	Set up
+E10	Action:T10 
+T11	Action 749 756	pipette
+E11	Action:T11 
+T12	Action 837 843	Vortex
+E12	Action:T12 
+T13	Action 863 873	pulse spin
+E13	Action:T13 
+T14	Action 875 883	Incubate
+E14	Action:T14 
+T15	Action 930 936	Vortex
+E15	Action:T15 
+T16	Action 1009 1016	Prepare
+E16	Action:T16 
+T17	Action 1045 1048	Add
+E17	Action:T17 
+T18	Action 1111 1116	Votex
+E18	Action:T18 
+T19	Action 1136 1144	incubate
+E19	Action:T19 
+T20	Action 1271 1276	Place
+E20	Action:T20 
+T21	Action 1389 1395	remove
+E21	Action:T21 
+T22	Action 1400 1407	discard
+E22	Action:T22 
+T23	Action 1552 1557	rinse
+E23	Action:T23 
+T24	Action 1635 1642	Discard
+E24	Action:T24 
+T25	Action 1740 1747	pipette
+E25	Action:T25 
+T26	Action 1787 1794	discard
+E26	Action:T26 
+T27	Action 1815 1822	Air dry
+E27	Action:T27 
+T29	Action 2125 2131	Remove
+E29	Action:T29 
+T28	Action 2169 2172	Add
+E28	Action:T28 
+T30	Action 2226 2232	Vortex
+E30	Action:T30 
+T31	Action 2236 2245	resuspend
+E31	Action:T31 
+T32	Action 2250 2260	pulse spin
+E32	Action:T32 
+T33	Action 2262 2270	Incubate
+E33	Action:T33 
+T34	Action 2455 2458	add
+E34	Action:T34 
+T35	Action 2517 2523	Vortex
+E35	Action:T35 
+T36	Action 2543 2553	pulse spin
+E36	Action:T36 
+T37	Action 2555 2563	Incubate
+E37	Action:T37 
+T38	Action 2592 2597	place
+E38	Action:T38 
+T39	Action 2630 2638	Pre-heat
+E39	Action:T39 
+T40	Action 2738 2744	Vortex
+E40	Action:T40 
+T41	Action 2764 2774	pulse spin
+E41	Action:T41 
+T42	Action 2776 2784	Incubate
+E42	Action:T42 
+T43	Action 2813 2818	place
+E43	Action:T43 
+T44	Action 2884 2890	stored
+E44	Action:T44 
+T45	Action 3281 3287	Vortex
+E45	Action:T45 
+T46	Action 3307 3317	pulse spin
+E46	Action:T46 
+T47	Action 3319 3326	Amplify
+E47	Action:T47 
+T48	Action 3519 3523	Hold
+E48	Action:T48 
+T49	Action 3629 3638	monitored
+E49	Action:T49 
+T50	Action 3708 3716	dilution
+E50	Action:T50 
+T51	Action 4841 4846	bring
+E51	Action:T51 
+T52	Action 4933 4939	Vortex
+E52	Action:T52 
+T53	Action 5014 5021	Prepare
+E53	Action:T53 
+T54	Action 5050 5053	Add
+E54	Action:T54 
+T55	Action 5123 5128	Votex
+E55	Action:T55 
+T56	Action 5148 5158	pulse spin
+E56	Action:T56 
+T57	Action 5160 5168	Incubate
+E57	Action:T57 
+T58	Action 5294 5299	Place
+E58	Action:T58 
+T59	Action 5489 5497	Transfer
+E59	Action:T59 
+T60	Action 5668 5671	Add
+E60	Action:T60 
+T61	Action 5711 5717	Vortex
+E61	Action:T61 
+T62	Action 5679 5684	clear
+E62	Action:T62 
+T63	Action 5737 5747	pulse spin
+E63	Action:T63 
+T64	Action 5749 5757	Incubate
+E64	Action:T64 
+T65	Action 5883 5888	Place
+E65	Action:T65 
+T66	Action 5991 5997	Remove
+E66	Action:T66 
+T67	Action 6002 6009	discard
+E67	Action:T67 
+T68	Action 6107 6111	Keep
+E68	Action:T68 
+T69	Action 6154 6159	rinse
+E69	Action:T69 
+T70	Action 6237 6244	Discard
+E70	Action:T70 
+T71	Action 6342 6349	pipette
+E71	Action:T71 
+T72	Action 6417 6424	Air dry
+E72	Action:T72 
+T73	Action 6727 6733	Remove
+E73	Action:T73 
+T74	Action 6771 6774	Add
+E74	Action:T74 
+T75	Action 6819 6825	Vortex
+E75	Action:T75 
+T76	Action 6829 6838	resuspend
+E76	Action:T76 
+T77	Action 6843 6853	pulse spin
+E77	Action:T77 
+T78	Action 6855 6863	Incubate
+E78	Action:T78 
+T79	Action 7127 7132	check
+E79	Action:T79 
+T80	Action 5421 5435	DO NOT DISCARD
+E80	Action:T80 
+T81	Action 5558 5572	Do not disrupt
+E81	Action:T81 
+T82	Reagent 129 137	Mix C400
+T83	Location 149 156	storage
+T84	Temperature 143 148	-20°C
+T85	Reagent 164 166	it
+T86	Temperature 185 201	room temperature
+T87	Time 219 229	30 minutes
+T88	Device 255 269	thermal cycler
+T89	Temperature 273 277	70°C
+T90	Device 299 313	thermal cycler
+T91	Temperature 317 321	25°C
+T92	Reagent 349 359	RNA Sample
+T93	Reagent 378 398	following components
+T94	Modifier 404 411	sterile
+T95	Amount 412 418	200 μL
+T96	Location 419 427	PCR tube
+T97	Reagent 436 446	RNA Sample
+T98	Amount 448 451	6μL
+T99	Reagent 453 461	Mix A400
+T100	Amount 463 466	2μL
+T101	Reagent 431 434	ice
+T102	Measure-Type 480 490	thoroughly
+T103	Temperature 507 511	70°C
+T104	Time 516 524	1 minute
+T105	Location 544 548	tube
+T106	Reagent 552 555	ice
+T107	Reagent 578 606	3’ Adapter Ligation reaction
+T108	Reagent 610 613	ice
+T109	Modifier 615 624	Denatured
+T110	Reagent 625 632	RNA mix
+T111	Amount 646 649	8μL
+T112	Reagent 651 659	Mix B400
+T113	Amount 661 664	2μL
+T114	Reagent 666 674	Mix C400
+T115	Amount 676 681	6.5μL
+T116	Modifier 757 763	slowly
+T117	Action 808 817	dispensed
+E82	Action:T117 
+T118	Amount 778 792	correct amount
+T119	Reagent 796 804	Mix C400
+T120	Reagent 827 835	reaction
+T121	Reagent 844 847	mix
+T122	Reagent 476 479	mix
+T123	Modifier 848 858	thoroughly
+T124	Temperature 887 891	25°C
+T125	Time 896 902	1 hour
+T126	Reagent 941 969	TailorMag Purification Beads
+T127	Concentration 1017 1020	80%
+T128	Reagent 1021 1028	ethanol
+T129	Amount 1049 1054	30 μL
+T130	Reagent 1058 1061	TPB
+T131	Reagent 1072 1097	3’-adapter ligated sample
+T132	Reagent 1117 1120	mix
+T133	Modifier 1121 1131	thoroughly
+T134	Temperature 1148 1164	room temperature
+T135	Time 1169 1179	15 minutes
+T136	Location 1281 1292	sample tube
+T137	Device 1300 1314	magnetic stand
+T138	Temperature 1318 1334	room temperature
+T139	Time 1339 1348	5 minutes
+T140	Amount 1408 1413	40 μL
+T141	Modifier 1379 1388	Carefully
+T142	Reagent 1421 1432	supernatant
+T143	Action 1505 1509	Keep
+E83	Action:T143 
+T144	Location 1510 1521	sample tube
+T145	Device 1529 1543	magnetic stand
+T146	Reagent 1562 1572	TPB pellet
+T147	Amount 1578 1584	150 μL
+T148	Concentration 1588 1591	80%
+T149	Reagent 1592 1599	ethanol
+T150	Action 1600 1618	without disrupting
+E84	Action:T150 
+T151	Reagent 1623 1633	TPB pellet
+T152	Modifier 1545 1551	Gently
+T153	Reagent 1647 1661	rinse solution
+T154	Modifier 1733 1739	Gently
+T155	Concentration 1752 1755	80%
+T156	Reagent 1756 1763	ethanol
+T157	Numerical 1776 1780	once
+T158	Reagent 1799 1813	rinse solution
+T159	Location 1823 1834	sample tube
+T160	Temperature 1838 1854	room temperature
+T161	Time 1909 1924	5 to 15 minutes
+T162	Location 2132 2143	sample tube
+T163	Device 2153 2167	magnetic stand
+T164	Amount 2173 2177	7 μL
+T165	Reagent 2181 2200	nuclease free water
+T166	Modifier 2208 2213	dried
+T167	Reagent 2214 2224	TPB pellet
+T168	Reagent 2271 2290	sample resuspension
+T169	Temperature 2294 2310	room temperature
+T170	Time 2315 2324	2 minutes
+T171	Reagent 2459 2467	Mix D400
+T172	Reagent 2472 2480	Mix E400
+T173	Reagent 2488 2494	sample
+T174	Reagent 2524 2527	mix
+T175	Modifier 2528 2538	thoroughly
+T176	Temperature 2567 2571	25°C
+T177	Time 2576 2582	1 hour
+T178	Location 2602 2606	tube
+T179	Reagent 2610 2613	ice
+T180	Device 2643 2657	thermal cycler
+T181	Temperature 2661 2666	50°C.
+T182	Reagent 2745 2748	mix
+T183	Modifier 2749 2759	thoroughly
+T184	Temperature 2788 2792	50°C
+T185	Time 2797 2803	1 hour
+T186	Location 2823 2827	tube
+T187	Reagent 2831 2834	ice
+T188	Reagent 2857 2874	First strand cDNA
+T189	Temperature 2894 2899	-20°C
+T190	Time 2910 2920	seven days
+T191	Reagent 3288 3291	mix
+T192	Modifier 3292 3302	thoroughly
+T193	Reagent 3331 3338	samples
+T194	Device 3346 3360	thermal cycler
+T195	Temperature 3405 3409	95°C
+T196	Time 3414 3424	10 minutes
+T197	Temperature 3439 3443	95°C
+T198	Time 3448 3457	5 seconds
+T199	Temperature 3459 3463	60°C
+T200	Time 3468 3478	15 seconds
+T201	Temperature 3480 3484	72°C
+T202	Time 3489 3497	1 minute
+T203	Temperature 3499 3503	72°C
+T204	Time 3508 3517	5 minutes
+T205	Temperature 3527 3531	4°C 
+T206	Reagent 3552 3564	PCR products
+T207	Action 3574 3580	stored
+E85	Action:T207 
+T208	Temperature 3584 3589	-20°C
+T209	Time 3600 3610	seven days
+T210	Measure-Type 3612 3621	PCR yield
+T211	Action 3642 3649	running
+E86	Action:T211 
+T212	Method 3653 3699	Agilent BioAnalyzer High Sensitivity DNA assay
+T213	Amount 3720 3724	1 μL
+T214	Reagent 3728 3739	PCR product
+T215	Amount 3744 3748	9 μL
+T216	Reagent 3752 3771	nuclease-free water
+T217	Measure-Type 4854 4860	volume
+T218	Reagent 4847 4853	sample
+T219	Amount 4869 4874	30 μL
+T220	Reagent 4944 4972	TailorMag Purification Beads
+T221	Reagent 5054 5057	TPB
+T222	Concentration 5022 5025	80%
+T223	Reagent 5026 5033	ethanol
+T224	Reagent 5066 5072	sample
+T225	Location 5080 5088	PCR tube
+T226	Reagent 5129 5132	mix
+T227	Modifier 5133 5143	thoroughly
+T228	Temperature 5172 5188	room temperature
+T229	Time 5193 5202	5 minutes
+T230	Action 5211 5247	Do NOT perform strong centrifugation
+E87	Action:T230 
+T231	Location 5304 5315	sample tube
+T232	Device 5323 5356	TailorMag PCR-tube magnetic stand
+T233	Temperature 5360 5376	room temperature

@@ -1,0 +1,82 @@
+T2	Action 398 404	Set up
+E2	Action:T2 Acts-on:T1 Site:T16
+T3	Action 488 492	Fill
+E3	Action:T3 Acts-on2:T20 Site:T18
+T4	Action 523 526	Add
+E4	Action:T4 Acts-on:T21 Site:T22
+T5	Action 601 604	mix
+E5	Action:T5 
+T6	Action 640 646	remove
+E6	Action:T6 Acts-on:T28
+T7	Action 690 698	Transfer
+E7	Action:T7 Site:T33
+T8	Action 752 758	Vortex
+E8	Action:T8 
+T9	Action 767 773	Pellet
+E9	Action:T9 Acts-on:T38
+T10	Action 838 844	remove
+E10	Action:T10 Acts-on:T43 Site:T45
+T11	Action 906 915	keep cold
+E11	Action:T11 
+T12	Action 945 950	Place
+E12	Action:T12 Acts-on:T46
+T13	Action 1018 1024	Repeat
+E13	Action:T13 Acts-on:T47
+T1	Reagent 405 424	adsorption cultures
+T15	Amount 432 438	250 mL
+T16	Location 439 470	polycarbonate Erlenmeyer flasks
+T17	Seal 476 485	screw cap
+R1	Measure Arg1:T16 Arg2:T15	
+R2	Meronym Arg1:T17 Arg2:T16	
+T18	Location 493 498	flask
+T19	Amount 504 510	100 mL
+T20	Reagent 511 521	host cells
+R3	Measure Arg1:T20 Arg2:T19	
+T21	Reagent 527 543	cyanophage stock
+T22	Reagent 562 566	host
+T23	Generic-Measure 573 588	MOI of ca. 0.01
+T24	Modifier 593 600	quickly
+T25	Action 608 616	disperse
+E1	Action:T25 Acts-on:T26 Using:E5
+T26	Reagent 621 626	virus
+R4	Mod-Link Arg1:E5 Arg2:T24	
+R5	Setting Arg1:E4 Arg2:T23	
+T27	Modifier 628 639	Immediately
+T28	Reagent 649 658	subsample
+T29	Action 663 669	dilute
+E15	Action:T29 
+T30	Concentration 670 674	100×
+T31	Time 679 688	time zero
+R6	Setting Arg1:E15 Arg2:T30	
+R7	Setting Arg1:E15 Arg2:T31	
+R8	Mod-Link Arg1:E6 Arg2:T27	
+T32	Amount 699 704	15 µL
+T33	Location 710 714	tube
+T34	Amount 726 732	1.5 mL
+T35	Modifier 736 744	ice cold
+T36	Reagent 745 750	media
+R9	Mod-Link Arg1:T36 Arg2:T35	
+R10	Measure Arg1:T36 Arg2:T34	
+R12	Setting Arg1:E7 Arg2:T32	
+R11	Meronym Arg1:T36 Arg2:T33	
+T37	Action 762 765	mix
+E16	Action:T37 Using:E8
+T38	Reagent 774 778	host
+T39	Time 783 788	5 min
+R13	Setting Arg1:E9 Arg2:T39	
+T40	Modifier 828 837	Carefully
+T41	Amount 847 860	small aliquot
+T42	Amount 862 867	50 µL
+T43	Reagent 876 887	supernatant
+T44	Modifier 893 896	new
+T45	Location 897 901	tube
+R14	Mod-Link Arg1:E10 Arg2:T40	
+R15	Measure Arg1:T43 Arg2:T42	
+R16	Or Arg1:T42 Arg2:T41	
+R17	Mod-Link Arg1:T45 Arg2:T44	
+T46	Reagent 951 970	adsorption cultures
+T47	Reagent 1025 1033	sampling
+T49	Time 1058 1068	1 to 1.5 h
+T48	Generic-Measure 1037 1053	15 min intervals
+R18	Setting Arg1:E13 Arg2:T48	
+R19	Setting Arg1:E13 Arg2:T49	

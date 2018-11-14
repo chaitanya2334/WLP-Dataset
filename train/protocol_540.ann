@@ -1,0 +1,44 @@
+T1	Action 56 62	Obtain
+E1	Action:T1 Acts-on:T11
+T2	Action 154 160	soaked
+E2	Action:T2 Acts-on:T12 Using:T14
+T3	Action 212 219	rotated
+E3	Action:T3 Acts-on:T12
+T4	Action 334 340	rinsed
+E4	Action:T4 Using:T16 Count:T17
+T5	Action 426 432	filled
+E5	Action:T5 Using:T19
+T6	Action 459 463	soak
+E6	Action:T6 
+T7	Action 531 537	rinsed
+E7	Action:T7 Acts-on:T23 Using:T26
+T8	Action 572 585	double-bagged
+E8	Action:T8 Acts-on:T23
+T9	Action 590 596	stored
+E9	Action:T9 Acts-on:T23
+T10	Size 63 68	60 mL
+T11	Location 69 114	narrow-mouth low density polyethylene bottles
+R1	Measure Arg1:T11 Arg2:T10	
+T12	Location 142 149	Bottles
+T13	Time 165 172	10 days
+R2	Setting Arg1:E2 Arg2:T13	
+T14	Reagent 198 206	Citranox
+T15	Time 220 246	after approximately 5 days
+R3	Setting Arg1:E3 Arg2:T15	
+T16	Reagent 357 370	Milli-Q water
+T17	Numerical 380 387	5 times
+T18	Concentration 438 441	10%
+T19	Reagent 442 445	HCl
+R4	Measure Arg1:T19 Arg2:T18	
+T20	Time 468 475	10 days
+R5	Setting Arg1:E6 Arg2:T20	
+T21	Action 488 495	rotated
+E10	Action:T21 
+T22	Time 502 508	5 days
+R6	Setting Arg1:E10 Arg2:T22	
+T23	Location 516 522	bottle
+T24	Measure-Type 554 556	pH
+T25	Numerical 557 558	2
+R7	Of-Type Arg1:T25 Arg2:T24	
+T26	Reagent 559 566	Milli-Q
+R8	Measure Arg1:T26 Arg2:T25	

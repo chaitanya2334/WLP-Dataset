@@ -1,0 +1,149 @@
+T1	Action 24 28	Wash
+E1	Action:T1 Acts-on:T29 Using:T30
+T2	Action 68 75	Replace
+E2	Action:T2 Acts-on:T32
+T3	Action 90 94	wash
+E3	Action:T3 
+T4	Action 118 121	Fix
+E4	Action:T4 Acts-on:T34 Using:T39
+T5	Action 222 229	Replace
+E5	Action:T5 Acts-on:T41
+T6	Action 247 250	fix
+E6	Action:T6 
+T7	Action 363 367	Wash
+E7	Action:T7 Acts-on:T43 Using:T45
+T8	Action 411 418	Replace
+E8	Action:T8 Acts-on:T47
+T9	Action 460 464	Wash
+E9	Action:T9 Acts-on:T50 Using:T51
+T10	Action 503 510	Replace
+E10	Action:T10 Acts-on:T53
+T11	Action 521 525	wash
+E11	Action:T11 
+T13	Action 588 594	mixing
+E13	Action:T13 Acts-on:T58 Acts-on2:T59 Creates:T55
+T14	Action 702 710	Incubate
+E14	Action:T14 Acts-on:T60 Using:T61
+T15	Action 773 777	wash
+E15	Action:T15 Using:T64 Count:T63
+T17	Action 867 873	mixing
+E17	Action:T17 Acts-on:T68 Acts-on2:T70 Creates:T66
+T18	Action 973 981	Incubate
+E18	Action:T18 Acts-on:T71 Using:T72
+T19	Action 1168 1175	Prepare
+E19	Action:T19 Acts-on:T74
+T20	Action 1206 1212	mixing
+E20	Action:T20 Acts-on:T76 Acts-on2:T78 Creates:T74
+T21	Action 1330 1337	Prepare
+E21	Action:T21 Acts-on:T80 Creates:T89
+T22	Action 1390 1394	wash
+E22	Action:T22 Acts-on:T12 Count:T81 Using:T82
+T23	Action 1468 1471	add
+E23	Action:T23 Acts-on:T85
+T24	Action 1503 1511	incubate
+E24	Action:T24 
+T25	Action 1833 1840	replace
+E25	Action:T25 Acts-on:T87 Acts-on2:T88
+T26	Action 1914 1918	Wash
+E26	Action:T26 Acts-on:T90
+T27	Action 1937 1944	replace
+E27	Action:T27 Acts-on:T92
+T28	Action 1963 1971	incubate
+E28	Action:T28 
+T29	Reagent 29 32	gel
+T30	Reagent 36 52	ultra pure water
+T31	Time 57 66	5 minutes
+R1	Setting Arg1:E1 Arg2:T31	
+T32	Reagent 80 85	water
+T33	Time 107 116	5 minutes
+R2	Setting Arg1:E3 Arg2:T33	
+T34	Reagent 122 125	gel
+T35	Concentration 129 132	30%
+T36	Reagent 133 140	ethanol
+T37	Concentration 141 144	10%
+T38	Reagent 145 156	acetic acid
+T39	Reagent 157 165	solution
+R3	Meronym Arg1:T39 Arg2:T38	
+R4	Measure Arg1:T38 Arg2:T37	
+R5	Measure Arg1:T36 Arg2:T35	
+R6	Meronym Arg1:T39 Arg2:T36	
+T40	Time 210 220	15 minutes
+R7	Setting Arg1:E4 Arg2:T40	
+T41	Reagent 234 242	solution
+T42	Time 263 273	15 minutes
+R8	Setting Arg1:E6 Arg2:T42	
+T43	Reagent 368 371	gel
+T44	Concentration 375 378	10%
+T45	Reagent 379 386	ethanol
+T46	Time 400 409	5 minutes
+R9	Measure Arg1:T45 Arg2:T44	
+R10	Setting Arg1:E7 Arg2:T46	
+T47	Reagent 419 427	solution
+T48	Action 432 436	wash
+E29	Action:T48 
+T49	Time 449 458	5 minutes
+R11	Setting Arg1:E29 Arg2:T49	
+T50	Reagent 465 468	gel
+T51	Reagent 472 487	ultrapure water
+T52	Time 492 501	5 minutes
+R12	Setting Arg1:E9 Arg2:T52	
+T53	Reagent 511 516	water
+T54	Time 538 547	5 minutes
+R13	Setting Arg1:E11 Arg2:T54	
+T55	Reagent 557 584	Sensitizer Working Solution
+T56	Generic-Measure 595 601	1 part
+T57	Generic-Measure 631 640	500 parts
+T58	Reagent 602 625	Silver Stain Sensitizer
+R14	Measure Arg1:T58 Arg2:T56	
+T59	Reagent 641 656	ultrapure water
+R15	Measure Arg1:T59 Arg2:T57	
+T60	Reagent 711 714	gel
+T61	Reagent 718 745	Sensitizer Working Solution
+T62	Time 758 766	1 minute
+R16	Setting Arg1:E14 Arg2:T62	
+T63	Numerical 783 786	two
+T64	Reagent 798 813	ultrapure water
+T65	Time 818 826	1 minute
+R17	Setting Arg1:E15 Arg2:T65	
+T66	Reagent 841 863	Stain Working Solution
+T67	Generic-Measure 874 880	1 part
+T68	Reagent 881 902	Silver Stain Enhancer
+T69	Generic-Measure 908 916	50 parts
+T70	Reagent 917 929	Silver Stain
+R18	Measure Arg1:T70 Arg2:T69	
+R19	Measure Arg1:T68 Arg2:T67	
+T71	Reagent 982 985	gel
+T72	Reagent 989 1011	Stain Working Solution
+T73	Time 1016 1026	30 minutes
+R20	Setting Arg1:E18 Arg2:T73	
+T74	Reagent 1176 1202	Developer Working Solution
+T75	Generic-Measure 1213 1219	1 part
+T76	Reagent 1220 1241	Silver Stain Enhancer
+T77	Generic-Measure 1247 1255	50 parts
+T78	Reagent 1256 1278	Silver Stain Developer
+R21	Measure Arg1:T78 Arg2:T77	
+R22	Measure Arg1:T76 Arg2:T75	
+T79	Concentration 1338 1340	5%
+T80	Reagent 1341 1361	acetic acid solution
+R23	Measure Arg1:T80 Arg2:T79	
+T12	Reagent 1395 1398	gel
+T16	Modifier 1382 1389	Quickly
+R24	Mod-Link Arg1:E22 Arg2:T16	
+T81	Numerical 1404 1407	two
+T82	Reagent 1419 1434	ultrapure water
+T83	Time 1439 1449	20 seconds
+R25	Setting Arg1:E22 Arg2:T83	
+T84	Modifier 1456 1467	Immediately
+T85	Reagent 1472 1498	Developer Working Solution
+R26	Mod-Link Arg1:E23 Arg2:T84	
+T86	Time 1540 1551	2-3 minutes
+R27	Setting Arg1:E24 Arg2:T86	
+T87	Reagent 1841 1867	Developer Working Solution
+T88	Reagent 1882 1895	Stop Solution
+T89	Reagent 1367 1380	Stop Solution
+T90	Reagent 1919 1922	gel
+T91	Modifier 1923 1930	briefly
+R28	Mod-Link Arg1:E26 Arg2:T91	
+T92	Reagent 1945 1958	Stop Solution
+T93	Time 1976 1986	10 minutes
+R29	Setting Arg1:E28 Arg2:T93	

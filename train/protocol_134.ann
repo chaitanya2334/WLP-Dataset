@@ -1,0 +1,75 @@
+T1	Action 65 74	Resuspend
+E1	Action:T1 Acts-on:T15
+T2	Action 89 92	add
+E2	Action:T2 Acts-on:T16
+T3	Action 111 114	Add
+E3	Action:T3 Acts-on:T17
+T4	Action 256 263	Collect
+E4	Action:T4 Acts-on:T24 Acts-on2:T25 Using:T26
+T5	Action 340 350	Re-suspend
+E5	Action:T5 Acts-on:T30 Site:T31 Site2:T32 Site3:T33
+T6	Action 423 433	Centrifuge
+E6	Action:T6 
+T7	Action 464 471	discard
+E7	Action:T7 Acts-on:T37
+T8	Action 485 492	Suspend
+E8	Action:T8 Acts-on:T42 Acts-on2:T38 Acts-on3:T39 Acts-on4:T40 Acts-on5:T41
+T9	Action 570 578	incubate
+E9	Action:T9 
+T10	Action 595 605	Centrifuge
+E10	Action:T10 
+T11	Action 636 643	Collect
+E11	Action:T11 Acts-on:T48
+T12	Action 28 34	Pellet
+E12	Action:T12 Acts-on:T14
+T13	Amount 35 40	500ml
+T14	Reagent 41 46	cells
+R1	Measure Arg1:T14 Arg2:T13	
+T15	Reagent 78 87	20ml MBBM
+T16	Reagent 93 109	20µl tetracyline
+T17	Reagent 115 134	150µl purified PBCV
+T18	Action 135 143	incubate
+E13	Action:T18 Site:T20 Using:T21 Site2:T23
+T19	Time 144 149	16hrs
+T20	Location 156 180	fluorescent illumination
+T21	Method 188 215	16 hr light/8 hr dark cycle
+T22	Temperature 219 223	25°C
+T23	Location 230 244	orbital shaker
+R2	Setting Arg1:E13 Arg2:T19	
+R3	Setting Arg1:E13 Arg2:T22	
+T24	Reagent 264 269	cells
+T25	Reagent 274 279	virus
+T26	Method 283 297	centrifugation
+T27	Speed 301 310	25,000RPM
+T28	Time 324 330	17 min
+T29	Temperature 334 338	20°C
+R4	Setting Arg1:E4 Arg2:T27	
+R5	Setting Arg1:E4 Arg2:T28	
+R6	Setting Arg1:E4 Arg2:T29	
+T30	Reagent 351 356	cells
+T31	Reagent 360 373	20ml 25mM KOH
+T32	Reagent 375 397	50mM MOPS, 2mM Na2EGTA
+T33	Reagent 399 408	0.1M LiCl
+T34	Speed 434 443	25,000RPM
+T35	Time 448 454	17 min
+T36	Temperature 458 462	20°C
+T37	Reagent 472 483	supernatant
+R7	Setting Arg1:E6 Arg2:T34	
+R8	Setting Arg1:E6 Arg2:T35	
+R9	Setting Arg1:E6 Arg2:T36	
+T38	Reagent 503 517	1.5ml 25mM KOH
+T39	Reagent 519 528	50mM MOPS
+T40	Reagent 537 551	60µl 10M LiCl,
+T41	Reagent 552 569	30µl 0.1M Na2EGTA
+T42	Reagent 493 499	pellet
+T43	Time 579 585	50 min
+T44	Temperature 589 593	37°C
+R10	Setting Arg1:E9 Arg2:T43	
+R11	Setting Arg1:E9 Arg2:T44	
+T45	Speed 606 615	25,000RPM
+T46	Time 620 626	17 min
+T47	Temperature 630 634	20°C
+R12	Setting Arg1:E10 Arg2:T45	
+R13	Setting Arg1:E10 Arg2:T46	
+R14	Setting Arg1:E10 Arg2:T47	
+T48	Reagent 644 655	supernatant

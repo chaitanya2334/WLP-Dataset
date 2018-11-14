@@ -1,0 +1,197 @@
+T1	Action 48 54	select
+E1	Action:T1 
+T2	Action 189 198	collected
+E2	Action:T2 
+T3	Action 399 405	Record
+E3	Action:T3 
+T4	Action 780 786	Obtain
+E4	Action:T4 
+T5	Action 974 978	take
+E5	Action:T5 
+T6	Action 1002 1006	grow
+E6	Action:T6 
+T7	Action 1107 1111	grow
+E7	Action:T7 
+T8	Action 1234 1243	collected
+E8	Action:T8 
+T9	Action 1282 1291	deposited
+E9	Action:T9 
+T10	Action 1414 1421	diluted
+E10	Action:T10 
+T11	Action 1465 1471	Create
+E11	Action:T11 
+T12	Action 1743 1753	submerging
+E12	Action:T12 
+T13	Action 1834 1840	rinsed
+E13	Action:T13 
+T14	Action 1894 1903	submerged
+E14	Action:T14 
+T15	Action 1959 1965	Remove
+E15	Action:T15 
+T16	Action 2020 2024	move
+E16	Action:T16 
+T17	Action 2095 2104	Inoculate
+E17	Action:T17 
+T18	Action 2354 2357	add
+E18	Action:T18 
+T19	Action 2418 2426	incubate
+E19	Action:T19 
+T20	Action 2532 2536	wash
+E20	Action:T20 
+T21	Action 2621 2626	Place
+E21	Action:T21 
+T22	Action 2708 2712	keep
+E22	Action:T22 
+T23	Action 2757 2761	Take
+E23	Action:T23 
+T24	Action 2773 2776	put
+E24	Action:T24 
+T25	Action 2814 2819	place
+E25	Action:T25 
+T26	Action 3101 3108	analyze
+E26	Action:T26 
+T27	Modifier 39 47	Manually
+T28	Reagent 55 76	almond kernel samples
+T29	Modifier 86 97	pasteurized
+T30	Modifier 102 109	shelled
+T31	Modifier 204 212	multiple
+T32	Method 213 227	harvest cycles
+T33	Reagent 164 178	almond kernels
+T34	Measure-Type 406 412	weight
+T35	Measure-Type 417 421	size
+T36	Reagent 425 439	almond kernels
+T37	Action 440 448	Separate
+E27	Action:T37 
+T38	Reagent 453 460	samples
+T39	Numerical 466 469	two
+T40	Reagent 470 476	groups
+T41	Action 539 547	infected
+E28	Action:T41 
+T42	Numerical 518 521	460
+T43	Mention 525 530	those
+T44	Reagent 493 507	almond kernels
+T45	Numerical 489 492	550
+T46	Numerical 553 556	two
+T47	Reagent 557 571	types of fungi
+T48	Action 619 627	infected
+E29	Action:T48 
+T49	Numerical 607 610	230
+T50	Reagent 633 642	A. flavus
+T51	Numerical 655 658	230
+T52	Action 667 675	infected
+E30	Action:T52 
+T53	Reagent 681 695	A. parasiticus
+T54	Modifier 701 710	remaining
+T55	Numerical 711 713	90
+T56	Reagent 714 721	kernels
+T57	Action 734 744	uninfected
+E31	Action:T57 
+T58	Reagent 787 796	A. flavus
+T59	Modifier 801 824	A. parasiticus isolates
+T60	Action 828 834	infect
+E32	Action:T60 
+T61	Reagent 835 842	almonds
+T62	Numerical 850 853	two
+T63	Reagent 854 868	types of fungi
+T64	Reagent 983 997	fungi isolates
+T65	Mention 1007 1011	them
+T66	Reagent 1015 1022	culture
+T67	Concentration 1028 1030	5%
+T68	Modifier 1031 1044	reconstituted
+T69	Reagent 1045 1062	tomato juice agar
+T70	Mention 1077 1079	it
+T71	Reagent 1088 1101	V8 juice agar
+T72	Modifier 1112 1116	each
+T73	Reagent 1117 1124	isolate
+T74	Time 1129 1135	6 days
+T75	Temperature 1156 1161	31 °C
+T76	Location 1167 1183	dark environment
+T77	Reagent 1190 1205	fungal isolates
+T78	Action 1216 1221	grown
+E33	Action:T78 
+T79	Reagent 1223 1230	conidia
+T80	Modifier 1252 1262	sterilized
+T81	Device 1263 1274	cotton swab
+T82	Modifier 1295 1302	sterile
+T83	Modifier 1303 1312	deionized
+T84	Reagent 1313 1318	water
+T85	Device 1322 1336	haemocytometer
+T86	Action 1353 1361	quantify
+E34	Action:T86 
+T87	Reagent 1366 1380	water solution
+T88	Reagent 1386 1393	conidia
+T89	Mention 1398 1400	it
+T90	Generic-Measure 1444 1463	105 spores per ml-1
+T91	Location 1488 1500	bottom right
+T92	Reagent 1504 1518	almond kernels
+T93	Device 1527 1560	B-D® 16G1 Precision Glide® Needle
+T94	Reagent 1713 1720	kernels
+T95	Modifier 1729 1739	sterilized
+T96	Concentration 1762 1765	10%
+T97	Reagent 1766 1781	bleach solution
+T98	Time 1798 1807	7 minutes
+T99	Reagent 1813 1820	kernels
+T100	Numerical 1841 1846	three
+T101	Modifier 1858 1865	sterile
+T102	Modifier 1866 1875	deionized
+T103	Reagent 1876 1881	water
+T104	Reagent 1925 1943	Dichloran solution
+T105	Time 1948 1957	2 seconds
+T106	Reagent 1966 1974	moisture
+T107	Location 1980 1987	surface
+T108	Reagent 1991 1998	almonds
+T109	Device 2002 2010	blotting
+T110	Mention 2011 2015	them
+T111	Mention 2025 2029	them
+T112	Location 2035 2060	biological safety cabinet
+T113	Time 2077 2093	10 to 15 minutes
+T114	Modifier 2105 2109	each
+T115	Reagent 2110 2116	almond
+T116	Amount 2122 2126	5 μl
+T117	Reagent 2134 2148	fungi solution
+T118	Action 2342 2352	inoculated
+E35	Action:T118 
+T119	Reagent 2324 2331	almonds
+T120	Modifier 2358 2367	deionized
+T121	Reagent 2368 2373	water
+T122	Location 2381 2390	container
+T123	Mention 2427 2431	them
+T124	Time 2448 2454	7 days
+T125	Temperature 2475 2478	31°
+T126	Location 2484 2494	dark place
+T127	Reagent 2537 2544	almonds
+T128	Modifier 2550 2559	deionized
+T129	Reagent 2560 2565	water
+T130	Action 2569 2575	remove
+E36	Action:T130 
+T131	Modifier 2576 2579	any
+T132	Reagent 2580 2586	traces
+T133	Reagent 2590 2602	fungi spores
+T134	Location 2612 2619	surface
+T135	Reagent 2627 2641	almond kernels
+T136	Device 2647 2656	fume hood
+T137	Time 2673 2681	12 hours
+T138	Time 2692 2700	12 hours
+T139	Reagent 2713 2720	kernels
+T140	Modifier 2726 2734	constant
+T141	Temperature 2750 2755	2.6°C
+T142	Reagent 2762 2768	almond
+T143	Device 2790 2807	spectrophotometer
+T144	Device 2820 2836	black optic mask
+T145	Location 2844 2857	space between
+T146	Action 2869 2873	Scan
+E37	Action:T146 
+T147	Location 2878 2885	surface
+T148	Reagent 2893 2906	almond kernel
+T149	Device 2917 2934	spectrophotometer
+T150	Modifier 2940 2944	each
+T151	Modifier 2945 2955	individual
+T152	Reagent 2956 2969	almond kernel
+T153	Action 2970 2974	take
+E38	Action:T153 
+T154	Numerical 2975 2977	32
+T155	Device 2978 2983	scans
+T156	Location 2991 2995	face
+T157	Measure-Type 3005 3021	wavelength range
+T158	Generic-Measure 3025 3042	400 nm to 2500 nm
+T159	Generic-Measure 3047 3051	2-nm

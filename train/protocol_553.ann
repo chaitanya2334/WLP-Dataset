@@ -1,0 +1,55 @@
+T1	Action 16 25	Wipe down
+E1	Action:T1 Acts-on:T2 Using:T3
+T2	Location 26 31	bench
+T3	Reagent 37 46	RNase zap
+T4	Action 60 66	Dilute
+E2	Action:T4 Acts-on:T5 Using:E3
+T5	Reagent 67 86	oligo-dT30VN primer
+T7	Amount 97 101	37µL
+T8	Concentration 105 110	100µM
+T9	Mention 111 117	primer
+T10	Amount 121 125	63µL
+T11	Reagent 129 146	nuclease free H20
+R1	Measure Arg1:T11 Arg2:T10	
+R2	Measure Arg1:T9 Arg2:T8	
+R3	Measure Arg1:T9 Arg2:T7	
+R4	Coreference-Link Arg1:T9 Arg2:T5	
+T6	Action 90 96	adding
+E3	Action:T6 Acts-on:T9 Site:T11
+T12	Action 383 391	Incubate
+E4	Action:T12 
+T13	Temperature 395 398	72º
+T14	Time 403 405	3m
+T15	Action 407 413	return
+E5	Action:T15 Site:T16
+T16	Location 417 420	ice
+R5	Setting Arg1:E4 Arg2:T13	
+R6	Setting Arg1:E4 Arg2:T14	
+T17	Action 423 427	Take
+E6	Action:T17 Acts-on:T20
+T18	Amount 428 433	4.3µL
+T19	Modifier 437 447	hybridized
+T20	Reagent 448 460	oligo-dT+RNA
+T21	Action 465 468	put
+E7	Action:T21 Site:T22
+T22	Location 472 483	strip tubes
+R7	Mod-Link Arg1:T20 Arg2:T19	
+R8	Measure Arg1:T20 Arg2:T18	
+T23	Action 787 790	Add
+E8	Action:T23 Acts-on:T25
+T24	Amount 791 795	15µL
+T25	Reagent 796 810	PCR preamp mix
+T26	Amount 814 818	10µL
+T27	Temperature 819 821	RT
+R9	Measure Arg1:T25 Arg2:T24	
+R10	Setting Arg1:E8 Arg2:T26	
+R11	Setting Arg1:E8 Arg2:T27	
+T28	Action 993 1002	Resuspend
+E9	Action:T28 Using:T30
+T29	Amount 1006 1012	15.5µL
+T30	Reagent 1013 1015	EB
+T31	Action 1022 1029	measure
+E10	Action:T31 Measure-Type-Link:T32 Using:T33
+T32	Measure-Type 1030 1044	concentrations
+T33	Device 1051 1056	qubit
+R12	Measure Arg1:T30 Arg2:T29	

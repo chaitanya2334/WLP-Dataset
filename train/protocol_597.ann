@@ -1,0 +1,87 @@
+T1	Action 25 34	Inoculate
+E1	Action:T1 Acts-on:T19 Using:T23 Site:T24
+T2	Action 270 280	centrifuge
+E2	Action:T2 Acts-on:T16
+T3	Action 333 341	Aspirate
+E3	Action:T3 Acts-on:T20
+T4	Action 346 353	discard
+E4	Action:T4 Acts-on:T20
+T5	Action 374 383	resuspend
+E5	Action:T5 Acts-on:T21 Site:T22
+T6	Action 716 723	Pipette
+E6	Action:T6 Acts-on:T40
+T7	Action 888 896	Incubate
+E7	Action:T7 Using:T43 Acts-on:T42
+T8	Action 1166 1172	Vortex
+E8	Action:T8 Acts-on:T31
+T9	Action 1221 1227	Remove
+E9	Action:T9 Acts-on:T28 Using:T30 Site:T29
+T10	Action 1232 1239	discard
+E10	Action:T10 Acts-on:T28 Using:T30 Site:T29
+T11	Action 1292 1297	Plate
+E11	Action:T11 Acts-on:T25 Site:T27
+T12	Action 1371 1379	incubate
+E12	Action:T12 Acts-on:T25
+T13	Amount 230 234	1 ml
+T14	Speed 284 294	10,000 rcf
+T15	Action 225 229	Take
+E13	Action:T15 Acts-on:T16
+T16	Reagent 238 265	donor and recipient culture
+T17	Time 299 308	2 minutes
+T18	Amount 35 40	small
+T19	Reagent 53 97	cultures of your donor and recipient strains
+T20	Reagent 358 369	supernatant
+T21	Reagent 388 404	bacterial pellet
+T22	Location 408 416	fresh LB
+T23	Reagent 104 127	appropriate antibiotics
+T24	Location 132 146	lysogeny broth
+T26	Modifier 1298 1305	desired
+T25	Reagent 1306 1341	volumes of the bacterial suspension
+T27	Location 1345 1366	selective agar medium
+T28	Device 1244 1251	filters
+T29	Location 1261 1266	tubes
+T30	Method 1273 1290	aseptic technique
+T31	Device 1177 1182	tubes
+T32	Action 496 501	place
+E14	Action:T32 Acts-on:T36 Site:T37
+T33	Modifier 502 512	sterilised
+T34	Amount 513 519	0.2 um
+T35	Modifier 520 529	pore size
+T36	Location 530 537	filters
+T37	Location 544 556	L-agar plate
+T38	Amount 724 729	10 ul
+T39	Modifier 737 748	resuspended
+T40	Reagent 749 776	donor and recipient strains
+T42	Location 901 906	plate
+T43	Method 907 918	upside down
+T44	Temperature 946 964	37 degrees Celsius
+T45	Action 997 1001	take
+E15	Action:T45 Acts-on:T46 Site:T47
+T46	Location 1006 1011	plate
+T47	Location 1023 1032	incubator
+T48	Modifier 1012 1015	out
+R1	Mod-Link Arg1:T47 Arg2:T48	
+T49	Method 1040 1057	aseptic technique
+T50	Action 1059 1063	pick
+E16	Action:T50 Using:T49 Acts-on:T51 Site:T53 Using2:T54
+T51	Device 1069 1075	filter
+T52	Modifier 1064 1068	each
+T53	Location 1084 1089	plate
+T54	Device 1096 1103	forceps
+T55	Action 1108 1113	place
+E17	Action:T55 Acts-on:T51 Site:T57
+T56	Amount 1122 1128	1.5 ml
+R4	Mod-Link Arg1:T25 Arg2:T26	
+R5	Mod-Link Arg1:T51 Arg2:T52	
+T57	Location 1129 1164	tube containing 1 ml of sterile PBS
+R2	Measure Arg1:T57 Arg2:T56	
+R3	Setting Arg1:E7 Arg2:T44	
+R6	Mod-Link Arg1:T40 Arg2:T39	
+R7	Measure Arg1:T40 Arg2:T38	
+R8	Mod-Link Arg1:T36 Arg2:T33	
+R9	Mod-Link Arg1:T36 Arg2:T35	
+R10	Measure Arg1:T36 Arg2:T34	
+R11	Measure Arg1:T16 Arg2:T13	
+R12	Setting Arg1:E2 Arg2:T14	
+R13	Setting Arg1:E2 Arg2:T17	
+R14	Measure Arg1:T19 Arg2:T18	

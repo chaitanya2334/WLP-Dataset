@@ -1,0 +1,79 @@
+T1	Action 80 87	Prepare
+E1	Action:T1 Creates:T39 Site:T40
+T2	Action 210 218	Transfer
+E2	Action:T2 Site:T14 Acts-on:T15
+T5	Action 606 609	Add
+E5	Action:T5 Acts-on:T16
+T6	Action 659 669	Centrifuge
+E6	Action:T6 
+T7	Action 776 779	Add
+E7	Action:T7 Acts-on:T26 Acts-on2:T28 Site:T29
+T8	Action 910 916	Invert
+E8	Action:T8 Count:T32 Acts-on:T31
+T9	Action 1014 1022	Incubate
+E9	Action:T9 
+T10	Action 1058 1062	Read
+E10	Action:T10 Measure-Type-Link:T43 Using:T50
+T12	Amount 219 223	50µl
+T13	Amount 244 249	1.5ml
+T14	Location 250 266	centrifuge tubes
+T15	Reagent 224 240	protein standard
+R1	Measure Arg1:T14 Arg2:T13	
+R2	Measure Arg1:T15 Arg2:T12	
+T3	Amount 610 613	1ml
+T16	Reagent 634 639	CB-X™
+R3	Measure Arg1:T16 Arg2:T3	
+T17	Action 644 650	vortex
+E3	Action:T17 Acts-on:T16
+T4	Modifier 614 625	pre-chilled
+T19	Speed 673 681	16,000xg
+T20	Time 686 695	5 minutes
+T21	Action 710 716	remove
+E4	Action:T21 Acts-on:T22
+T22	Reagent 725 736	supernatant
+T23	Modifier 737 774	without disturbing the protein pellet
+R4	Mod-Link Arg1:E4 Arg2:T23	
+R5	Setting Arg1:E6 Arg2:T19	
+R6	Setting Arg1:E6 Arg2:T20	
+T24	Time 1027 1036	5 minutes
+T25	Temperature 1040 1056	room temperature
+R7	Mod-Link Arg1:T16 Arg2:T4	
+T18	Amount 780 784	50µl
+T26	Reagent 785 814	CB-X™ Solubilization Buffer-I
+T27	Amount 819 823	50µl
+T28	Reagent 824 854	CB-X™ Solubilization Buffer-II
+T29	Location 862 866	tube
+T30	Action 871 877	vortex
+E12	Action:T30 Acts-on:T29
+R8	Measure Arg1:T26 Arg2:T18	
+R9	Measure Arg1:T28 Arg2:T27	
+T31	Reagent 921 936	CB-X™ Assay Dye
+T32	Numerical 937 940	2-3
+T33	Amount 962 965	1ml
+T34	Reagent 966 981	CB-X™ Assay Dye
+T35	Location 989 993	tube
+T36	Action 998 1004	vortex
+E13	Action:T36 Acts-on:T35
+T37	Modifier 1005 1012	briefly
+R10	Mod-Link Arg1:E13 Arg2:T37	
+R11	Measure Arg1:T34 Arg2:T33	
+T38	Action 958 961	add
+E14	Action:T38 Acts-on:T34 Site:T35
+R12	Setting Arg1:E9 Arg2:T24	
+R13	Setting Arg1:E9 Arg2:T25	
+T40	Reagent 126 142	buffer of choice
+T39	Reagent 98 117	standards of choice
+T41	Modifier 88 97	duplicate
+R14	Mod-Link Arg1:T39 Arg2:T41	
+T42	Concentration 176 207	0, 0.2, 0.4, 0.6, 0.8, 1.0µg/µl
+R15	Measure Arg1:T39 Arg2:T42	
+T43	Measure-Type 1067 1077	absorbance
+T44	Generic-Measure 1081 1086	595nm
+R16	Of-Type Arg1:T44 Arg2:T43	
+T45	Size 1126 1129	1cm
+T46	Location 1142 1149	cuvette
+T50	Location 1130 1141	path length
+R17	Meronym Arg1:T50 Arg2:T46	
+R18	Measure Arg1:T50 Arg2:T45	
+T51	Modifier 1087 1110	against deionized water
+R19	Mod-Link Arg1:E10 Arg2:T51	

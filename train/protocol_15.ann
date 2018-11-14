@@ -1,0 +1,80 @@
+T1	Action 53 57	Warm
+E1	Action:T1 Acts-on:T2 Site:T4
+T2	Reagent 58 84	Quant-iT PicoGreen reagent
+T4	Location 105 109	dark
+T3	Temperature 88 97	room temp
+R1	Setting Arg1:E1 Arg2:T3
+T5	Action 111 118	Prepare
+E2	Action:T5 Acts-on:T6 Acts-on2:T8 Acts-on3:T9
+T6	Reagent 119 130	1XTE buffer
+T7	Concentration 136 139	20X
+T8	Reagent 140 154	stock solution
+T9	Reagent 161 180	nuclease-free water
+T10	Action 254 260	Dilute
+E3	Action:T10 Acts-on:T11 Acts-on2:T14 Acts-on3:T17
+T11	Reagent 261 273	DNA standard
+T12	Concentration 291 298	2 μg/mL
+T13	Concentration 300 304	1:50
+T14	Reagent 308 319	λ DNA stock
+T15	Concentration 330 338	50 ng/mL
+T16	Generic-Measure 340 346	1:1000
+T17	Reagent 350 361	λ DNA stock
+T18	Action 446 449	Add
+E4	Action:T18 Acts-on:T20 Site:T21
+T19	Amount 450 464	correct amount
+T20	Reagent 468 477	TE buffer
+T21	Location 481 490	all wells
+T22	Action 492 495	Add
+E5	Action:T22 Acts-on:T23 Site:T24
+T23	Reagent 496 505	standards
+T24	Location 509 514	wells
+T25	Action 521 524	add
+E6	Action:T25 Site:T27 Acts-on:T26
+T26	Reagent 525 532	samples
+T27	Location 536 541	wells
+T28	Action 543 549	Dilute
+E7	Action:T28 Acts-on:T29 Acts-on2:T31
+T29	Reagent 550 559	PicoGreen
+T30	Concentration 560 565	1:200
+R8	Or Arg1:T30 Arg2:T29
+T31	Reagent 569 578	TE buffer
+T32	Misc 583 629	protect from light until ready to add to plate
+#1	AnnotatorNotes T32	Conditional Statement
+T33	Action 631 634	Add
+E8	Action:T33 Acts-on:T36 Site:T37
+T34	Mention 635 652	equivalent volume
+T35	Amount 654 660	100 μl
+R9	Misc-Link Arg1:T34 Arg2:T35
+T36	Reagent 665 682	diluted PicoGreen
+T37	Location 686 696	every well
+T38	Action 746 749	Tap
+E9	Action:T38 Acts-on:T39 Using:E10
+T39	Location 750 755	plate
+T40	Action 759 762	mix
+E10	Action:T40 
+T41	Action 764 772	Incubate
+E11	Action:T41 Using:E12
+T42	Time 773 782	5 minutes
+T43	Temperature 786 802	room temperature
+R11	Setting Arg1:E11 Arg2:T42
+R12	Setting Arg1:E11 Arg2:T43
+T44	Action 803 810	keeping
+E12	Action:T44 Acts-on:T45 Site:T46
+T45	Location 811 816	plate
+T46	Location 824 828	dark
+T47	Action 830 855	Take fluorescent readings
+E13	Action:T47 Site:T48 Site2:T49
+T48	Device 862 878	485nm excitation
+T49	Device 883 905	535nm emission filters
+T50	Action 907 931	Determine standard curve
+E14	Action:T50 Acts-on:T52
+T51	Action 936 959	calculate concentration
+E15	Action:T51 Acts-on:T52
+T52	Reagent 963 977	DNA in samples
+R2	Measure Arg1:T8 Arg2:T7	
+R3	Measure Arg1:T14 Arg2:T13	
+R5	Measure Arg1:T14 Arg2:T12	
+R4	Measure Arg1:T17 Arg2:T16	
+R6	Measure Arg1:T17 Arg2:T15	
+R7	Measure Arg1:T20 Arg2:T19	
+R10	Measure Arg1:T36 Arg2:T35	

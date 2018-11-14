@@ -1,0 +1,770 @@
+T1	Action 60 67	combine
+E1	Action:T1 Acts-on:T123 Acts-on2:T125 Site:T139
+T2	Action 226 229	Mix
+E2	Action:T2 Using:T126
+T3	Action 257 258	a
+E3	Action:T3 
+T5	Action 329 332	add
+E5	Action:T5 Acts-on:T133 Site:T134
+T6	Action 436 440	Heat
+E6	Action:T6 
+T8	Action 296 304	place on
+E8	Action:T8 
+T4	Action 476 484	place on
+E4	Action:T4 
+T7	Action 509 516	combine
+E7	Action:T7 Site:T141 Acts-on:T144 Acts-on2:T146 Acts-on3:T148
+T9	Action 751 754	Mix
+E9	Action:T9 Using:T150
+T10	Action 780 788	Incubate
+E10	Action:T10 
+T11	Action 808 816	Incubate
+E11	Action:T11 
+T12	Action 836 844	Incubate
+E12	Action:T12 
+T13	Action 883 890	combine
+E13	Action:T13 Site:T157 Acts-on:T160 Acts-on2:T162
+T14	Action 1066 1069	Mix
+E14	Action:T14 Using:T164
+T15	Action 1095 1103	Incubate
+E15	Action:T15 
+T16	Action 1128 1131	Add
+E16	Action:T16 Acts-on:T169 Site:T170
+T17	Action 1200 1203	Mix
+E17	Action:T17 Using:T172
+T18	Action 1229 1237	Incubate
+E18	Action:T18 Acts-on:T173
+T19	Action 1283 1288	Place
+E19	Action:T19 Acts-on:T176 Site:T177
+T20	Action 1406 1412	Remove
+E20	Action:T20 Acts-on:T180 Site:T181
+T21	Action 1417 1424	discard
+E21	Action:T21 Acts-on:T180
+T22	Action 1521 1524	add
+E22	Action:T22 Acts-on:T185 Site:T186
+T23	Action 1610 1618	incubate
+E23	Action:T23 Acts-on:T187
+T24	Action 1685 1691	remove
+E24	Action:T24 Acts-on:T193
+T25	Action 1696 1703	discard
+E25	Action:T25 Acts-on:T193
+T28	Action 1809 1815	Remove
+E28	Action:T28 Acts-on:T197 Site:T198
+T29	Action 1854 1861	let dry
+E29	Action:T29 Acts-on:T197
+T30	Action 1897 1906	Resuspend
+E30	Action:T30 Acts-on:T201 Using:T203
+T31	Action 1952 1955	Mix
+E31	Action:T31 Using:T205
+T33	Action 2047 2055	Incubate
+E33	Action:T33 Acts-on:T206
+T34	Action 2109 2114	Place
+E34	Action:T34 Acts-on:T209 Site:T210
+T35	Action 2232 2240	Transfer
+E35	Action:T35 Acts-on:T214 Site:T216
+T37	Action 2402 2409	combine
+E37	Action:T37 Site:T218 Acts-on:T220 Acts-on2:T222
+T38	Action 2578 2581	Mix
+E38	Action:T38 Using:T224
+T39	Action 2607 2615	Incubate
+E39	Action:T39 
+T40	Action 2635 2643	Incubate
+E40	Action:T40 
+T41	Action 2679 2686	combine
+E41	Action:T41 Site:T230 Acts-on:T232 Acts-on2:T234 Acts-on3:T236
+T42	Action 2893 2896	Mix
+E42	Action:T42 Using:T239
+T43	Action 2922 2930	Incubate
+E43	Action:T43 Using:T240
+T44	Action 2973 2976	Add
+E44	Action:T44 Acts-on:T245 Site:T246
+T45	Action 3045 3048	Mix
+E45	Action:T45 Using:T248
+T46	Action 3074 3082	Incubate
+E46	Action:T46 Acts-on:T249
+T47	Action 3128 3133	Place
+E47	Action:T47 Acts-on:T252 Site:T253
+T48	Action 3251 3257	Remove
+E48	Action:T48 Acts-on:T256 Site:T257
+T49	Action 3262 3269	discard
+E49	Action:T49 Acts-on:T256
+T50	Action 3367 3370	add
+E50	Action:T50 Acts-on:T261 Site:T262
+T51	Action 3456 3464	incubate
+E51	Action:T51 Acts-on:T263
+T52	Action 3531 3537	remove
+E52	Action:T52 Acts-on:T268
+T53	Action 3542 3549	discard
+E53	Action:T53 Acts-on:T268
+T27	Action 3655 3661	Remove
+E27	Action:T27 Site:T274 Acts-on:T273
+T32	Action 3700 3707	let dry
+E32	Action:T32 Acts-on:T273
+T55	Action 3743 3752	Resuspend
+E55	Action:T55 Acts-on:T277 Using:T279
+T56	Action 3798 3801	Mix
+E56	Action:T56 Using:T281
+T57	Action 3893 3901	Incubate
+E57	Action:T57 Acts-on:T282
+T58	Action 3955 3960	Place
+E58	Action:T58 Acts-on:T285 Site:T286
+T59	Action 4078 4086	Transfer
+E59	Action:T59 Acts-on:T291 Site:T292
+T60	Action 4135 4138	Add
+E60	Action:T60 Acts-on:T295 Site:T296
+T61	Action 4207 4210	Mix
+E61	Action:T61 Using:T298
+T62	Action 4236 4244	Incubate
+E62	Action:T62 Acts-on:T299
+T63	Action 4290 4295	Place
+E63	Action:T63 Acts-on:T302 Site:T303
+T64	Action 4413 4419	Remove
+E64	Action:T64 Acts-on:T306 Site:T307
+T65	Action 4424 4431	discard
+E65	Action:T65 Acts-on:T306
+T66	Action 4529 4532	add
+E66	Action:T66 Acts-on:T311 Site:T312
+T67	Action 4618 4626	incubate
+E67	Action:T67 Acts-on:T313
+T68	Action 4693 4699	remove
+E68	Action:T68 Acts-on:T317
+T69	Action 4704 4711	discard
+E69	Action:T69 Acts-on:T317
+T71	Action 4817 4823	Remove
+E71	Action:T71 Acts-on:T323 Site:T324
+T72	Action 4862 4869	let dry
+E72	Action:T72 Acts-on:T323
+T73	Action 4905 4914	Resuspend
+E73	Action:T73 Acts-on:T327 Using:T329
+T74	Action 4960 4963	Mix
+E74	Action:T74 Using:T331
+T75	Action 5054 5062	Incubate
+E75	Action:T75 Acts-on:T332
+T76	Action 5116 5121	Place
+E76	Action:T76 Acts-on:T335 Site:T336
+T77	Action 5239 5247	Transfer
+E77	Action:T77 Acts-on:T341 Site:T342
+T36	Action 5441 5444	add
+E36	Action:T36 Acts-on:T344
+T78	Action 5487 5490	mix
+E78	Action:T78 Acts-on:T345
+T79	Action 5492 5500	Incubate
+E79	Action:T79 
+T80	Action 5525 5533	Incubate
+E80	Action:T80 Acts-on:T349
+T81	Action 5562 5570	transfer
+E81	Action:T81 
+T82	Action 5596 5603	combine
+E82	Action:T82 Acts-on:T354 Acts-on2:T356 Site:T352 Acts-on3:T358 Acts-on4:T360
+T83	Action 5843 5846	Mix
+E83	Action:T83 Using:T362
+T84	Action 5884 5887	Add
+E84	Action:T84 Acts-on:T365 Site:T366
+T85	Action 5956 5959	Mix
+E85	Action:T85 Using:T368
+T86	Action 5985 5993	Incubate
+E86	Action:T86 Acts-on:T369
+T87	Action 6039 6044	Place
+E87	Action:T87 Acts-on:T372 Site:T373
+T88	Action 6162 6168	Remove
+E88	Action:T88 Acts-on:T376 Site:T377
+T89	Action 6173 6180	discard
+E89	Action:T89 Acts-on:T376
+T90	Action 6278 6281	add
+E90	Action:T90 Acts-on:T382
+T91	Action 6367 6375	incubate
+E91	Action:T91 Acts-on:T383
+T92	Action 6442 6448	remove
+E92	Action:T92 Acts-on:T387
+T93	Action 6453 6460	discard
+E93	Action:T93 Acts-on:T387
+T95	Action 6566 6572	Remove
+E95	Action:T95 Acts-on:T393 Site:T394
+T96	Action 6611 6618	let dry
+E96	Action:T96 
+T97	Action 6653 6662	Resuspend
+E97	Action:T97 Acts-on:T397 Using:T399
+T98	Action 6708 6711	Mix
+E98	Action:T98 Using:T401
+T99	Action 6803 6811	Incubate
+E99	Action:T99 Acts-on:T402
+T100	Action 6865 6870	Place
+E100	Action:T100 Acts-on:T405 Site:T406
+T101	Action 6988 6996	Transfer
+E101	Action:T101 Acts-on:T411 Site:T412
+T102	Action 7045 7048	Add
+E102	Action:T102 Acts-on:T415 Site:T416
+T103	Action 7117 7120	Mix
+E103	Action:T103 Using:T418
+T104	Action 7146 7154	Incubate
+E104	Action:T104 Acts-on:T419
+T105	Action 7200 7205	Place
+E105	Action:T105 Acts-on:T422 Site:T423
+T106	Action 7323 7329	Remove
+E106	Action:T106 Acts-on:T426 Site:T427
+T107	Action 7334 7341	discard
+E107	Action:T107 Acts-on:T426
+T108	Action 7439 7442	add
+E108	Action:T108 Acts-on:T431 Site:T432
+T109	Action 7528 7536	incubate
+E109	Action:T109 Acts-on:T433
+T110	Action 7603 7609	remove
+E110	Action:T110 Acts-on:T437
+T111	Action 7614 7621	discard
+E111	Action:T111 Acts-on:T437
+T113	Action 7727 7733	Remove
+E113	Action:T113 Acts-on:T443 Site:T444
+T114	Action 7772 7779	let dry
+E114	Action:T114 Acts-on:T443
+T115	Action 7814 7823	Resuspend
+E115	Action:T115 Acts-on:T447 Using:T449
+T116	Action 7869 7872	Mix
+E116	Action:T116 Using:T450
+T117	Action 7964 7972	Incubate
+E117	Action:T117 Acts-on:T452
+T118	Action 8026 8031	Place
+E118	Action:T118 Acts-on:T455 Site:T456
+T119	Action 8149 8157	Transfer
+E119	Action:T119 Site:T462 Acts-on:T460
+T120	Action 8206 8213	Proceed
+E120	Action:T120 Using:T464
+T121	Action 8239 8244	store
+E121	Action:T121 
+T122	Amount 131 136	14 µL
+T123	Reagent 137 140	RNA
+R1	Measure Arg1:T123 Arg2:T122	
+T124	Amount 185 189	5 µL
+T125	Reagent 190 224	NEXTflex™ RNA Fragmentation buffer
+R2	Measure Arg1:T125 Arg2:T124	
+T126	Method 244 253	pipetting
+T127	Modifier 230 240	thoroughly
+R3	Mod-Link Arg1:E2 Arg2:T127	
+T128	Time 264 274	10 minutes
+T129	Temperature 278 282	95°C
+T130	Modifier 284 295	immediately
+R4	Mod-Link Arg1:E8 Arg2:T130	
+T131	Temperature 305 308	ice
+R5	Setting Arg1:E8 Arg2:T131	
+R6	Setting Arg1:E3 Arg2:T128	
+R7	Setting Arg1:E3 Arg2:T129	
+T132	Amount 333 337	1 µL
+T133	Reagent 338 377	NEXTflex™ First Strand Synthesis Primer
+R8	Measure Arg1:T133 Arg2:T132	
+T134	Reagent 385 399	fragmented RNA
+T135	Temperature 444 448	65°C
+T136	Time 453 462	5 minutes
+T137	Modifier 464 475	immediately
+R9	Mod-Link Arg1:E4 Arg2:T137	
+T138	Temperature 485 488	ice
+R10	Setting Arg1:E4 Arg2:T138	
+R11	Setting Arg1:E6 Arg2:T135	
+R12	Setting Arg1:E6 Arg2:T136	
+T139	Location 87 121	nuclease-free microcentrifuge tube
+T140	Location 125 130	plate
+R13	Or Arg1:T139 Arg2:T140	
+T141	Location 536 570	nuclease-free microcentrifuge tube
+T142	Location 574 579	plate
+R14	Or Arg1:T141 Arg2:T142	
+T143	Amount 581 586	20 µL
+T144	Reagent 587 643	Fragmented RNA + NEXTflex™ First Strand Synthesis Primer
+R15	Measure Arg1:T144 Arg2:T143	
+T145	Amount 645 649	4 µL
+T146	Reagent 650 705	NEXTflex™ Directional First Strand Synthesis Buffer Mix
+R16	Measure Arg1:T146 Arg2:T145	
+T147	Amount 707 711	1 µL
+T148	Reagent 712 749	NEXTflex™ Rapid Reverse Transcriptase
+R17	Measure Arg1:T148 Arg2:T147	
+T149	Modifier 755 765	thoroughly
+R18	Mod-Link Arg1:E9 Arg2:T149	
+T150	Method 769 778	pipetting
+T151	Temperature 792 796	25°C
+T152	Time 801 806	10min
+R19	Setting Arg1:E10 Arg2:T151	
+R20	Setting Arg1:E10 Arg2:T152	
+T153	Temperature 820 824	50°C
+T154	Time 829 834	50min
+R21	Setting Arg1:E11 Arg2:T153	
+R22	Setting Arg1:E11 Arg2:T154	
+T155	Temperature 848 852	70°C
+T156	Time 857 862	15min
+R23	Setting Arg1:E12 Arg2:T155	
+R24	Setting Arg1:E12 Arg2:T156	
+T157	Location 910 944	nuclease-free microcentrifuge tube
+T158	Location 948 953	plate
+R25	Or Arg1:T157 Arg2:T158	
+T159	Amount 955 960	25 µL
+T160	Reagent 961 991	First Strand Synthesis product
+T161	Amount 993 998	25 µL
+T162	Reagent 999 1048	NEXTflex™ Directional Second Strand Synthesis Mix
+R26	Measure Arg1:T162 Arg2:T161	
+R27	Measure Arg1:T160 Arg2:T159	
+T163	Modifier 1070 1080	thoroughly
+R28	Mod-Link Arg1:E14 Arg2:T163	
+T164	Method 1084 1093	pipetting
+T165	Time 1108 1118	60 minutes
+T166	Temperature 1122 1126	16°C
+R29	Setting Arg1:E15 Arg2:T165	
+R30	Setting Arg1:E15 Arg2:T166	
+T167	Amount 1132 1137	90 µL
+T168	Modifier 1141 1151	well mixed
+T169	Reagent 1152 1167	AMPure XP Beads
+R31	Mod-Link Arg1:T169 Arg2:T168	
+R32	Measure Arg1:T169 Arg2:T167	
+T170	Location 1176 1180	well
+T171	Modifier 1204 1214	thoroughly
+R33	Mod-Link Arg1:E17 Arg2:T171	
+T172	Method 1218 1227	pipetting
+T173	Location 1242 1247	plate
+T174	Time 1252 1261	5 minutes
+T175	Temperature 1265 1281	room temperature
+R34	Setting Arg1:E18 Arg2:T174	
+R35	Setting Arg1:E18 Arg2:T175	
+T176	Location 1293 1298	plate
+T177	Location 1306 1320	magnetic stand
+T178	Time 1325 1334	5 minutes
+T179	Temperature 1338 1354	room temperature
+R36	Setting Arg1:E19 Arg2:T178	
+R37	Setting Arg1:E19 Arg2:T179	
+T180	Reagent 1436 1447	supernatant
+T181	Location 1457 1462	plate
+T182	Amount 1525 1531	200 µL
+T183	Modifier 1535 1551	freshly prepared
+T184	Concentration 1552 1555	80%
+T185	Reagent 1556 1563	ethanol
+R38	Mod-Link Arg1:T185 Arg2:T183	
+R39	Measure Arg1:T185 Arg2:T184	
+T186	Location 1572 1576	well
+R40	Measure Arg1:T185 Arg2:T182	
+T187	Location 1623 1628	plate
+T188	Modifier 1633 1641	at least
+T189	Time 1642 1652	30 seconds
+T190	Temperature 1656 1672	room temperature
+R41	Setting Arg1:E23 Arg2:T190	
+R42	Setting Arg1:E23 Arg2:T189	
+R43	Mod-Link Arg1:T189 Arg2:T188	
+T26	Numerical 1752 1755	two
+T191	Action 1764 1770	washes
+E26	Action:T191 Using:T192 Count:T26
+T192	Reagent 1756 1763	ethanol
+T193	Reagent 1708 1719	supernatant
+T194	Modifier 1674 1683	Carefully
+R44	Mod-Link Arg1:E24 Arg2:T194	
+T195	Action 1800 1807	removed
+E122	Action:T195 Acts-on:T196
+T196	Reagent 1783 1790	ethanol
+T197	Location 1820 1825	plate
+T198	Location 1835 1849	magnetic stand
+T199	Temperature 1865 1881	room temperature
+T200	Time 1886 1895	2 minutes
+R45	Setting Arg1:E29 Arg2:T199	
+R46	Setting Arg1:E29 Arg2:T200	
+T201	Reagent 1907 1918	dried beads
+T202	Amount 1922 1927	17 µL
+T203	Reagent 1931 1950	Resuspension Buffer
+R47	Measure Arg1:T203 Arg2:T202	
+T204	Modifier 1956 1966	thoroughly
+T205	Method 1970 1979	pipetting
+R48	Mod-Link Arg1:E31 Arg2:T204	
+T206	Reagent 2056 2073	resuspended beads
+T207	Temperature 2077 2093	room temperature
+T208	Time 2098 2107	2 minutes
+R49	Setting Arg1:E33 Arg2:T207	
+R50	Setting Arg1:E33 Arg2:T208	
+T209	Location 2119 2124	plate
+T210	Location 2132 2146	magnetic stand
+T211	Time 2151 2160	5 minutes
+T212	Temperature 2164 2180	room temperature
+R51	Setting Arg1:E34 Arg2:T211	
+R52	Setting Arg1:E34 Arg2:T212	
+T213	Amount 2241 2246	16 µL
+T214	Reagent 2260 2271	supernatant
+T215	Modifier 2254 2259	clear
+R53	Mod-Link Arg1:T214 Arg2:T215	
+R54	Measure Arg1:T214 Arg2:T213	
+T216	Location 2277 2287	fresh well
+T217	Temperature 2433 2439	on ice
+R55	Setting Arg1:E37 Arg2:T217	
+T218	Location 2445 2476	nuclease-free 96 well PCR Plate
+T219	Amount 2478 2483	16 µL
+T220	Reagent 2484 2515	Second Strand Synthesis product
+T221	Amount 2544 2550	4.5 µL
+T222	Reagent 2551 2576	NEXTflex™ Adenylation Mix
+R56	Measure Arg1:T222 Arg2:T221	
+R57	Measure Arg1:T220 Arg2:T219	
+T223	Modifier 2582 2592	thoroughly
+T224	Method 2596 2605	pipetting
+R58	Mod-Link Arg1:E38 Arg2:T223	
+T225	Temperature 2619 2623	37°C
+T226	Time 2628 2633	30min
+T227	Temperature 2647 2651	70°C
+T228	Time 2656 2660	5min
+R59	Setting Arg1:E40 Arg2:T227	
+R60	Setting Arg1:E40 Arg2:T228	
+R61	Setting Arg1:E39 Arg2:T225	
+R62	Setting Arg1:E39 Arg2:T226	
+T229	Temperature 2710 2716	on ice
+R63	Setting Arg1:E41 Arg2:T229	
+T230	Location 2722 2753	nuclease-free 96 well PCR Plate
+T231	Amount 2755 2762	20.5 µL
+T232	Reagent 2763 2780	3' Adenylated DNA
+T233	Amount 2811 2818	27.5 µL
+T234	Reagent 2819 2841	NEXTflex™ Ligation Mix
+T235	Amount 2843 2849	2.0 µL
+T236	Reagent 2850 2884	NEXTflex™ Molecular Index Adapters
+T237	Concentration 2886 2890	1 µM
+R64	Measure Arg1:T236 Arg2:T235	
+R65	Measure Arg1:T236 Arg2:T237	
+R66	Measure Arg1:T234 Arg2:T233	
+R67	Measure Arg1:T232 Arg2:T231	
+T238	Modifier 2897 2907	thoroughly
+T239	Method 2911 2920	pipetting
+R68	Mod-Link Arg1:E42 Arg2:T238	
+T240	Device 2936 2948	thermocycler
+T241	Time 2953 2963	10 minutes
+T242	Temperature 2967 2971	30°C
+R69	Setting Arg1:E43 Arg2:T241	
+R70	Setting Arg1:E43 Arg2:T242	
+T243	Amount 2977 2982	40 µL
+T244	Modifier 2986 2996	well mixed
+T245	Reagent 2997 3012	AMPure XP Beads
+T246	Location 3021 3025	well
+R71	Mod-Link Arg1:T245 Arg2:T244	
+R72	Measure Arg1:T245 Arg2:T243	
+T247	Modifier 3049 3059	thoroughly
+T248	Method 3063 3072	pipetting
+R73	Mod-Link Arg1:E45 Arg2:T247	
+T249	Location 3087 3092	plate
+T250	Time 3097 3106	5 minutes
+T251	Temperature 3110 3126	room temperature
+R74	Setting Arg1:E46 Arg2:T250	
+R75	Setting Arg1:E46 Arg2:T251	
+T252	Location 3138 3143	plate
+T253	Location 3151 3165	magnetic stand
+T254	Time 3170 3179	5 minutes
+T255	Temperature 3183 3199	room temperature
+R76	Setting Arg1:E47 Arg2:T254	
+R77	Setting Arg1:E47 Arg2:T255	
+T256	Reagent 3281 3292	supernatant
+T257	Location 3302 3307	plate
+T258	Amount 3371 3377	200 µL
+T259	Modifier 3381 3397	freshly prepared
+T260	Concentration 3398 3401	80%
+T261	Reagent 3402 3409	ethanol
+T262	Location 3418 3422	well
+T263	Location 3469 3474	plate
+T264	Time 3488 3498	30 seconds
+T265	Modifier 3479 3487	at least
+T266	Temperature 3502 3518	room temperature
+R78	Measure Arg1:T261 Arg2:T260	
+R79	Mod-Link Arg1:T261 Arg2:T259	
+R80	Measure Arg1:T261 Arg2:T258	
+R81	Mod-Link Arg1:T264 Arg2:T265	
+R82	Setting Arg1:E51 Arg2:T266	
+R83	Setting Arg1:E51 Arg2:T264	
+T267	Modifier 3520 3529	Carefully
+R84	Mod-Link Arg1:E52 Arg2:T267	
+T268	Reagent 3554 3565	supernatant
+T54	Numerical 3598 3601	two
+T269	Reagent 3602 3609	ethanol
+T270	Action 3610 3616	washes
+E54	Action:T270 Using:T269 Count:T54
+T271	Action 3646 3653	removed
+E123	Action:T271 Acts-on:T272
+T272	Reagent 3629 3636	ethanol
+T273	Location 3666 3671	plate
+T274	Location 3681 3695	magnetic stand
+T275	Temperature 3711 3727	room temperature
+T276	Time 3732 3741	2 minutes
+R85	Setting Arg1:E32 Arg2:T275	
+R86	Setting Arg1:E32 Arg2:T276	
+T277	Reagent 3753 3764	dried beads
+T278	Amount 3768 3773	51 µL
+T279	Reagent 3777 3796	Resuspension Buffer
+R87	Measure Arg1:T279 Arg2:T278	
+T280	Modifier 3802 3812	thoroughly
+T281	Method 3816 3825	pipetting
+R88	Mod-Link Arg1:E56 Arg2:T280	
+T282	Reagent 3902 3919	resuspended beads
+T283	Temperature 3923 3939	room temperature
+T284	Time 3944 3953	2 minutes
+R89	Setting Arg1:E57 Arg2:T283	
+R90	Setting Arg1:E57 Arg2:T284	
+T285	Location 3965 3970	plate
+T286	Location 3978 3992	magnetic stand
+T287	Time 3997 4006	5 minutes
+T288	Temperature 4010 4026	room temperature
+R91	Setting Arg1:E58 Arg2:T287	
+R92	Setting Arg1:E58 Arg2:T288	
+T289	Amount 4087 4092	50 µL
+T290	Modifier 4100 4105	clear
+T291	Reagent 4106 4117	supernatant
+R93	Mod-Link Arg1:T291 Arg2:T290	
+T292	Location 4123 4133	fresh well
+R94	Measure Arg1:T291 Arg2:T289	
+T293	Amount 4139 4144	40 µL
+T294	Modifier 4148 4158	well mixed
+T295	Reagent 4159 4174	AMPure XP Beads
+T296	Location 4183 4187	well
+R95	Mod-Link Arg1:T295 Arg2:T294	
+R96	Measure Arg1:T295 Arg2:T293	
+T297	Modifier 4211 4221	thoroughly
+T298	Method 4225 4234	pipetting
+R97	Mod-Link Arg1:E61 Arg2:T297	
+T299	Location 4249 4254	plate
+T300	Time 4259 4268	5 minutes
+T301	Temperature 4272 4288	room temperature
+R98	Setting Arg1:E62 Arg2:T300	
+R99	Setting Arg1:E62 Arg2:T301	
+T302	Location 4300 4305	plate
+T303	Location 4313 4327	magnetic stand
+T304	Time 4332 4341	5 minutes
+T305	Temperature 4345 4361	room temperature
+R100	Setting Arg1:E63 Arg2:T304	
+R101	Setting Arg1:E63 Arg2:T305	
+T306	Reagent 4443 4454	supernatant
+T307	Location 4464 4469	plate
+T308	Amount 4533 4539	200 µL
+T309	Modifier 4543 4559	freshly prepared
+T310	Concentration 4560 4563	80%
+T311	Reagent 4564 4571	ethanol
+R102	Measure Arg1:T311 Arg2:T310	
+R103	Mod-Link Arg1:T311 Arg2:T309	
+R104	Measure Arg1:T311 Arg2:T308	
+T312	Location 4580 4584	well
+T313	Location 4631 4636	plate
+T314	Modifier 4641 4649	at least
+T315	Time 4650 4660	30 seconds
+R105	Mod-Link Arg1:T315 Arg2:T314	
+R106	Setting Arg1:E67 Arg2:T315	
+T316	Temperature 4664 4680	room temperature
+R107	Setting Arg1:E67 Arg2:T316	
+T317	Reagent 4716 4727	supernatant
+T318	Modifier 4682 4691	Carefully
+R108	Mod-Link Arg1:E68 Arg2:T318	
+T70	Numerical 4760 4763	two
+T319	Reagent 4764 4771	ethanol
+T320	Action 4772 4778	washes
+E70	Action:T320 Using:T319 Count:T70
+T321	Action 4808 4815	removed
+E124	Action:T321 Acts-on:T322
+T322	Reagent 4791 4798	ethanol
+T323	Location 4828 4833	plate
+T324	Location 4843 4857	magnetic stand
+T325	Temperature 4873 4889	room temperature
+T326	Time 4894 4903	2 minutes
+R109	Setting Arg1:E72 Arg2:T325	
+R110	Setting Arg1:E72 Arg2:T326	
+T327	Reagent 4915 4926	dried beads
+T328	Amount 4930 4935	34 µL
+T329	Reagent 4939 4958	Resuspension Buffer
+R111	Measure Arg1:T329 Arg2:T328	
+T330	Modifier 4964 4974	thoroughly
+T331	Method 4978 4987	pipetting
+R112	Mod-Link Arg1:E74 Arg2:T330	
+T332	Reagent 5063 5080	resuspended beads
+T333	Temperature 5084 5100	room temperature
+T334	Time 5105 5114	2 minutes
+R113	Setting Arg1:E75 Arg2:T333	
+R114	Setting Arg1:E75 Arg2:T334	
+T335	Location 5126 5131	plate
+T336	Location 5139 5153	magnetic stand
+T337	Time 5158 5167	5 minutes
+T338	Temperature 5171 5187	room temperature
+R115	Setting Arg1:E76 Arg2:T337	
+R116	Setting Arg1:E76 Arg2:T338	
+T339	Amount 5248 5253	33 µL
+T340	Modifier 5261 5266	clear
+T341	Reagent 5267 5278	supernatant
+R117	Mod-Link Arg1:T341 Arg2:T340	
+R118	Measure Arg1:T341 Arg2:T339	
+T342	Location 5284 5294	fresh well
+T343	Amount 5445 5449	1 µL
+T344	Reagent 5450 5482	NEXTflex™ Uracil DNA Glycosylase
+R119	Measure Arg1:T344 Arg2:T343	
+T345	Reagent 5401 5407	sample
+T346	Temperature 5504 5508	37°C
+T347	Time 5513 5523	30 minutes
+R120	Setting Arg1:E79 Arg2:T346	
+R121	Setting Arg1:E79 Arg2:T347	
+T348	Temperature 5537 5541	98°C
+T349	Reagent 5546 5555	2 minutes
+T350	Temperature 5574 5577	ice
+R122	Setting Arg1:E80 Arg2:T348	
+R123	Setting Arg1:E81 Arg2:T350	
+T351	Temperature 5630 5633	ice
+R124	Setting Arg1:E82 Arg2:T351	
+T352	Location 5639 5670	nuclease-free 96 well PCR Plate
+T353	Amount 5672 5677	34 µL
+T354	Reagent 5678 5717	Glycosylase-treated Adapter Ligated DNA
+T355	Amount 5719 5724	12 µL
+T356	Reagent 5725 5749	NEXTflex™ PCR Master Mix
+T357	Amount 5751 5755	2 µL
+T358	Reagent 5756 5800	NEXTflex™ qRNA-Seq™ Universal Forward Primer
+T359	Amount 5802 5805	2µL
+T360	Reagent 5806 5841	NEXTflex™ qRNA-Seq™ Barcoded Primer
+R125	Measure Arg1:T360 Arg2:T359	
+R126	Measure Arg1:T358 Arg2:T357	
+R127	Measure Arg1:T356 Arg2:T355	
+R128	Measure Arg1:T354 Arg2:T353	
+T361	Modifier 5847 5857	thoroughly
+T362	Method 5861 5870	pipetting
+R129	Mod-Link Arg1:E83 Arg2:T361	
+T363	Amount 5888 5893	40 µL
+T364	Modifier 5897 5907	well mixed
+T365	Reagent 5908 5923	AMPure XP Beads
+T366	Location 5932 5936	well
+R130	Mod-Link Arg1:T365 Arg2:T364	
+R131	Measure Arg1:T365 Arg2:T363	
+T367	Modifier 5960 5970	thoroughly
+T368	Method 5974 5983	pipetting
+R132	Mod-Link Arg1:E85 Arg2:T367	
+T369	Location 5998 6003	plate
+T370	Time 6008 6017	5 minutes
+T371	Temperature 6021 6037	room temperature
+R133	Setting Arg1:E86 Arg2:T370	
+R134	Setting Arg1:E86 Arg2:T371	
+T372	Location 6049 6054	plate
+T373	Location 6062 6076	magnetic stand
+T374	Time 6081 6090	5 minutes
+R135	Setting Arg1:E87 Arg2:T374	
+T375	Temperature 6094 6110	room temperature
+R136	Setting Arg1:E87 Arg2:T375	
+T376	Reagent 6192 6203	supernatant
+T377	Location 6213 6218	plate
+T378	Amount 6282 6288	200 µL
+T379	Modifier 6292 6308	freshly prepared
+T380	Concentration 6309 6312	80%
+T381	Reagent 6313 6320	ethanol
+R137	Measure Arg1:T381 Arg2:T380	
+R138	Mod-Link Arg1:T381 Arg2:T379	
+T382	Location 6329 6333	well
+R139	Measure Arg1:T381 Arg2:T378	
+T383	Location 6380 6385	plate
+T384	Time 6399 6409	30 seconds
+T385	Modifier 6390 6398	at least
+T386	Temperature 6413 6429	room temperature
+R140	Setting Arg1:E91 Arg2:T384	
+R141	Setting Arg1:E91 Arg2:T386	
+R142	Mod-Link Arg1:T384 Arg2:T385	
+T387	Reagent 6465 6476	supernatant
+T388	Modifier 6431 6440	Carefully
+R143	Mod-Link Arg1:E92 Arg2:T388	
+T94	Action 6521 6527	washes
+E94	Action:T94 Using:T390 Count:T389
+T389	Numerical 6509 6512	two
+T390	Reagent 6513 6520	ethanol
+T391	Action 6557 6564	removed
+E125	Action:T391 Acts-on:T392
+T392	Reagent 6540 6547	ethanol
+T393	Location 6577 6582	plate
+T394	Location 6592 6606	magnetic stand
+T395	Temperature 6622 6638	room temperature
+T396	Time 6643 6651	2minutes
+R144	Setting Arg1:E96 Arg2:T395	
+R145	Setting Arg1:E96 Arg2:T396	
+T397	Reagent 6663 6674	dried beads
+T398	Amount 6678 6683	51 µL
+T399	Reagent 6687 6706	Resuspension Buffer
+R146	Measure Arg1:T399 Arg2:T398	
+T400	Modifier 6712 6722	thoroughly
+T401	Method 6726 6735	pipetting
+R147	Mod-Link Arg1:E98 Arg2:T400	
+T402	Reagent 6812 6829	resuspended beads
+T403	Temperature 6833 6849	room temperature
+T404	Time 6854 6863	2 minutes
+R148	Setting Arg1:E99 Arg2:T403	
+R149	Setting Arg1:E99 Arg2:T404	
+T405	Location 6875 6880	plate
+T406	Location 6888 6902	magnetic stand
+T407	Time 6907 6916	5 minutes
+T408	Temperature 6920 6936	room temperature
+R150	Setting Arg1:E100 Arg2:T407	
+R151	Setting Arg1:E100 Arg2:T408	
+T409	Amount 6997 7002	50 µL
+T410	Modifier 7010 7015	clear
+T411	Reagent 7016 7027	supernatant
+T412	Location 7039 7043	well
+R152	Mod-Link Arg1:T411 Arg2:T410	
+R153	Measure Arg1:T411 Arg2:T409	
+T413	Amount 7049 7054	40 µL
+T414	Modifier 7058 7068	well mixed
+T415	Reagent 7069 7084	AMPure XP Beads
+T416	Location 7093 7097	well
+R154	Mod-Link Arg1:T415 Arg2:T414	
+R155	Measure Arg1:T415 Arg2:T413	
+T417	Modifier 7121 7131	thoroughly
+T418	Method 7135 7144	pipetting
+R156	Mod-Link Arg1:E103 Arg2:T417	
+T419	Location 7159 7164	plate
+T420	Time 7169 7178	5 minutes
+T421	Temperature 7182 7198	room temperature
+R157	Setting Arg1:E104 Arg2:T420	
+R158	Setting Arg1:E104 Arg2:T421	
+T422	Location 7210 7215	plate
+T423	Location 7223 7237	magnetic stand
+T424	Time 7242 7251	5 minutes
+T425	Temperature 7255 7271	room temperature
+R159	Setting Arg1:E105 Arg2:T424	
+R160	Setting Arg1:E105 Arg2:T425	
+T426	Reagent 7353 7364	supernatant
+T427	Location 7374 7379	plate
+T428	Amount 7443 7449	200 µL
+T429	Modifier 7453 7469	freshly prepared
+T430	Concentration 7470 7473	80%
+T431	Reagent 7474 7481	ethanol
+T432	Location 7490 7494	well
+R161	Measure Arg1:T431 Arg2:T430	
+R162	Mod-Link Arg1:T431 Arg2:T429	
+R163	Measure Arg1:T431 Arg2:T428	
+T433	Location 7541 7546	plate
+T434	Time 7560 7570	30 seconds
+T435	Modifier 7551 7559	at least
+R164	Mod-Link Arg1:T434 Arg2:T435	
+R165	Setting Arg1:E109 Arg2:T434	
+T436	Temperature 7574 7590	room temperature
+R166	Setting Arg1:E109 Arg2:T436	
+T437	Reagent 7626 7637	supernatant
+T438	Modifier 7592 7601	Carefully
+R167	Mod-Link Arg1:E110 Arg2:T438	
+T112	Numerical 7670 7673	two
+T439	Action 7682 7688	washes
+E112	Action:T439 Using:T440 Count:T112
+T440	Reagent 7674 7681	ethanol
+T441	Action 7718 7725	removed
+E126	Action:T441 Acts-on:T442
+T442	Reagent 7701 7708	ethanol
+T443	Location 7738 7743	plate
+T444	Location 7753 7767	magnetic stand
+T445	Temperature 7783 7799	room temperature
+T446	Time 7804 7812	2minutes
+R168	Setting Arg1:E114 Arg2:T445	
+R169	Setting Arg1:E114 Arg2:T446	
+T447	Reagent 7824 7835	dried beads
+T448	Amount 7839 7844	17 µL
+T449	Reagent 7848 7867	Resuspension Buffer
+R170	Measure Arg1:T449 Arg2:T448	
+T450	Method 7887 7896	pipetting
+T451	Modifier 7873 7883	thoroughly
+R171	Mod-Link Arg1:E116 Arg2:T451	
+T452	Reagent 7973 7990	resuspended beads
+T453	Temperature 7994 8010	room temperature
+T454	Time 8015 8024	2 minutes
+R172	Setting Arg1:E117 Arg2:T453	
+R173	Setting Arg1:E117 Arg2:T454	
+T455	Location 8036 8041	plate
+T456	Location 8049 8063	magnetic stand
+T457	Time 8068 8077	5 minutes
+T458	Temperature 8081 8097	room temperature
+R174	Setting Arg1:E118 Arg2:T457	
+R175	Setting Arg1:E118 Arg2:T458	
+T459	Amount 8158 8163	16 µL
+T460	Reagent 8177 8188	supernatant
+T461	Modifier 8171 8176	clear
+R176	Mod-Link Arg1:T460 Arg2:T461	
+T462	Location 8200 8204	well
+T463	Modifier 8194 8199	fresh
+R177	Mod-Link Arg1:T462 Arg2:T463	
+R178	Measure Arg1:T460 Arg2:T459	
+T464	Method 8217 8235	cluster generation
+T465	Temperature 8248 8253	-20°C
+R179	Setting Arg1:E121 Arg2:T465	

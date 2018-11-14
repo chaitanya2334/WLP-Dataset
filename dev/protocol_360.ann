@@ -1,0 +1,22 @@
+T1	Action 24 32	Incubate
+E1	Action:T1 Acts-on:T4 Site:T5
+T2	Action 204 209	store
+E2	Action:T2 Acts-on:T9 Site:T10
+T3	Action 268 277	Transform
+E3	Action:T3 Acts-on:T12 Using:T14
+T4	Reagent 33 40	samples
+T5	Device 46 58	thermocycler
+T6	Temperature 62 66	50°C
+T7	Time 71 81	15 minutes
+T8	Time 129 139	60 minutes
+T9	Reagent 210 217	samples
+T10	Reagent 221 224	ice
+T11	Temperature 231 236	–20°C
+R1	Setting Arg1:E1 Arg2:T6	
+R2	Setting Arg1:E1 Arg2:T7	
+R3	Or Arg1:T7 Arg2:T8	
+R4	Setting Arg1:E2 Arg2:T11	
+T12	Reagent 278 313	NEB 5-alpha Competent E. coli cells
+T13	Amount 382 386	2 μl
+T14	Reagent 394 411	assembled product
+R5	Measure Arg1:T14 Arg2:T13	

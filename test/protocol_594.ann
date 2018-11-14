@@ -1,0 +1,101 @@
+T1	Action 38 46	Transfer
+E1	Action:T1 Acts-on:T20 Creates:T21
+T2	Action 123 127	Grow
+E2	Action:T2 
+T3	Action 147 154	Prepare
+E3	Action:T3 Acts-on:T40 Site:T39
+T4	Action 319 324	Label
+E4	Action:T4 Acts-on:T23
+T5	Action 344 351	Prepare
+E5	Action:T5 Acts-on:T37
+T6	Action 707 713	Vortex
+E6	Action:T6 Acts-on:T31
+T7	Action 718 722	spin
+E7	Action:T7 Acts-on:T31
+T8	Action 775 778	Cap
+E8	Action:T8 Acts-on:T41
+T9	Action 790 793	Set
+E9	Action:T9 Acts-on:T25
+T10	Action 820 825	Place
+E10	Action:T10 Acts-on:T46 Site:T47
+T11	Action 860 865	touch
+E11	Action:T11 
+T12	Action 909 916	Pipette
+E12	Action:T12 Using:T43 Site:T44
+T13	Action 986 992	repeat
+E13	Action:T13 Using:T55
+T14	Action 1040 1047	Perform
+E14	Action:T14 Using:T57 Using2:T58
+T15	Action 1251 1257	Remove
+E15	Action:T15 Acts-on:T59
+T16	Action 1291 1294	Add
+E16	Action:T16 Acts-on:T28 Using:T29
+T18	Time 132 137	24 hr
+T19	Temperature 141 145	37°C
+T20	Reagent 51 69	transformed clones
+T21	Reagent 75 87	stock LB-Amp
+R1	Setting Arg1:E2 Arg2:T18	
+R2	Setting Arg1:E2 Arg2:T19	
+T22	Modifier 325 336	thin-walled
+T23	Device 337 342	tubes
+R3	Mod-Link Arg1:T23 Arg2:T22	
+T24	Amount 796 801	10 μl
+T25	Device 802 810	pipetter
+T26	Amount 814 818	1 μl
+R4	Measure Arg1:T25 Arg2:T24	
+T27	Amount 1295 1299	2 μl
+T28	Reagent 1300 1322	10x gel loading buffer
+T29	Device 1331 1335	tube
+T30	Modifier 1326 1330	each
+T31	Reagent 723 733	Master Mix
+T32	Action 738 746	dispense
+E18	Action:T32 Acts-on:T31 Using:T35
+T33	Amount 747 752	20 μl
+T34	Modifier 757 768	thin-walled
+T35	Device 769 773	tube
+R5	Setting Arg1:E18 Arg2:T33	
+R6	Mod-Link Arg1:T35 Arg2:T34	
+T36	Amount 352 356	1 ml
+T37	Reagent 360 370	Master Mix
+R7	Measure Arg1:T37 Arg2:T36	
+T38	Concentration 225 234	100 ng/μl
+T39	Reagent 238 243	DDH2O
+T40	Reagent 155 182	forward and reverse primers
+R8	Setting Arg1:E3 Arg2:T38	
+T41	Device 783 788	tubes
+T42	Modifier 779 782	all
+R9	Mod-Link Arg1:T41 Arg2:T42	
+R11	Mod-Link Arg1:T29 Arg2:T30	
+T17	Action 1382 1386	load
+E17	Action:T17 Site:T61
+T43	Method 917 928	up and down
+T44	Location 948 956	PCR tube
+T45	Modifier 936 947	appropriate
+R12	Mod-Link Arg1:T44 Arg2:T45	
+T46	Device 826 843	tranformant plate
+T47	Location 847 855	template
+T48	Device 870 881	pipette tip
+T49	Modifier 889 900	appropriate
+T50	Reagent 901 907	colony
+T51	Action 958 964	Re-cap
+E19	Action:T51 Acts-on:T52
+T52	Device 965 969	tube
+T53	Seal 978 981	tip
+T54	Action 971 977	change
+E20	Action:T54 Acts-on:T53
+T55	Method 993 1003	steps 9-10
+T56	Modifier 1004 1038	until all colonies have been added
+R13	Mod-Link Arg1:E13 Arg2:T56	
+T57	Method 1062 1086	thermal cycling protocol
+T58	Method 1048 1051	PCR
+T59	Device 1258 1263	tubes
+T60	Amount 1387 1392	10 μl
+T61	Reagent 1408 1422	1% agarose gel
+T62	Reagent 1426 1441	0.5x TBE buffer
+T63	Modifier 1398 1402	lane
+T64	Action 1337 1341	Spin
+E21	Action:T64 
+R14	Setting Arg1:E17 Arg2:T60	
+R10	Measure Arg1:T28 Arg2:T27	
+R15	Mod-Link Arg1:T61 Arg2:T63	
+R16	Meronym Arg1:T61 Arg2:T62	

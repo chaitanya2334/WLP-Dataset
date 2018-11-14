@@ -1,0 +1,84 @@
+T1	Action 80 87	prepare
+E1	Action:T1 Acts-on:T21
+T2	Action 108 114	Assign
+E2	Action:T2 
+T3	Action 180 183	Add
+E3	Action:T3 Acts-on:T22 Acts-on2:T23 Site:T24
+T4	Action 243 246	Add
+E4	Action:T4 Acts-on:T26 Site:T28
+T5	Action 278 285	Heating
+E5	Action:T5 
+T6	Action 343 346	Add
+E6	Action:T6 Acts-on:T33 Site:T34
+T7	Action 397 401	peel
+E7	Action:T7 Acts-on:T35 Site:T36
+T8	Action 436 445	take away
+E8	Action:T8 Acts-on:T37
+T9	Action 475 478	set
+E9	Action:T9 Acts-on:T38 Site:T39
+T10	Action 515 519	Fill
+E10	Action:T10 Acts-on:T41 Using:T40
+T11	Action 744 748	Load
+E11	Action:T11 Acts-on:T42 Site:T43
+T12	Action 780 787	Connect
+E12	Action:T12 Acts-on:T44 Using:T45
+T13	Action 837 844	perform
+E13	Action:T13 Using:T46
+T14	Action 969 973	Wash
+E14	Action:T14 Acts-on:T48 Using:T49
+T15	Action 990 996	Remove
+E15	Action:T15 Acts-on:T50 Site:T52
+T16	Action 1035 1038	add
+E16	Action:T16 Acts-on:T53 Site:T52
+T17	Action 1057 1064	agitate
+E17	Action:T17 Acts-on:T52
+T18	Action 1077 1081	Wash
+E18	Action:T18 
+T19	Action 1205 1209	keep
+E19	Action:T19 
+T20	Action 1230 1237	agitate
+E20	Action:T20 
+T21	Reagent 92 105	mucin samples
+T22	Reagent 184 193	DDI water
+T23	Reagent 201 208	samples
+T24	Location 219 223	tube
+T25	Amount 228 232	30ul
+R1	Setting Arg1:E3 Arg2:T25	
+T26	Reagent 247 261	loading buffer
+T27	Modifier 265 269	each
+T28	Reagent 270 276	sample
+R2	Mod-Link Arg1:T28 Arg2:T27	
+T29	Temperature 294 303	95 degree
+T30	Time 308 313	10min
+R3	Setting Arg1:E5 Arg2:T29	
+R4	Setting Arg1:E5 Arg2:T30	
+T31	Reagent 327 341	running buffer
+T32	Action 315 322	Loading
+E21	Action:T32 Acts-on:T31
+T33	Reagent 352 366	running buffer
+T34	Device 376 395	electrophrosis cell
+T35	Reagent 406 417	green paste
+T36	Location 425 431	bottom
+T37	Seal 450 473	top green plastic cover
+T38	Reagent 483 486	gel
+T39	Device 494 513	electrophorsis cell
+T40	Reagent 561 576	running buffer.
+T41	Location 524 555	inner and outer buffer chambers
+T42	Reagent 753 767	protein sample
+T43	Reagent 775 778	gel
+T44	Device 792 812	electrophoresis cell
+T45	Device 820 832	power supply
+T46	Method 845 858	electrophores
+T47	Generic-Measure 878 889	150 V~200 V
+R5	Setting Arg1:E13 Arg2:T47	
+T48	Reagent 974 978	gels
+T49	Reagent 982 988	DI H2O
+T50	Reagent 1001 1006	water
+T51	Modifier 997 1000	all
+R6	Mod-Link Arg1:T50 Arg2:T51	
+T52	Location 1012 1030	staining container
+T53	Reagent 1039 1044	stain
+T54	Time 1065 1074	overnight
+R7	Setting Arg1:E17 Arg2:T54	
+T55	Reagent 1082 1085	gel
+T56	Reagent 1092 1100	DI water

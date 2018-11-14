@@ -1,0 +1,226 @@
+T1	Action 37 44	Turn on
+E1	Action:T1 Acts-on:T71
+T2	Action 132 138	Instal
+E2	Action:T2 Acts-on:T75 Site:T76
+T3	Action 174 180	Select
+E3	Action:T3 Acts-on:T77
+T5	Action 314 319	clean
+E5	Action:T5 Using:T78 Acts-on:T4
+T6	Action 355 361	Insert
+E6	Action:T6 Acts-on:T81 Site:T83
+T8	Action 446 454	screwing
+E8	Action:T8 Site:T84 Acts-on:T85
+T10	Action 724 730	Instal
+E10	Action:T10 Acts-on:T9 Site:T86
+T13	Action 962 967	clean
+E13	Action:T13 Using:T12 Acts-on:T11 Acts-on2:T88
+T14	Action 1003 1010	Install
+E14	Action:T14 Acts-on:T89 Site:T90
+T15	Action 1127 1134	Tighten
+E15	Action:T15 Acts-on:T91 Site:T92
+T16	Action 1184 1190	Insert
+E16	Action:T16 Acts-on:T94 Site:T96 Site2:T97
+T17	Action 1252 1258	Insert
+E17	Action:T17 Acts-on:T99 Using:T100
+T18	Action 1294 1300	Insert
+E18	Action:T18 Acts-on:T102 Site:T103
+T19	Action 1360 1365	Flush
+E19	Action:T19 Acts-on:T104
+T20	Action 1511 1515	Load
+E20	Action:T20 Acts-on:T105 Using:T106
+T21	Action 1562 1567	click
+E21	Action:T21 Using:T107
+T22	Action 1595 1598	Set
+E22	Action:T22 
+T24	Action 1655 1659	draw
+E24	Action:T24 Site:T111 Acts-on2:T113
+T25	Action 1914 1919	Lower
+E25	Action:T25 Using:T114 Site:T116
+T26	Action 1978 1985	squeeze
+E26	Action:T26 Acts-on:T118
+T27	Action 2111 2116	click
+E27	Action:T27 Using:T119 Acts-on:T121
+T28	Action 2180 2185	Click
+E28	Action:T28 Using:T122
+T30	Action 2257 2262	Click
+E30	Action:T30 Using:T29
+T34	Action 3046 3051	Check
+E34	Action:T34 Acts-on:T31
+T35	Action 3072 3078	export
+E35	Action:T35 Acts-on:T32
+T41	Action 3507 3512;3524 3534	bring into focus
+E41	Action:T41 Acts-on:T123 Using:T40
+T42	Action 3536 3539	Run
+E42	Action:T42 Acts-on:T124
+T43	Action 3549 3554	Click
+E43	Action:T43 Using:T125
+T44	Action 3646 3651	enter
+E44	Action:T44 
+T45	Action 3728 3733;3776 3783	leave checked
+E45	Action:T45 Using:T127 Using2:T46
+T47	Action 3863 3867	Make
+E47	Action:T47 Creates:T128
+T48	Action 3996 4001	click
+E48	Action:T48 Using:T130
+T49	Action 4328 4334	Select
+E49	Action:T49 Acts-on:T131
+T50	Action 4356 4367	clicking on
+E50	Action:T50 Acts-on:T132
+T51	Action 4390 4402	highlighting
+E51	Action:T51 Acts-on:T134
+T52	Action 4430 4439	selecting
+E52	Action:T52 Using:T135
+T53	Action 4473 4479	Adjust
+E53	Action:T53 Using:T136
+T54	Action 4563 4571	Enter in
+E54	Action:T54 
+T56	Action 4762 4767	flush
+E56	Action:T56 Acts-on:T55
+T57	Action 4799 4804	Flush
+E57	Action:T57 Acts-on:T138
+T58	Action 4949 4953	Load
+E58	Action:T58 Acts-on:T139 Using:T140
+T59	Action 5000 5005	click
+E59	Action:T59 Using:T141
+T64	Action 5245 5251	Remove
+E64	Action:T64 Acts-on:T60 Acts-on2:T61 Acts-on3:T62
+T65	Action 5310 5316	Loosen
+E65	Action:T65 Acts-on:T63
+T66	Action 5348 5354	remove
+E66	Action:T66 Acts-on:T144 Acts-on2:T145
+T67	Action 5394 5400	Remove
+E67	Action:T67 Acts-on:T146 Site:T147
+T68	Action 5444 5447;5462 5466	Put back
+E68	Action:T68 Acts-on:T148 Site:T149
+T69	Action 5493 5498	Close
+E69	Action:T69 Acts-on:T150
+T70	Action 5515 5524	shut down
+E70	Action:T70 Acts-on:T151
+T71	Device 45 52	FlowCam
+T72	Action 52 56	Push
+E71	Action:T72 Acts-on:T73 Using:T74
+T73	Location 57 70	silver button
+T74	Seal 86 98	machine face
+T75	Reagent 139 148	flow cell
+T76	Location 158 174	flow cell holder
+T77	Reagent 189 205	flow cell tubing
+T78	Reagent 282 289	kimwipe
+T79	Reagent 293 303	lens paper
+R1	Or Arg1:T78 Arg2:T79	
+R2	Meronym Arg1:T74 Arg2:T71	
+T4	Location 324 337	glass portion
+T80	Reagent 345 354	flow cell
+R3	Meronym Arg1:T4 Arg2:T80	
+T81	Location 362 375	glass portion
+T82	Reagent 383 392	flow cell
+R4	Meronym Arg1:T81 Arg2:T82	
+T83	Location 402 418	flow cell holder
+T84	Reagent 426 435	flow cell
+T7	Modifier 439 445	gently
+R5	Mod-Link Arg1:E8 Arg2:T7	
+T85	Device 459 479	male threaded holder
+T9	Reagent 735 751	flow cell holder
+T86	Device 761 768	FLowCam
+T12	Reagent 930 937	kimwipe
+T87	Reagent 941 951	lens paper
+R6	Or Arg1:T12 Arg2:T87	
+T11	Device 972 986	objective lens
+T88	Device 991 1002	collimnator
+T89	Reagent 1011 1027	flow cell holder
+T90	Location 1057 1079	flow cell holder mount
+T91	Device 1135 1140	screw
+T92	Reagent 1151 1157	holder
+T93	Seal 1144 1147	top
+R7	Meronym Arg1:T93 Arg2:T92	
+T94	Reagent 1191 1197	tubing
+T95	Seal 1201 1204	top
+T96	Reagent 1208 1217	flow cell
+R8	Meronym Arg1:T96 Arg2:T95	
+T97	Location 1237 1250	sample funnel
+T98	Seal 1227 1233	bottom
+R9	Meronym Arg1:T97 Arg2:T98	
+T99	Reagent 1259 1272	bottom tubing
+T100	Seal 1278 1281	tip
+T101	Device 1285 1292	syringe
+R10	Meronym Arg1:T101 Arg2:T100	
+T102	Reagent 1301 1319	syringe-out tubing
+T103	Location 1325 1337	small beaker
+T104	Reagent 1366 1375	Flow Cell
+T105	Device 1520 1526	funnel
+T106	Reagent 1532 1537	ddH2O
+T107	Method 1568 1590	Setup -> Pump -> Flush
+T108	Generic-Measure 1602 1612	4-5 cycles
+R11	Setting Arg1:E22 Arg2:T108	
+T23	Action 1628 1632	Load
+E4	Action:T23 Acts-on:T109
+T109	Reagent 1633 1640	Sample1
+T111	Location 1677 1686	container
+T112	Amount 1702 1712	0.2-0.5 mL
+T113	Reagent 1716 1734	homogenized sample
+R12	Measure Arg1:T113 Arg2:T112	
+T110	Seal 1920 1923	tip
+T114	Device 1927 1932	pipet
+R13	Meronym Arg1:T114 Arg2:T110	
+T115	Seal 1938 1944	bottom
+T116	Location 1948 1967	P1000 sample funnel
+R14	Meronym Arg1:T116 Arg2:T115	
+T117	Modifier 1969 1977	Forcibly
+R15	Mod-Link Arg1:E26 Arg2:T117	
+T118	Device 1986 1991	pipet
+T119	Method 2117 2151	Setup -> Pump -> Prime -> Aspirate
+T120	Amount 2152 2159	0.500mL
+T121	Reagent 2165 2174	Flow Cell
+R16	Measure Arg1:T121 Arg2:T120	
+T122	Method 2186 2195	Stop Pump
+T29	Method 2266 2273	Context
+T31	Reagent 3056 3067	export data
+T32	Reagent 3079 3091	summary data
+T33	Action 3309 3314	Click
+E7	Action:T33 Using:T36
+T36	Method 3315 3326	Setup/Focus
+T37	Method 3393 3396;3430 3435	Use knobs
+T38	Action 3439 3445	center
+E9	Action:T38 Acts-on:T39 Using:T37
+T39	Reagent 3450 3459	flow cell
+T40	Method 3463 3466;3498 3503	Use knobs
+T123	Reagent 3517 3523	sample
+T124	Reagent 3540 3547	Sample1
+T125	Method 3555 3566	Autoimage.2
+T126	Numerical 3654 3659	value
+R17	Setting Arg1:E44 Arg2:T126	
+T127	Method 3769 3775	button
+T46	Method 3788 3801	manually stop
+T128	Reagent 3883 3894	folder name
+T129	Modifier 3871 3882	informative
+R18	Mod-Link Arg1:T128 Arg2:T129	
+T130	Method 4002 4006	save
+T131	Reagent 4340 4344	data
+T132	Reagent 4380 4386	filter
+T133	Reagent 4419 4425	graphs
+T134	Reagent 4403 4411	portions
+R19	Meronym Arg1:T133 Arg2:T134	
+T135	Method 4440 4449	Open View
+T136	Method 4505 4524;4529 4561	Context -> Fluidics checking the Sample Dilution box
+T137	Numerical 4576 4581	ratio
+R20	Setting Arg1:E54 Arg2:T137	
+T55	Reagent 4772 4781	flow cell
+T138	Reagent 4805 4814	Flow Cell
+T139	Device 4958 4964	funnel
+T140	Reagent 4970 4975	ddH2O
+T141	Method 5006 5029	Setup -> Pump -> Flush 
+T142	Action 5033 5036	Set
+E11	Action:T142 
+T143	Numerical 5040 5050	4-5 cycles
+R21	Setting Arg1:E11 Arg2:T143	
+T60	Reagent 5256 5262	tubing
+T61	Device 5272 5283	syringe tip
+T62	Device 5292 5305	sample funnel
+T63	Device 5321 5343	flow cell holder screw
+T144	Location 5359 5375	flow cell holder
+T145	Reagent 5380 5389	flow cell
+T146	Reagent 5405 5414	flow cell
+T147	Location 5424 5440	flow cell holder
+T148	Reagent 5452 5461	flow cell
+T149	Location 5474 5489	protective tube
+T150	Device 5503 5510	program
+T151	Device 5525 5533	computer

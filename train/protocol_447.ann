@@ -1,0 +1,121 @@
+T2	Action 176 182	Remove
+E2	Action:T2 
+T3	Action 375 380	Rinse
+E3	Action:T3 
+T4	Action 480 487	Replace
+E4	Action:T4 
+T5	Action 527 531	Take
+E5	Action:T5 Acts-on:T43 Using:T44
+T6	Action 591 596	Rinse
+E6	Action:T6 
+T7	Action 637 640	Put
+E7	Action:T7 
+T8	Action 715 721	Record
+E8	Action:T8 
+T9	Action 740 745	start
+E9	Action:T9 
+T10	Action 780 785	Clamp
+E10	Action:T10 
+T11	Action 870 881	Concentrate
+E11	Action:T11 
+T12	Action 944 952	Transfer
+E12	Action:T12 
+T14	Action 1080 1088	lowering
+E14	Action:T14 
+T15	Action 1187 1192	clamp
+E15	Action:T15 
+T16	Action 1211 1222	recirculate
+E16	Action:T16 
+T17	Action 1272 1279	Leaving
+E17	Action:T17 
+T18	Action 1406 1410	Take
+E18	Action:T18 
+T21	Action 1527 1532	Store
+E21	Action:T21 
+T22	Action 1664 1669	Rinse
+E22	Action:T22 
+T23	Action 1702 1707	Rinse
+E23	Action:T23 
+T24	Action 1737 1742	Rinse
+E24	Action:T24 
+T25	Action 1767 1770	Put
+E25	Action:T25 
+T26	Action 1788 1813	feed, retentate, filtrate
+E26	Action:T26 
+T27	Action 1849 1860	Recirculate
+E27	Action:T27 
+T28	Action 1925 1930	Rinse
+E28	Action:T28 
+T29	Action 1970 1974	Stop
+E29	Action:T29 
+T30	Action 1988 1993	clamp
+E30	Action:T30 
+T31	Action 2012 2017	Store
+E31	Action:T31 
+T32	Action 2054 2059	store
+E32	Action:T32 
+T1	Device 187 193	clamps
+T33	Action 194 197	Set
+E1	Action:T33 
+T34	Device 202 206	pump
+T35	Speed 210 223	maximum speed
+T36	Location 385 394	cartridge
+T37	Amount 406 412	250 mL
+T38	Reagent 416 428	MilliQ water
+T39	Reagent 488 500	MilliQ water
+T40	Device 504 510	sample
+T41	Amount 514 517	6 L
+T42	Location 518 524	bottle
+T43	Reagent 532 538	sample
+T44	Method 543 557	flow cytometry
+T45	Action 561 568	compute
+E33	Action:T45 Measure-Type-Link:T46 Using:E5
+T46	Measure-Type 569 589	concentration factor
+T47	Location 597 606	cartridge
+T48	Modifier 612 617	about
+T49	Amount 618 624	250 mL
+T50	Reagent 628 634	sample
+T51	Device 645 659	retentate line
+T52	Location 669 682	sample bottle
+T53	Measure-Type 722 735	sample volume
+T54	Device 746 750	pump
+T55	Speed 765 778	macimum speed
+T56	Modifier 751 761	increasing
+T57	Device 790 804	retentate line
+T58	Action 808 816	increase
+E34	Action:T58 
+T59	Reagent 882 888	sample
+T60	Amount 901 907	250 mL
+T61	Action 908 915	remains
+E35	Action:T61 
+T62	Reagent 953 960	sample 
+T63	Modifier 965 972	smaller
+T64	Location 973 979	bottle
+T65	Amount 981 987	250 mL
+T66	Amount 1007 1012	50 mL
+T67	Location 1013 1017	tube
+T68	Location 1023 1037	conical bottom
+T69	Modifier 1064 1078	very carefully
+T70	Speed 1093 1103	pump speed
+T71	Measure-Type 1114 1127	sample volume
+T72	Action 1131 1138	reduced
+E36	Action:T72 
+T73	Amount 1142 1150	15-20 mL
+T74	Action 1052 1063	concentrate
+E37	Action:T74 
+T13	Location 1193 1206	filtrate tube
+T75	Modifier 1223 1229	slowly
+T76	Location 1284 1297	filtrate tube
+T77	Action 1307 1310	get
+E13	Action:T77 
+T78	Device 1315 1324	feed line
+T79	Reagent 1336 1342	sample
+T80	Action 1355 1363	get back
+E38	Action:T80 
+T81	Amount 1368 1380	total volume
+T82	Modifier 1384 1396	concentrated
+T83	Reagent 1397 1403	sample
+T84	Reagent 1411 1417	sample
+T85	Method 1422 1436	flow cytometry
+T86	Action 1437 1442	count
+E39	Action:T86 

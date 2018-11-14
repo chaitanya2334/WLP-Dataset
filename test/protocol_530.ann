@@ -1,0 +1,95 @@
+T2	Action 324 327	Add
+E2	Action:T2 Acts-on:T21 Site:T23
+T3	Action 386 389	Add
+E3	Action:T3 Acts-on:T25 Acts-on2:T26
+T4	Action 429 432	Add
+E4	Action:T4 Acts-on:T27 Site:T28
+T5	Action 421 427	vortex
+E5	Action:T5 Acts-on:T26
+T6	Action 465 471	vortex
+E6	Action:T6 Acts-on:T28
+T7	Action 473 481	Incubate
+E7	Action:T7 
+T8	Action 519 529	Centrifuge
+E8	Action:T8 Acts-on:T31
+T9	Action 599 605	Invert
+E9	Action:T9 Acts-on:T34
+T10	Action 652 657	shake
+E10	Action:T10 Acts-on:T34
+T11	Action 692 695	Add
+E11	Action:T11 Acts-on:T36 Acts-on2:T38 Site:T39
+T12	Action 773 779	vortex
+E12	Action:T12 Acts-on:T39
+T13	Action 855 860	shoot
+E13	Action:T13 Acts-on:T43 Site:T44 Using:T41
+T15	Action 982 990	Incubate
+E15	Action:T15 
+T16	Action 1050 1054	read
+E16	Action:T16 Using:T52
+T17	Action 1112 1120	transfer
+E17	Action:T17 Acts-on:T54 Site:T56
+T18	Action 1189 1196	measure
+E18	Action:T18 Site:T59
+T1	Amount 328 334	1-50µl
+T21	Reagent 342 357	protein samples
+R1	Measure Arg1:T21 Arg2:T1	
+T22	Size 375 378	2ml
+T23	Location 379 384	tubes
+R2	Measure Arg1:T23 Arg2:T22	
+T24	Amount 390 395	0.5ml
+T25	Reagent 396 403	UPPA™ I
+R3	Measure Arg1:T25 Arg2:T24	
+T26	Location 412 416	tube
+T27	Reagent 433 447	0.5ml UPPA™ II
+T28	Location 455 460	tubes
+T29	Time 486 497	2-3 minutes
+T30	Temperature 501 517	room temperature
+R4	Setting Arg1:E7 Arg2:T29	
+R5	Setting Arg1:E7 Arg2:T30	
+T31	Location 534 545	titer plate
+T32	Speed 549 557	~5,000xg
+T33	Time 562 571	7 minutes
+R6	Setting Arg1:E8 Arg2:T32	
+R7	Setting Arg1:E8 Arg2:T33	
+T34	Location 610 621	titer plate
+T35	Amount 696 701	100µl
+T36	Reagent 702 717	Copper Solution
+R8	Measure Arg1:T36 Arg2:T35	
+T37	Amount 734 739	400µl
+T38	Reagent 740 755	deionized water
+R9	Measure Arg1:T38 Arg2:T37	
+T39	Location 763 768	tubes
+T40	Size 834 837	1ml
+T41	Device 838 845	pipette
+R10	Measure Arg1:T41 Arg2:T40	
+T42	Amount 861 864	1ml
+T43	Reagent 865 875	Reagent II
+R11	Measure Arg1:T43 Arg2:T42	
+T44	Location 895 899	tube
+T45	Reagent 911 920	Reagent I
+R12	Meronym Arg1:T45 Arg2:T44	
+T46	Reagent 926 934	DI Water
+R13	Meronym Arg1:T46 Arg2:T44	
+T14	Action 961 970	inverting
+E1	Action:T14 Acts-on:T47
+T47	Location 975 980	tubes
+T48	Temperature 994 1010	room temperature
+T49	Time 1015 1028	15-20 minutes
+R14	Setting Arg1:E15 Arg2:T48	
+R15	Setting Arg1:E15 Arg2:T49	
+T50	Measure-Type 1055 1066	absorbances
+T51	Numerical 1070 1075	480nm
+R16	Of-Type Arg1:T51 Arg2:T50	
+R17	Setting Arg1:E16 Arg2:T51	
+T52	Reagent 1084 1092	DI water
+T53	Amount 1121 1126	200µl
+T54	Reagent 1127 1141	assay reaction
+R18	Measure Arg1:T54 Arg2:T53	
+T55	Size 1159 1166	96 well
+T56	Location 1167 1184	micro titer plate
+R19	Measure Arg1:T56 Arg2:T55	
+T57	Measure-Type 1201 1212	absorbances
+T58	Numerical 1216 1221	480nm
+R20	Of-Type Arg1:T58 Arg2:T57	
+R21	Setting Arg1:E18 Arg2:T58	
+T59	Reagent 1230 1238	DI water

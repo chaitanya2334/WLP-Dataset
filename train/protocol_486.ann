@@ -1,0 +1,154 @@
+T1	Action 56 61	Label
+E1	Action:T1 Acts-on:T35 Using:T37
+T2	Action 100 107	prepare
+E2	Action:T2 Creates:T36
+T3	Action 371 375	Thaw
+E3	Action:T3 Acts-on:T38 Acts-on2:T39
+T4	Action 489 492	Add
+E4	Action:T4 Acts-on:T42 Site:T43
+T5	Action 606 609	mix
+E5	Action:T5 
+T6	Action 625 630	Store
+E6	Action:T6 Acts-on:T45
+T7	Action 687 700	do not freeze
+E7	Action:T7 
+T8	Action 845 849	Thaw
+E8	Action:T8 Acts-on:T56 Site:T57
+T9	Action 881 887	dilute
+E9	Action:T9 Using:T60
+T10	Action 1040 1044	Thaw
+E10	Action:T10 
+T11	Action 1155 1167	Reconstitute
+E11	Action:T11 Acts-on:T62 Using:T65
+T12	Action 1320 1323	add
+E12	Action:T12 Acts-on:T73 Site:T74
+T13	Action 1351 1357	vortex
+E13	Action:T13 
+T14	Action 1359 1362	Add
+E14	Action:T14 Acts-on:T78
+T15	Action 1409 1415	vortex
+E15	Action:T15 
+T16	Action 1435 1438	Add
+E16	Action:T16 Acts-on:T80 Site:T84 Creates:T87
+T17	Action 1544 1551	Prepare
+E17	Action:T17 Creates:T85
+T18	Action 1682 1689	Prepare
+E18	Action:T18 
+T19	Action 1848 1851	Add
+E19	Action:T19 
+T20	Action 1919 1926	Perform
+E20	Action:T20 
+T21	Action 1957 1962	Blank
+E21	Action:T21 
+T22	Action 2002 2006	Read
+E22	Action:T22 
+T23	Action 2118 2129	Equilibrate
+E23	Action:T23 
+T24	Action 2190 2197	Aliquot
+E24	Action:T24 
+T25	Action 2482 2489	aliquot
+E25	Action:T25 
+T26	Action 2645 2648	add
+E26	Action:T26 
+T27	Action 2797 2800	Add
+E27	Action:T27 
+T28	Action 3009 3016	prepare
+E28	Action:T28 
+T29	Action 3353 3361	initiate
+E29	Action:T29 
+T30	Action 3451 3455	read
+E30	Action:T30 
+T31	Action 3604 3610	Dilute
+E31	Action:T31 
+T32	Action 3683 3686	Mix
+E32	Action:T32 
+T33	Numerical 62 63	8
+T34	Modifier 64 69	clean
+T35	Location 70 86	glass test tubes
+T36	Reagent 112 121	standards
+R1	Mod-Link Arg1:T35 Arg2:T34	
+R2	Measure Arg1:T35 Arg2:T33	
+T37	Reagent 92 95	A-H
+T38	Reagent 376 410	SAM Methyltransferase Assay Buffer
+T39	Reagent 415 467	SAM Methyltransferase Assay Buffer Additive solution
+T40	Temperature 471 487	room temperature
+R3	Setting Arg1:E3 Arg2:T40	
+T41	Amount 497 510	entire volume
+T42	Reagent 514 557	SAM Methyltransferase Assay Buffer Additive
+T43	Reagent 567 601	SAM Methyltransferase Assay Buffer
+T44	Modifier 613 623	thoroughly
+R4	Measure Arg1:T42 Arg2:T41	
+R5	Mod-Link Arg1:E5 Arg2:T44	
+T45	Reagent 631 665	SAM Methyltransferase Assay Buffer
+T46	Temperature 669 685	room temperature
+T47	Action 707 715	addition
+E33	Action:T47 Acts-on:T48
+T48	Reagent 719 727	Additive
+R6	Setting Arg1:E6 Arg2:T46	
+T49	Amount 787 792	200µl
+T50	Concentration 798 801	1mM
+T51	Reagent 802 810	solution
+T52	Reagent 814 834	adenosylhomocysteine
+R7	Meronym Arg1:T51 Arg2:T52	
+R8	Measure Arg1:T51 Arg2:T50	
+R9	Measure Arg1:T51 Arg2:T49	
+T53	Action 778 786	contains
+E34	Action:T53 Site:T54 Acts-on:T51 Creates:T55
+T54	Location 773 777	vial
+T55	Reagent 747 767	Adenosylhomocysteine
+T56	Location 854 858	vial
+T57	Location 862 865	ice
+T58	Amount 888 892	10µl
+T59	Amount 898 902	90µl
+T60	Reagent 906 954	SAM Methyltransferase Assay Buffer with Additive
+R10	Measure Arg1:T60 Arg2:T59	
+R11	Setting Arg1:E9 Arg2:T58	
+T61	Location 1048 1051	ice
+T62	Reagent 1172 1180	contents
+T63	Location 1187 1191	vial
+T64	Amount 1197 1202	100µl
+T65	Reagent 1203 1220	HCl Assay Reagent
+T66	Concentration 1222 1226	20mM
+T67	Action 1231 1236	yield
+E35	Action:T67 Acts-on:T69 Using:E11
+T68	Concentration 1237 1242	6.9mM
+T69	Reagent 1243 1246	SAM
+R12	Measure Arg1:T69 Arg2:T68	
+R13	Measure Arg1:T65 Arg2:T64	
+R14	Meronym Arg1:T62 Arg2:T63	
+T70	Amount 1324 1329	100µl
+T71	Action 1297 1303	making
+E36	Action:T71 Acts-on:T72
+T72	Reagent 1308 1318	Master Mix
+T73	Reagent 1330 1334	DMSO
+T74	Location 1342 1346	vial
+R15	Measure Arg1:T73 Arg2:T70	
+T75	Amount 1363 1368	400µl
+T76	Modifier 1388 1398	ultra pure
+T77	Reagent 1399 1404	water
+R16	Mod-Link Arg1:T77 Arg2:T76	
+T78	Reagent 1369 1384	proteomic grade
+R17	Measure Arg1:T78 Arg2:T75	
+R18	Measure Arg1:T77 Arg2:T75	
+R19	Or Arg1:T78 Arg2:T77	
+T79	Amount 1439 1442	4ml
+T80	Reagent 1443 1459	Resorufin Buffer
+T81	Concentration 1461 1464	10X
+T82	Amount 1469 1473	36ml
+T83	Modifier 1474 1484	ultra pure
+T84	Reagent 1485 1490	water
+T86	Concentration 1503 1505	1X
+T87	Reagent 1506 1522	Resorufin Buffer
+R20	Measure Arg1:T80 Arg2:T79	
+R21	Measure Arg1:T80 Arg2:T81	
+R22	Mod-Link Arg1:T84 Arg2:T83	
+R23	Measure Arg1:T84 Arg2:T82	
+R24	Measure Arg1:T87 Arg2:T86	
+T85	Reagent 1557 1568	test sample
+T88	Modifier 1585 1593	purified
+T89	Modifier 1594 1607	SAM dependent
+T90	Reagent 1608 1625	methyltransferase
+R25	Mod-Link Arg1:T90 Arg2:T89	
+R26	Mod-Link Arg1:T90 Arg2:T88	
+R27	Meronym Arg1:T90 Arg2:T85	
+T91	Amount 1852 1857	115µl

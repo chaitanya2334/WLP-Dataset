@@ -1,0 +1,71 @@
+T1	Action 67 74	Suspend
+E1	Action:T1 Acts-on:T15 Site:T16
+T2	Action 169 177	Incubate
+E2	Action:T2 Acts-on:T19
+T3	Action 234 242	incubate
+E3	Action:T3 
+T4	Action 260 267	Prepare
+E4	Action:T4 Using:E16 Acts-on:T24
+T5	Action 399 426	Check the DNA concentration
+E5	Action:T5 Acts-on:T32 Using:T33
+T6	Action 571 574	add
+E6	Action:T6 Acts-on:T37 Site:T39
+T7	Action 676 721	quantify the number of genomic standard reads
+E7	Action:T7 
+T8	Action 771 794	identify standard reads
+E8	Action:T8 
+T9	Action 918 934	perform a BLASTx
+E9	Action:T9 
+T10	Action 1053 1090	Quantify recovered standard DNA reads
+E10	Action:T10 
+T11	Action 1095 1101	remove
+E11	Action:T11 
+T12	Action 1116 1149	Calculate the number of molecules
+E12	Action:T12 
+T13	Action 1445 1483	Calculate the community gene pool size
+E13	Action:T13 
+T14	Action 1775 1811	Calculate individual gene abundances
+E14	Action:T14 
+T15	Reagent 75 86	genomic DNA
+T16	Reagent 102 121	nuclease-free water
+T17	Action 125 154	produce a stock concentration
+E15	Action:T17 Using:E1
+T18	Concentration 158 167	0.1 μg/μL
+R1	Setting Arg1:E15 Arg2:T18	
+T19	Reagent 178 192	rehydrated DNA
+T20	Time 193 202	overnight
+T21	Temperature 206 209	4°C
+R2	Setting Arg1:E2 Arg2:T20	
+R3	Setting Arg1:E2 Arg2:T21	
+T22	Time 247 250	1 h
+T23	Temperature 254 258	65°C
+R4	Setting Arg1:E3 Arg2:T22	
+R5	Setting Arg1:E3 Arg2:T23	
+T24	Reagent 268 284	working solution
+T25	Action 288 294	adding
+E16	Action:T25 Acts-on:T27 Site:T29
+T26	Amount 295 299	1 μL
+T27	Reagent 307 321	stock solution
+T28	Amount 325 330	99 μL
+T29	Reagent 334 353	nuclease-free water
+T30	Action 357 386	produce a final concentration
+E17	Action:T30 Using:E16
+T31	Concentration 390 397	1 ng/μL
+R6	Setting Arg1:E17 Arg2:T31	
+R7	Measure Arg1:T27 Arg2:T26	
+R8	Measure Arg1:T29 Arg2:T28	
+T32	Reagent 430 436	stocks
+T33	Device 460 496	Quant-iT™ PicoGreen® dsDNA Assay Kit
+T34	Reagent 497 508	Genomic DNA
+T35	Action 516 522	stored
+E18	Action:T35 Acts-on:T34
+T36	Temperature 526 532	−20 °C
+R9	Setting Arg1:E18 Arg2:T36	
+T37	Reagent 582 594	standard DNA
+T38	Modifier 598 602	each
+T39	Reagent 603 609	sample
+T40	Action 613 618	reach
+E19	Action:T40 Using:E6
+T41	Concentration 619 628	~0.1-1.0%
+R10	Mod-Link Arg1:T39 Arg2:T38	
+R11	Setting Arg1:E19 Arg2:T41	

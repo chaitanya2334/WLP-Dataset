@@ -1,0 +1,141 @@
+T1	Action 79 84	Pulse
+E1	Action:T1 Acts-on:T24 Using:T25
+T2	Action 206 213	Harvest
+E2	Action:T2 Acts-on:T26
+T3	Action 224 234	centrifuge
+E3	Action:T3 
+T4	Action 280 284	Wash
+E4	Action:T4 Acts-on:T29 Using:T30
+T5	Action 337 347	centrifuge
+E5	Action:T5 
+T6	Action 394 401	Discard
+E6	Action:T6 Acts-on:T33
+T7	Action 416 423	Aliquot
+E7	Action:T7 Acts-on:T35 Site:T37
+T8	Action 479 484	Stain
+E8	Action:T8 Acts-on:T38 Using:T39
+T10	Action 669 681	centrifuging
+E10	Action:T10 
+T11	Action 728 735	Discard
+E11	Action:T11 Acts-on:T45
+T13	Action 763 769	adding
+E13	Action:T13 Acts-on:T48
+T12	Action 616 622	adding
+E12	Action:T12 Acts-on:T41 Site:T42
+T9	Action 840 844	Wash
+E9	Action:T9 Acts-on:T51 Count:T60
+T14	Action 972 978	adding
+E14	Action:T14 Acts-on:T54 Site:T55
+T15	Action 1051 1055	Wash
+E15	Action:T15 Acts-on:T58 Count:T59
+T16	Action 1090 1095	Treat
+E16	Action:T16 Acts-on:T61 Using:T63 Site:T67
+T17	Action 1214 1222	incubate
+E17	Action:T17 
+T18	Action 1243 1247	Wash
+E18	Action:T18 Acts-on:T70 Count:T71
+T19	Action 1282 1285	Add
+E19	Action:T19 Acts-on:T73 Site:T74
+T20	Action 1334 1337	add
+E20	Action:T20 Acts-on:T76 Site:T77
+T21	Action 1404 1412	Incubate
+E21	Action:T21 Using:T80
+T23	Action 1488 1494	adding
+E23	Action:T23 Acts-on:T82
+T22	Action 1561 1565	Wait
+E22	Action:T22 
+T24	Reagent 85 108	actively dividing cells
+T25	Reagent 114 118	BrdU
+T26	Reagent 214 219	cells
+T27	Time 239 248	5 minutes
+T28	Speed 252 265	1200-1500 rpm
+R1	Setting Arg1:E3 Arg2:T27	
+R2	Setting Arg1:E3 Arg2:T28	
+T29	Reagent 285 290	cells
+T30	Reagent 294 314	Cell Staining Buffer
+T31	Time 352 361	5 minutes
+R3	Setting Arg1:E5 Arg2:T31	
+T32	Speed 365 378	1200-1500 rpm
+R4	Setting Arg1:E5 Arg2:T32	
+T33	Reagent 402 413	supernatant
+T34	Amount 424 440	5 x 105- 1 x 106
+T35	Reagent 441 446	cells
+R5	Measure Arg1:T35 Arg2:T34	
+T36	Size 451 461	12 x 75 mm
+T37	Location 462 466	tube
+R6	Measure Arg1:T37 Arg2:T36	
+T38	Reagent 485 490	cells
+T39	Method 539 588	Cell Surface Immunofluorescence Staining Protocol
+T40	Amount 623 627	1 ml
+T41	Reagent 631 651	Cell Staining Buffer
+R7	Measure Arg1:T41 Arg2:T40	
+T42	Location 660 664	tube
+T43	Time 686 695	5 minutes
+T44	Speed 699 712	1200-1500 rpm
+R8	Setting Arg1:E10 Arg2:T43	
+R9	Setting Arg1:E10 Arg2:T44	
+T45	Reagent 736 747	supernatant
+T46	Amount 770 776	100 μl
+T47	Concentration 780 782	4%
+T48	Reagent 783 799	paraformaldehyde
+R10	Measure Arg1:T48 Arg2:T47	
+R11	Measure Arg1:T48 Arg2:T46	
+T49	Temperature 803 819	room temperature
+T50	Time 824 837	20-30 minutes
+R12	Setting Arg1:E13 Arg2:T49	
+R13	Setting Arg1:E13 Arg2:T50	
+T51	Reagent 845 850	cells
+T52	Amount 979 985	500 μl
+T53	Concentration 989 993	0.5%
+T54	Reagent 994 1006	Triton-X 100
+R14	Measure Arg1:T54 Arg2:T53	
+R15	Measure Arg1:T54 Arg2:T52	
+T55	Reagent 1010 1013	PBS
+T56	Time 1018 1028	15 minutes
+T57	Temperature 1032 1048	room temperature
+R16	Setting Arg1:E14 Arg2:T56	
+R17	Setting Arg1:E14 Arg2:T57	
+T58	Reagent 1056 1061	cells
+T59	Numerical 1082 1087	twice
+T60	Numerical 871 876	twice
+T61	Reagent 1096 1101	cells
+T62	Amount 1107 1112	20 μg
+T63	Reagent 1116 1121	DNAse
+R18	Measure Arg1:T63 Arg2:T62	
+T64	Reagent 1165 1169	DPBS
+T65	Reagent 1175 1182	calcium
+T66	Reagent 1187 1196	magnesium
+R19	Meronym Arg1:T65 Arg2:T64	
+R20	Meronym Arg1:T66 Arg2:T64	
+T67	Location 1205 1209	tube
+T68	Temperature 1226 1230	37⁰C
+T69	Time 1235 1241	1 hour
+R21	Setting Arg1:E17 Arg2:T68	
+R22	Setting Arg1:E17 Arg2:T69	
+R23	Meronym Arg1:T64 Arg2:T63	
+T70	Reagent 1248 1253	cells
+T71	Numerical 1274 1279	twice
+T72	Amount 1286 1291	50 μl
+T73	Reagent 1295 1315	Cell Staining Buffer
+R24	Measure Arg1:T73 Arg2:T72	
+T74	Location 1324 1328	tube
+T75	Generic-Measure 1342 1367	recommended concentration
+T76	Reagent 1371 1389	anti-BrdU antibody
+R25	Measure Arg1:T76 Arg2:T75	
+T77	Location 1398 1402	tube
+T78	Time 1417 1427	20 minutes
+T79	Temperature 1431 1447	room temperature
+R26	Setting Arg1:E21 Arg2:T78	
+R27	Setting Arg1:E21 Arg2:T79	
+T80	Method 1455 1459	dark
+T81	Amount 1495 1499	1 μg
+T82	Reagent 1510 1515	7-AAD
+R28	Measure Arg1:T82 Arg2:T81	
+T83	Reagent 1537 1541	DAPI
+R29	Or Arg1:T82 Arg2:T83	
+T84	Time 1570 1579	5 minutes
+R30	Setting Arg1:E22 Arg2:T84	
+T85	Action 1589 1598	acquiring
+E24	Action:T85 Acts-on:T86 Using:T87
+T86	Reagent 1599 1606	samples
+T87	Device 1610 1624	flow cytometer

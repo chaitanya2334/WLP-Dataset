@@ -1,0 +1,130 @@
+T1	Action 37 44	Harvest
+E1	Action:T1 Acts-on:T19 Site:T20
+T2	Action 139 144	Tease
+E2	Action:T2 Acts-on:T21 Using:T24 Creates:T25
+T3	Action 289 298	Resuspend
+E3	Action:T3 Acts-on:T28 Using:T31
+T4	Action 356 363	isolate
+E4	Action:T4 Acts-on:T29 Using:E3
+T6	Action 430 435	plate
+E6	Action:T6 Acts-on:T5 Site:T33
+T7	Action 477 484	Culture
+E7	Action:T7 Acts-on:T34 Site:T36
+T8	Action 640 647	harvest
+E8	Action:T8 Acts-on:T45
+T9	Action 679 683	Seed
+E9	Action:T9 Acts-on2:T51 Acts-on3:T53 Site:T50
+T10	Action 809 813	coat
+E10	Action:T10 Acts-on:T56 Using:T57
+T11	Action 875 880	clone
+E11	Action:T11 Acts-on:T58 Site:T60
+T12	Action 919 927	Incubate
+E12	Action:T12 Acts-on:T63
+T13	Action 971 975	wash
+E13	Action:T13 
+T14	Action 1043 1050	Harvest
+E14	Action:T14 Acts-on:T69 Site:T70
+T15	Action 1105 1109	Wash
+E15	Action:T15 Acts-on:T71
+T16	Action 1132 1136	Wash
+E16	Action:T16 Acts-on:T72
+T17	Action 1159 1163	Seed
+E17	Action:T17 Acts-on:T75 Acts-on2:T76
+T18	Action 1274 1282	Incubate
+E18	Action:T18 Using:T82
+T19	Reagent 45 56	lymph nodes
+T20	Reagent 133 137	mice
+T21	Reagent 145 156	lymph nodes
+T22	Modifier 167 174	sterile
+T23	Size 175 180	70-µm
+T24	Device 181 200	nylon cell strainer
+T25	Reagent 211 250	single-cell suspensions incomplete RPMI
+T26	Concentration 262 265	10%
+T27	Reagent 266 269	FCS
+R1	Measure Arg1:T27 Arg2:T26	
+R2	Setting Arg1:T24 Arg2:T23	
+R3	Mod-Link Arg1:T24 Arg2:T22	
+R4	Meronym Arg1:T27 Arg2:T25	
+T28	Reagent 299 304	cells
+T29	Reagent 364 373	CD4+cells
+T30	Reagent 308 323	complete medium
+R5	Meronym Arg1:T28 Arg2:T30	
+T31	Method 332 352	your favorite method
+T5	Reagent 436 446	CD4+ cells
+T32	Generic-Measure 450 469	30 x106 /30 ml/T-75
+T33	Location 470 475	flask
+R6	Measure Arg1:T33 Arg2:T32	
+T34	Reagent 485 490	cells
+T35	Time 495 501	3 days
+T36	Reagent 505 518	complete RPMI
+T37	Concentration 530 533	10%
+T38	Reagent 534 537	FCS
+T39	Reagent 556 578	recombinant mouse IL-2
+T40	Concentration 546 553	5 µg/mL
+T41	Concentration 580 588	20 ng/ml
+T42	Reagent 595 617	recombinant mouse IL-4
+T43	Concentration 619 627	50 ng/ml
+R7	Measure Arg1:T38 Arg2:T37	
+R8	Setting Arg1:E7 Arg2:T35	
+R9	Meronym Arg1:T38 Arg2:T36	
+T44	Reagent 539 544	Con A
+R10	Measure Arg1:T44 Arg2:T40	
+R11	Measure Arg1:T39 Arg2:T41	
+R12	Measure Arg1:T42 Arg2:T43	
+R13	Meronym Arg1:T44 Arg2:T36	
+R14	Meronym Arg1:T39 Arg2:T36	
+R15	Meronym Arg1:T42 Arg2:T36	
+T45	Reagent 652 657	cells
+T46	Action 662 666	wash
+E5	Action:T46 Acts-on:T47 Count:T48
+T47	Reagent 667 672	cells
+T48	Numerical 673 677	once
+T49	Generic-Measure 684 708	15 x106 cells/30 ml/T-75
+T50	Location 709 714	flask
+T51	Reagent 726 748	recombinant mouse IL-2
+T52	Generic-Measure 750 758	20 ng/ml
+T53	Reagent 764 786	recombinant mouse IL-4
+T54	Concentration 788 796	50 ng/ml
+R16	Measure Arg1:T50 Arg2:T49	
+R17	Measure Arg1:T51 Arg2:T52	
+R18	Measure Arg1:T53 Arg2:T54	
+T55	Size 816 826	60 x 15 mm
+T56	Location 827 852	tissue culture petri dish
+T57	Reagent 858 873	anti-mouse CD3ε
+T58	Reagent 881 889	145-2C11
+T59	Concentration 891 899	10 µg/mL
+T60	Reagent 903 906	PBS
+T61	Generic-Measure 908 917	5 ml/dish
+R19	Measure Arg1:T56 Arg2:T55	
+R20	Measure Arg1:T58 Arg2:T59	
+R21	Setting Arg1:E10 Arg2:T61	
+T62	Temperature 933 936	4°C
+T63	Device 937 949	refrigerator
+T64	Time 950 959	overnight
+R22	Setting Arg1:E12 Arg2:T62	
+R23	Setting Arg1:E12 Arg2:T64	
+T65	Reagent 980 995	anti-mouse CD3ε
+T66	Modifier 996 1006	pre-coated
+T67	Location 1007 1032	tissue culture petri dish
+T68	Reagent 1038 1041	PBS
+R24	Mod-Link Arg1:T67 Arg2:T66	
+T69	Reagent 1055 1060	cells
+T70	Location 1070 1075	flask
+T71	Reagent 1114 1119	cells
+T72	Reagent 1141 1146	cells
+T73	Generic-Measure 1167 1192	20 x106 /10 ml/petri dish
+T74	Amount 1204 1209	10 µl
+T75	Reagent 1213 1221	monensin
+T76	Reagent 1234 1249	anti-mouse CD28
+T77	Action 1251 1256	clone
+E19	Action:T77 Acts-on:T78
+T78	Reagent 1257 1262	37.51
+T79	Generic-Measure 1264 1271	5 µg/ml
+R25	Setting Arg1:E17 Arg2:T73	
+R26	Measure Arg1:T75 Arg2:T74	
+R27	Measure Arg1:T78 Arg2:T79	
+T80	Time 1287 1294	6 hours
+T81	Temperature 1298 1302	37°C
+T82	Device 1308 1321	CO2 incubator
+R28	Setting Arg1:E18 Arg2:T80	
+R29	Setting Arg1:E18 Arg2:T81	

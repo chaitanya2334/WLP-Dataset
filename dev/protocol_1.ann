@@ -1,0 +1,41 @@
+T1	Action 62 65	Add
+E1	Action:T1 Acts-on:T3
+T2	Concentration 66 72	1/1000
+T3	Reagent 73 84	Hoechst dye
+R1	Measure Arg1:T3 Arg2:T2
+T4	Action 118 122	Keep
+E2	Action:T4 Acts-on:T5 Using:T6
+T5	Reagent 123 137	cells with dye
+T6	Method 138 158	protected from light
+T7	Action 160 168	Incubate
+E3	Action:T7 
+T8	Time 193 203	10 minutes
+T9	Action 204 208	Keep
+E4	Action:T9 Acts-on:T10 Using:T11
+T10	Reagent 209 223	cells with dye
+T11	Method 224 244	protected from light
+T12	Action 246 256	Centrifuge
+E5	Action:T12 Acts-on:T13
+T13	Reagent 257 262	cells
+T14	Speed 266 271	1000g
+T15	Time 276 285	5 minutes
+T16	Action 287 296	Resuspend
+E6	Action:T16 Using:T17
+T17	Reagent 302 322	fresh growing medium
+T19	Amount 328 342	minimum volume
+T20	Reagent 346 352	medium
+R2	Measure Arg1:T20 Arg2:T19
+T18	Action 365 373	plate in
+E7	Action:T18 Site:T21 Acts-on:T20
+T21	Location 381 386	slide
+T22	Action 400 405	Mount
+E8	Action:T22 Acts-on:T23 Site:T24
+T23	Location 411 416	slide
+T24	Device 449 459	microscope
+R3	Setting Arg1:E5 Arg2:T15
+R4	Setting Arg1:E3 Arg2:T8	
+T25	Temperature 172 188	room temperature
+R5	Setting Arg1:E3 Arg2:T25	
+R6	Setting Arg1:E5 Arg2:T14	
+T26	Modifier 387 398	immediately
+R7	Mod-Link Arg1:E7 Arg2:T26	

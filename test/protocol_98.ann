@@ -1,0 +1,12 @@
+T1	Action 54 58	Load
+E1	Action:T1 
+T2	Action 94 98	Read
+E2	Action:T2 
+T3	Action 377 383	Format
+E3	Action:T3 
+T4	Action 396 403	Look at
+E4	Action:T4 
+T5	Action 417 421	Plot
+E5	Action:T5 
+T6	Action 119 125	format
+E6	Action:T6 

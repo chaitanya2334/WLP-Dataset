@@ -1,0 +1,37 @@
+T1	Action 41 48	Combine
+E1	Action:T1 
+T2	Action 101 109	Denature
+E2	Action:T2 Acts-on:T10
+T3	Action 126 133	heating
+E3	Action:T3 Acts-on:T11
+T4	Action 166 171	Chill
+E4	Action:T4 Acts-on:T14 Acts-on2:T15
+T5	Action 204 214	Centrifuge
+E5	Action:T5 
+T6	Action 228 231	Add
+E6	Action:T6 
+T7	Action 291 294	Add
+E7	Action:T7 
+T8	Action 313 316	Mix
+E8	Action:T8 
+T9	Action 326 334	Incubate
+E9	Action:T9 Acts-on:T19
+T10	Reagent 110 122	glycoprotein
+T11	Reagent 134 142	reaction
+T12	Temperature 146 150	95°C
+T13	Temperature 155 164	5 minutes
+R1	Setting Arg1:E3 Arg2:T12	
+R2	Setting Arg1:E3 Arg2:T13	
+T14	Reagent 172 194	denatured glycoprotein
+T15	Location 198 201	ice
+T16	Time 215 225	10 seconds
+R3	Setting Arg1:E5 Arg2:T16	
+T17	Reagent 295 303	PNGase F
+T18	Amount 306 310	1 µl
+R4	Measure Arg1:T17 Arg2:T18	
+R5	Setting Arg1:E7 Arg2:T18	
+T19	Reagent 335 343	reaction
+T20	Temperature 347 351	37°C
+T21	Time 356 362	1 hour
+R6	Setting Arg1:E9 Arg2:T20	
+R7	Setting Arg1:E9 Arg2:T21	

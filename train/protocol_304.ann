@@ -1,0 +1,257 @@
+T2	Action 165 173	Initiate
+E2	Action:T2 Acts-on:T1 Using:T54
+T3	Action 350 357	Monitor
+E3	Action:T3 Measure-Type-Link:T55
+T4	Action 382 399	transfer/dilution
+E4	Action:T4 Measure-Type-Link:T58
+T5	Action 703 713	increasing
+E5	Action:T5 Acts-on:T61
+T6	Action 753 763	ramping up
+E6	Action:T6 Acts-on:T63
+T7	Action 1814 1817	Fit
+E7	Action:T7 Acts-on:T64
+T8	Action 1950 1955	Place
+E8	Action:T8 Acts-on:T67 Site:T68
+T9	Action 2011 2018	tighten
+E9	Action:T9 Acts-on:T69
+T11	Action 2338 2347	transport
+E11	Action:T11 Acts-on:T70 Site:T71
+T12	Action 2393 2402	resuspend
+E12	Action:T12 Acts-on:T72
+T13	Action 2435 2443	pour off
+E13	Action:T13 Acts-on:T74 Site:T75
+T14	Action 2540 2554	Resuspend/wash
+E14	Action:T14 Acts-on:T78 Using:T83 Site:T82
+T15	Action 2785 2788	Run
+E15	Action:T15 Acts-on:T84 Using:T124
+T16	Action 2858 2863	Store
+E16	Action:T16 Acts-on:T128
+T17	Action 2967 2976	Calculate
+E17	Action:T17 
+T18	Action 3027 3036	inoculate
+E18	Action:T18 Acts-on:T157
+T19	Action 3267 3273	Adjust
+E19	Action:T19 
+T20	Action 3287 3294	achieve
+E20	Action:T20 
+T21	Action 3375 3378	mix
+E21	Action:T21 
+T22	Action 3425 3432	monitor
+E22	Action:T22 
+T23	Action 3822 3830	Transfer
+E23	Action:T23 Acts-on:T140 Site:T143
+T24	Action 3882 3885	Add
+E24	Action:T24 Acts-on:T146
+T25	Action 3941 3947	vortex
+E25	Action:T25 
+T26	Action 3951 3954	mix
+E26	Action:T26 Using:E25
+T27	Action 3956 3963	Aliquot
+E27	Action:T27 Site:T150
+T28	Action 3996 4000	Snap
+E28	Action:T28 Acts-on:T151 Site:T152
+T29	Action 4030 4038	incubate
+E29	Action:T29 Site:T155
+T30	Action 4074 4086	Flash freeze
+E30	Action:T30 Site:T156
+T31	Action 4107 4112	Store
+E31	Action:T31 
+T33	Action 4579 4584	Apply
+E33	Action:T33 Acts-on:T118 Site:T120
+T34	Action 4639 4646	turn on
+E34	Action:T34 Acts-on:T121
+T36	Action 4738 4745	collect
+E36	Action:T36 Site:T111
+T37	Action 4802 4806	Pour
+E37	Action:T37 Acts-on:T105 Site:T108
+T38	Action 4857 4863	Repeat
+E38	Action:T38 Acts-on:T104
+T39	Action 4886 4891	Rinse
+E39	Action:T39 Acts-on:T102 Using:T103
+T40	Action 4934 4939	Store
+E40	Action:T40 Acts-on:T100
+T41	Action 4952 4960	filtrate
+E41	Action:T41 
+T42	Action 5039 5047	Transfer
+E42	Action:T42 Acts-on:T88 Site:T87
+T44	Action 5119 5122	add
+E44	Action:T44 Site:T89 Acts-on:T92
+T45	Action 5172 5175	mix
+E45	Action:T45 Using:T46
+T47	Action 5190 5203	Do not vortex
+E47	Action:T47 
+T48	Action 5205 5209	Snap
+E48	Action:T48 Acts-on:T94 Site:T95
+T49	Action 5239 5247	incubate
+E49	Action:T49 Site:T98
+T50	Action 5291 5296	Store
+E50	Action:T50 
+T1	Reagent 177 197	experimental culture
+T51	Modifier 211 219	at least
+T52	Modifier 237 250	characterized
+T53	Generic-Measure 220 233	7 generations
+T54	Reagent 251 269	exponential growth
+T55	Measure-Type 358 364	growth
+T56	Modifier 403 417	pre-determined
+T57	Modifier 418 433	mid-exponential
+T58	Measure-Type 434 441	density
+T59	Reagent 480 494	target biomass
+T60	Action 498 505	reached
+E1	Action:T60 Creates:T59 Using:E4 Using2:E3
+T61	Reagent 714 721	culture
+T62	Amount 722 728	volume
+T63	Reagent 767 781	target biomass
+R1	Measure Arg1:T61 Arg2:T62	
+T64	Device 1818 1828	centrifuge
+T65	Device 1834 1845	large rotor
+R2	Meronym Arg1:T65 Arg2:T64	
+T66	Modifier 1956 1962	paired
+T67	Location 1963 1970	bottles
+T68	Device 2001 2006	rotor
+T69	Seal 2023 2026	lid
+R3	Mod-Link Arg1:T67 Arg2:T66	
+T10	Modifier 2328 2337	carefully
+T70	Location 2352 2359	bottles
+T71	Location 2368 2372	hood
+T72	Reagent 2407 2426	cell pellets/smears
+R4	Mod-Link Arg1:E11 Arg2:T10	
+T73	Modifier 2428 2434	Gently
+T74	Reagent 2448 2459	supernatant
+T75	Location 2467 2482	waste container
+R5	Mod-Link Arg1:E13 Arg2:T73	
+T76	Reagent 2506 2516	cell smear
+T77	Action 2494 2501	disturb
+E10	Action:T77 Acts-on:T76 Using:E13
+T78	Reagent 2555 2560	cells
+T79	Amount 2568 2574	volume
+T80	Amount 2620 2642	initial culture volume
+T81	Modifier 2646 2650	each
+T82	Location 2651 2657	bottle
+T83	Reagent 2578 2601	nutrient deplete medium
+R6	Mod-Link Arg1:T82 Arg2:T81	
+T84	Reagent 2791 2797	sample
+T85	Amount 5048 5052	1 mL
+T86	Amount 5075 5081	1.2 mL
+T87	Location 5082 5095	cryovial tube
+T88	Reagent 5056 5063	culture
+R7	Measure Arg1:T87 Arg2:T86	
+T43	Modifier 5067 5074	sterile
+R8	Mod-Link Arg1:T87 Arg2:T43	
+R9	Measure Arg1:T88 Arg2:T85	
+T89	Location 5104 5117	chemical hood
+T90	Amount 5123 5129	100 µL
+T91	Concentration 5133 5136	37%
+T92	Reagent 5137 5149	formaldehyde
+T46	Method 5179 5188	inverting
+T93	Concentration 5151 5155	3.7%
+R10	Measure Arg1:T92 Arg2:T91	
+R11	Measure Arg1:T92 Arg2:T93	
+R12	Measure Arg1:T92 Arg2:T90	
+T94	Location 5210 5219	cryovials
+T95	Device 5225 5234	cryocanes
+T96	Temperature 5251 5260	room temp
+T97	Time 5265 5275	15 minutes
+T98	Location 5284 5288	dark
+R13	Setting Arg1:E49 Arg2:T96	
+R14	Setting Arg1:E49 Arg2:T97	
+T99	Temperature 5300 5303	4°C
+T100	Device 4940 4947	filters
+T101	Temperature 4964 4969	-20°C
+R15	Setting Arg1:E41 Arg2:T101	
+T102	Device 4892 4904	filter tower
+T103	Reagent 4910 4916	MilliQ
+T104	Reagent 4868 4874	sample
+T105	Reagent 4807 4815	filtrate
+T106	Modifier 4824 4836	acid-cleaned
+T107	Amount 4837 4842	50 mL
+T108	Location 4843 4855	conical tube
+R16	Measure Arg1:T108 Arg2:T107	
+R17	Mod-Link Arg1:T108 Arg2:T106	
+T109	Modifier 4687 4702	ethanol-cleaned
+T110	Device 4703 4710	forceps
+T111	Location 4751 4764	12-well plate
+T112	Seal 4787 4800	aluminum foil
+T113	Modifier 4777 4786	combusted
+R18	Mod-Link Arg1:T112 Arg2:T113	
+R19	Mod-Link Arg1:T110 Arg2:T109	
+T114	Action 4714 4718	fold
+E43	Action:T114 Acts-on:T115 Using:T110
+T115	Device 4719 4725	filter
+T116	Generic-Measure 4729 4733	half
+R20	Setting Arg1:E43 Arg2:T116	
+T35	Location 4768 4773	piece
+R21	Or Arg1:T111 Arg2:T35	
+R22	Meronym Arg1:T35 Arg2:T112	
+T117	Amount 4585 4593	20-40 mL
+T118	Reagent 4597 4602	media
+T119	Reagent 4606 4613	culture
+T120	Device 4621 4634	filter funnel
+T121	Device 4651 4657	vacuum
+T122	Device 4668 4674	filter
+T123	Action 4678 4681	dry
+E35	Action:T123 Acts-on:T122 Using:E34
+R23	Measure Arg1:T118 Arg2:T117	
+R24	Measure Arg1:T119 Arg2:T117	
+R25	Or Arg1:T118 Arg2:T119	
+T32	Temperature 4116 4121	-80°C
+T124	Device 2829 2835	Accuri
+T125	Action 2839 2848	determine
+E32	Action:T125 Measure-Type-Link:T126 Using:E15
+T126	Measure-Type 2849 2856	density
+T127	Reagent 2805 2821	cell concentrate
+R26	Meronym Arg1:T84 Arg2:T127	
+T128	Reagent 2864 2869	cells
+T129	Generic-Measure 2873 2897	normal growth conditions
+T130	Device 2905 2911	Accuri
+T131	Action 2912 2915	run
+E46	Action:T131 Acts-on:T130
+T132	Action 2920 2932	calculations
+E51	Action:T132 
+R27	Measure Arg1:T128 Arg2:T129	
+T133	Modifier 2977 2988	appropriate
+T134	Amount 2989 2995	volume
+T135	Action 3071 3078	deplete
+E52	Action:T135 Acts-on:T136 Using:T137
+T136	Location 3079 3093	culture flasks
+T137	Reagent 3103 3119	cell concentrate
+T138	Reagent 3383 3389	sample
+T139	Amount 3831 3835	1 mL
+T140	Reagent 3839 3846	culture
+T141	Modifier 3852 3859	sterile
+T142	Amount 3860 3866	1.2 mL
+T143	Location 3867 3880	cryovial tube
+T144	Amount 3886 3891	10 µL
+T145	Concentration 3892 3895	25%
+T146	Reagent 3896 3910	glutaraldehyde
+T147	Modifier 3934 3940	gently
+R28	Measure Arg1:T146 Arg2:T145	
+R29	Measure Arg1:T146 Arg2:T144	
+R30	Mod-Link Arg1:E25 Arg2:T147	
+T148	Amount 3964 3970	500 µL
+T149	Modifier 3976 3985	duplicate
+T150	Location 3986 3994	cryovial
+R31	Mod-Link Arg1:T150 Arg2:T149	
+R32	Setting Arg1:E27 Arg2:T148	
+T151	Location 4001 4010	cryovials
+T152	Device 4016 4025	cryocanes
+T153	Temperature 4042 4045	4°C
+T154	Time 4050 4060	30 minutes
+T155	Location 4068 4072	dark
+R33	Setting Arg1:E29 Arg2:T153	
+R34	Setting Arg1:E29 Arg2:T154	
+T156	Reagent 4090 4105	liquid nitrogen
+R35	Setting Arg1:E31 Arg2:T32	
+R36	Setting Arg1:E50 Arg2:T99	
+R37	Measure Arg1:T140 Arg2:T139	
+R38	Measure Arg1:T143 Arg2:T142	
+R39	Mod-Link Arg1:T143 Arg2:T141	
+R40	Setting Arg1:E17 Arg2:T134	
+R41	Mod-Link Arg1:T134 Arg2:T133	
+T157	Reagent 3037 3058	experimental nutrient
+T158	Action 3059 3066	replete
+E53	Action:T158 Acts-on:T136 Using:T137
+R42	Measure Arg1:T83 Arg2:T79	
+R43	Or Arg1:T79 Arg2:T80	
+R44	Mod-Link Arg1:T53 Arg2:T51	
+R45	Mod-Link Arg1:T54 Arg2:T52	
+R46	Setting Arg1:E2 Arg2:T53	

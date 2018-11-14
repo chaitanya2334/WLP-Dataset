@@ -1,0 +1,72 @@
+T1	Action 43 49	Filter
+E1	Action:T1 Acts-on:T24 Using:T23
+T2	Action 159 162	Add
+E2	Action:T2 
+T3	Action 313 319	adding
+E3	Action:T3 Acts-on:T28
+T4	Action 369 379	incubating
+E4	Action:T4 
+T5	Action 341 349	dividing
+E5	Action:T5 
+T6	Action 413 418	Amend
+E6	Action:T6 Acts-on:T29
+T7	Action 539 545	Employ
+E7	Action:T7 Using:T31
+T8	Action 647 654	Prepare
+E8	Action:T8 Creates:T33 Using:T36
+T9	Action 810 816	dilute
+E9	Action:T9 Acts-on:T37
+T10	Action 879 886	Prepare
+E10	Action:T10 Creates:T39 Site:T40
+T11	Action 965 972	Prepare
+E11	Action:T11 Creates:T41 Acts-on:T21
+T12	Action 1034 1042	Incubate
+E12	Action:T12 Acts-on:T43
+T13	Action 1118 1123	Score
+E13	Action:T13 
+T14	Action 1213 1222	Calculate
+E14	Action:T14 Using:T44
+T15	Action 1301 1309	Evaluate
+E15	Action:T15 Using:T46
+T16	Action 1437 1444	Perform
+E16	Action:T16 Using:T45
+T17	Action 123 129	remove
+E17	Action:T17 Acts-on:T25
+T18	Action 233 239	reduce
+E18	Action:T18 
+T19	Action 587 596	enumerate
+E19	Action:T19 Acts-on:T32 Using:T31
+T20	Action 859 864	place
+E20	Action:T20 Acts-on:T38
+T22	Modifier 72 78	0.2-µm
+T23	Device 79 85	filter
+R1	Mod-Link Arg1:T23 Arg2:T22	
+T24	Reagent 55 61	sample
+T25	Reagent 142 157	ambient viruses
+T26	Modifier 175 191	0.02-µm filtered
+T27	Reagent 193 198	water
+R2	Mod-Link Arg1:T27 Arg2:T26	
+T28	Reagent 320 339	virus-free seawater
+T29	Reagent 459 470	mitomycin C
+T30	Concentration 493 500	1 µg/mL
+R3	Measure Arg1:T29 Arg2:T30	
+T31	Method 571 583	(MPN) method
+T32	Reagent 601 622	cyanophage population
+T33	Reagent 719 745	induction treatment sample
+T34	Amount 657 685	one- to five-dilution series
+R4	Setting Arg1:E8 Arg2:T34	
+T35	Modifier 752 770	96-well microtiter
+T36	Device 771 777	plates
+R5	Mod-Link Arg1:T36 Arg2:T35	
+T37	Reagent 831 849	Synechococcus host
+T38	Location 873 877	well
+T39	Reagent 918 934	sterile SN media
+T40	Location 942 963	first column of wells
+T41	Reagent 979 998	replicate treatment
+T42	Modifier 973 978	three
+R6	Mod-Link Arg1:T41 Arg2:T42	
+T21	Device 1003 1017	control plates
+T43	Device 1047 1053	plates
+T44	Method 1263 1274	MPN program
+T45	Method 1512 1529	linear regression
+T46	Method 1371 1384	paired t test

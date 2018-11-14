@@ -1,0 +1,535 @@
+T1	Action 347 353	washed
+E1	Action:T1 
+T2	Action 432 439	blasted
+E2	Action:T2 
+T3	Action 663 668	added
+E3	Action:T3 
+T4	Action 686 694	agitated
+E4	Action:T4 
+T5	Action 752 763	homogenized
+E5	Action:T5 
+T6	Action 838 849	centrifuged
+E6	Action:T6 
+T7	Action 892 903	transferred
+E7	Action:T7 
+T8	Action 937 941	spun
+E8	Action:T8 
+T9	Action 968 974	pellet
+E9	Action:T9 
+T10	Action 1102 1110	layering
+E10	Action:T10 
+T11	Action 1288 1299	centrifuged
+E11	Action:T11 
+T12	Action 1405 1416	homogenized
+E12	Action:T12 
+T13	Action 1477 1481	spun
+E13	Action:T13 
+T14	Action 1527 1536	aliquoted
+E14	Action:T14 
+T15	Action 1717 1726	disrupted
+E15	Action:T15 
+T16	Action 1761 1772	centrifuged
+E16	Action:T16 
+T18	Action 2160 2169	enumerate
+E18	Action:T18 
+T19	Action 2079 2088	subjected
+E19	Action:T19 
+T20	Action 2224 2231	treated
+E20	Action:T20 
+T21	Action 2304 2313	extracted
+E21	Action:T21 
+T22	Action 2324 2331	treated
+E22	Action:T22 
+T23	Action 2424 2433	extracted
+E23	Action:T23 
+T24	Action 2618 2624	reduce
+E24	Action:T24 
+T25	Action 2896 2905	underwent
+E25	Action:T25 
+T26	Action 2964 2970	mixing
+E26	Action:T26 
+T27	Action 3141 3150	incubated
+E27	Action:T27 
+T28	Action 3192 3198	placed
+E28	Action:T28 
+T29	Action 3332 3341	incubated
+E29	Action:T29 
+T30	Action 3374 3383	incubated
+E30	Action:T30 
+T31	Action 3462 3468	pooled
+E31	Action:T31 
+T32	Action 3473 3480	cleaned
+E32	Action:T32 
+T33	Action 3520 3526	eluted
+E33	Action:T33 
+T34	Action 3603 3612	amplified
+E34	Action:T34 
+T35	Action 3717 3720	run
+E35	Action:T35 
+T36	Action 3799 3805	pooled
+E36	Action:T36 
+T37	Action 3810 3817	cleaned
+E37	Action:T37 
+T38	Action 3847 3853	eluted
+E38	Action:T38 
+T39	Action 3937 3947	sequencing
+E39	Action:T39 
+T40	Action 4071 4078	convert
+E40	Action:T40 
+T41	Action 4285 4290	added
+E41	Action:T41 
+T42	Action 4341 4350	incubated
+E42	Action:T42 
+T43	Action 4392 4398	placed
+E43	Action:T43 
+T44	Action 4502 4507	added
+E44	Action:T44 
+T45	Action 4512 4521	incubated
+E45	Action:T45 
+T46	Action 4649 4655	adding
+E46	Action:T46 
+T47	Action 4718 4727	underwent
+E47	Action:T47 
+T48	Action 4781 4784	put
+E48	Action:T48 
+T50	Action 4906 4915	incubated
+E50	Action:T50 
+T51	Action 4958 4968	terminated
+E51	Action:T51 
+T52	Action 5251 5257	heated
+E52	Action:T52 
+T53	Action 5299 5305	cooled
+E53	Action:T53 
+T54	Action 5401 5406	added
+E54	Action:T54 
+T55	Action 5567 5578	synthesized
+E55	Action:T55 
+T56	Action 5649 5658	incubated
+E56	Action:T56 
+T57	Action 5865 5874	increased
+E57	Action:T57 
+T58	Action 5935 5941	heated
+E58	Action:T58 
+T59	Action 5989 5995	cooled
+E59	Action:T59 
+T60	Action 6051 6062	synthesized
+E60	Action:T60 
+T61	Action 6169 6179	terminated
+E61	Action:T61 
+T62	Action 6361 6370	incubated
+E62	Action:T62 
+T63	Action 6409 6418	underwent
+E63	Action:T63 
+T64	Action 6472 6478	loaded
+E64	Action:T64 
+T66	Action 6911 6920	incubated
+E66	Action:T66 
+T67	Action 6959 6968	underwent
+E67	Action:T67 
+T68	Action 7013 7020	cleaned
+E68	Action:T68 
+T69	Action 7032 7040	assessed
+E69	Action:T69 
+T70	Action 7076 7083	cleaned
+E70	Action:T70 
+T71	Action 7197 7204	checked
+E71	Action:T71 
+T72	Action 7352 7355	run
+E72	Action:T72 
+T73	Action 7723 7732	processed
+E73	Action:T73 
+T74	Action 7779 7787	imported
+E74	Action:T74 
+T75	Action 7841 7848	trimmed
+E75	Action:T75 
+T76	Action 7865 7872	checked
+E76	Action:T76 
+T77	Action 7961 7967	merged
+E77	Action:T77 
+T78	Action 8161 8169	uploaded
+E78	Action:T78 
+T79	Modifier 357 367	autoclaved
+T80	Size 369 376	0.02 μm
+T81	Modifier 377 385	filtered
+T82	Modifier 386 396	virus-free
+T83	Reagent 397 405	seawater
+T84	Reagent 332 341	Fragments
+T85	Reagent 421 427	tissue
+T86	Reagent 449 463	coral skeleton
+T87	Device 474 481	air-gun
+T88	Amount 488 493	15 mL
+T89	Size 494 501	0.02 μm
+T90	Modifier 502 510	filtered
+T91	Device 512 527	Anotop, Whatman
+T92	Reagent 529 538	SM buffer
+T93	Concentration 540 546	100 mM
+T94	Reagent 547 551	NaCl
+T95	Concentration 553 557	8 mM
+T96	Reagent 558 563	MgSO4
+T97	Concentration 565 570	50 mM
+T98	Reagent 571 575	Tris
+T99	pH 576 582	pH 7.5
+T100	Location 589 601	zip-lock bag
+T101	Modifier 603 610	Briefly
+T102	Amount 612 616	5 mL
+T103	Reagent 620 630	chloroform
+T104	Amount 635 640	40 mL
+T105	Reagent 644 658	coral blastate
+T106	Reagent 673 680	samples
+T107	Modifier 695 701	gently
+T108	Time 706 709	1 h
+T109	Temperature 713 729	room temperature
+T110	Speed 767 775	5000 rpm
+T111	Time 780 785	1 min
+T112	Reagent 731 746	Coral blastates
+T113	Device 787 810	Heidolph SilentCrusher™
+T114	Reagent 813 820	Samples
+T115	Modifier 826 837	immediately
+T116	Speed 853 859	1000 g
+T117	Time 864 870	15 min
+T118	Reagent 876 887	supernatant
+T119	Modifier 907 914	sterile
+T120	Location 915 932	glass corex tubes
+T121	Speed 945 953	12,000 g
+T122	Time 958 964	15 min
+T123	Modifier 979 987	majority
+T124	Reagent 991 1006	microbial cells
+T125	Reagent 1043 1058	cesium chloride
+T126	Reagent 1060 1064	CsCl
+T127	Reagent 1066 1082	density gradient
+T128	Action 1092 1098	formed
+E79	Action:T128 
+T129	Amount 1111 1115	1 mL
+T130	Numerical 1119 1122	1.7
+T131	Numerical 1124 1127	1.5
+T132	Generic-Measure 1133 1144	1.35 g mL−1
+T133	Reagent 1145 1149	CsCl
+T134	Amount 1155 1162	13.2 mL
+T135	Location 1163 1196	UltraClear™ ultracentrifuge tubes
+T136	Amount 1220 1224	9 mL
+T137	Reagent 1225 1231	sample
+T138	Action 1232 1239	layered
+E80	Action:T138 
+T139	Location 1247 1250	top
+T140	Reagent 1258 1266	gradient
+T141	Reagent 1268 1277	Gradients
+T142	Amount 1304 1307	2 h
+T143	Speed 1311 1319	60,000 g
+T144	Temperature 1323 1326	4°C
+T145	Speed 1332 1353	swinging bucket rotor
+T146	Method 1362 1373	MECH method
+T147	Reagent 1379 1400	coral tissue blastate
+T148	Speed 1420 1430	10,000 rpm
+T149	Time 1435 1440	1 min
+T150	Reagent 1446 1467	coral tissue blastate
+T151	Speed 1485 1490	400 g
+T152	Time 1495 1500	5 min
+T153	Reagent 1506 1517	supernatant
+T154	Amount 1542 1548	1.5 mL
+T155	Reagent 1549 1557	aliquots
+T156	Amount 1561 1565	2 mL
+T157	Location 1566 1581	eppendorf tubes
+T158	Amount 1593 1599	0.3 mL
+T159	Modifier 1600 1611	acid-washed
+T160	Reagent 1612 1623	glass beads
+T161	Size 1625 1635	425–600 μm
+T162	Measure-Type 1636 1644	diameter
+T163	Location 1667 1672	tubes
+T164	Action 1678 1684	placed
+E81	Action:T164 
+T165	Device 1690 1701	bead beater
+T166	Reagent 1706 1711	cells
+T167	Speed 1730 1738	5000 rpm
+T168	Time 1743 1748	5 min
+T169	Location 1750 1755	Tubes
+T170	Speed 1776 1785	top speed
+T171	Device 1791 1821	bench-top Eppendorf centrifuge
+T172	Time 1826 1831	1 min
+T173	Reagent 1837 1848	supernatant
+T174	Action 1853 1862	collected
+E82	Action:T174 
+T175	Method 1867 1886	viral fractionation
+T176	Reagent 1893 1920	step CsCl density gradients
+T17	Action 1925 1932	confirm
+E17	Action:T17 
+T177	Method 1942 1953	MECH method
+T178	Action 1958 1972	not disrupting
+E83	Action:T178 
+T179	Reagent 1973 1988	virus particles
+T180	Numerical 1990 1993	two
+T181	Reagent 1994 2007	dsDNA viruses
+T182	Reagent 2009 2014	OtV-2
+T183	Reagent 2043 2049	EhV-86
+T184	Modifier 2096 2100	same
+T185	Method 2101 2131	mechanical disruption protocol
+T186	Device 2133 2147	Flow cytometry
+T187	Reagent 2170 2177	viruses
+T188	Method 2178 2205	before and after disruption
+T189	Modifier 2207 2210	All
+T190	Reagent 2211 2218	samples
+T191	Reagent 2237 2242	DNase
+T192	Reagent 2247 2252	RNase
+T194	Method 2271 2294	nucleic acid extraction
+T193	Reagent 2296 2299	DNA
+T195	Reagent 2318 2323	RNase
+T196	Reagent 2340 2354	MasterPure kit
+T197	Method 2387 2414	manufacturer's instructions
+T198	Reagent 2416 2419	RNA
+T199	Reagent 2442 2469	Qiagen QIAamp viral RNA kit
+T200	Method 2489 2516	manufacturer's instructions
+T201	Modifier 2532 2537	final
+T202	Method 2538 2548	DNase step
+T203	Modifier 2625 2629	some
+T204	Method 2656 2688	multi-displacement amplification
+T205	Action 2763 2772	converted
+E84	Action:T205 
+T206	Reagent 2742 2757	DNA extractions
+T207	Reagent 2776 2781	dsDNA
+T208	Method 2791 2804	amplification
+T209	Numerical 2806 2816	Triplicate
+T210	Amount 2817 2823	10 μ L
+T211	Reagent 2824 2832	aliquots
+T212	Reagent 2840 2855	DNA extractions
+T213	Reagent 2868 2870	ds
+T214	Reagent 2875 2894	ssDNA viral genomes
+T215	Method 2924 2939	Klenow reaction
+T216	Amount 2971 2978	1.5 μ L
+T217	Concentration 2982 2985	10×
+T218	Reagent 2986 3001	reaction buffer
+T219	Amount 3034 3041	1.5 μ L
+T220	Reagent 3045 3050	dNTPs
+T221	Concentration 3052 3058	2.5 mM
+T222	Reagent 3059 3064	stock
+T223	Amount 3067 3072	1 μ L
+T224	Reagent 3076 3098	random hexamer primers
+T225	Concentration 3100 3109	50 ng/μ L
+T226	Reagent 3111 3121	Invitrogen
+T227	Temperature 3154 3158	94°C
+T228	Time 3163 3168	3 min
+T229	Location 3202 3205	ice
+T230	Time 3210 3215	3 min
+T231	Method 3229 3245	primer annealing
+T232	Amount 3247 3252	1 μ L
+T233	Reagent 3256 3262	Klenow
+T234	Action 3290 3299	incubated
+E85	Action:T234 
+T235	Action 3280 3285	added
+E86	Action:T235 
+T236	Temperature 3303 3307	25°C
+T237	Time 3312 3318	10 min
+T238	Temperature 3345 3349	37°C
+T239	Time 3354 3360	60 min
+T240	Method 3391 3407	termination step
+T241	Temperature 3411 3415	75°C
+T242	Time 3420 3426	20 min
+T243	Reagent 3489 3515	Qiagen QIAamp DNA mini kit
+T244	Reagent 3447 3456	reactions
+T245	Amount 3530 3535	50 μL
+T246	Reagent 3539 3548	Buffer AE
+T247	Action 3550 3559	Replicate
+E87	Action:T247 
+T248	Reagent 3560 3573	MDA reactions
+T249	Amount 3619 3626	2.5 μ L
+T250	Reagent 3627 3641	dsDNA template
+T251	Reagent 3650 3668	Qiagen RepliG® kit
+T252	Method 3679 3696	standard protocol
+T253	Modifier 3698 3701	All
+T254	Method 3702 3711	reactions
+T255	Concentration 3726 3730	0.8%
+T256	Reagent 3731 3742	agarose gel
+T257	Concentration 3746 3748	1×
+T258	Reagent 3749 3752	TAE
+T259	Generic-Measure 3756 3761	100 V
+T260	Time 3766 3772	30 min
+T261	Action 3776 3783	confirm
+E88	Action:T261 
+T262	Method 3784 3797	amplification
+T263	Reagent 3823 3842	QIAampl DNA minikit
+T264	Amount 3857 3864	200 μ L
+T265	Reagent 3868 3877	Buffer AE
+T266	Action 3951 3958	confirm
+E89	Action:T266 
+T267	Method 4012 4028	RepliG® protocol
+T268	Reagent 4030 4045	Klenow Fragment
+T269	Reagent 4083 4094	DNA genomes
+T270	Reagent 4098 4103	dsDNA
+T271	Reagent 4110 4126	RP-SISPA primers
+T272	Reagent 4134 4160	3′ random hexamer sequence
+T273	Method 4189 4206	PCR amplification
+T274	Action 4211 4216	label
+E90	Action:T274 
+T275	Modifier 4221 4226	first
+T276	Reagent 4227 4233	strand
+T277	Reagent 4243 4258	RP-SISPA primer
+T278	Amount 4260 4264	5 μL
+T279	Reagent 4268 4280	nucleic acid
+T280	Amount 4294 4298	9 μL
+T281	Reagent 4299 4311	reaction mix
+T282	Reagent 4328 4336	reaction
+T283	Temperature 4354 4358	94°C
+T284	Time 4363 4368	3 min
+T285	Reagent 4374 4382	reaction
+T286	Location 4402 4405	ice
+T287	Time 4410 4415	3 min
+T288	Method 4429 4445	primer annealing
+T289	Amount 4447 4451	1 μL
+T290	Reagent 4455 4470	Klenow Fragment
+T291	Temperature 4525 4529	37°C
+T292	Time 4534 4540	60 min
+T293	Reagent 4560 4584	Klenow Fragment reaction
+T294	Reagent 4632 4644	SISPA primer
+T295	Amount 4670 4674	1 μL
+T296	Reagent 4678 4684	primer
+T297	Reagent 4694 4698	dNTP
+T298	Amount 4689 4693	1 μL
+T299	Reagent 4704 4712	reaction
+T300	Temperature 4730 4734	94°C
+T301	Time 4739 4744	3 min
+T302	Time 4796 4801	3 min
+T303	Location 4788 4791	ice
+T304	Reagent 4763 4771	reaction
+T305	Reagent 4807 4815	reaction
+T306	Amount 4851 4855	1 μL
+T307	Reagent 4859 4874	Klenow Fragment
+T308	Temperature 4919 4923	37°C
+T309	Time 4928 4934	60 min
+T310	Reagent 4893 4901	reaction
+T311	Action 4839 4847	addition
+E91	Action:T311 
+T49	Temperature 4972 4976	75°C
+T312	Time 4981 4987	20 min
+T313	Reagent 4940 4948	reaction
+T314	Modifier 4989 4996	Briefly
+T315	Action 5072 5077	mixed
+E49	Action:T315 
+T316	Modifier 5040 5048	purified
+T317	Reagent 5049 5067	RNA viral template
+T318	Amount 5033 5039	10 μ L
+T319	Amount 5083 5088	1 μ L
+T320	Concentration 5092 5098	2.5 mM
+T321	Reagent 5099 5104	dNTPs
+T322	Amount 5109 5116	1.3 μ L
+T323	Reagent 5176 5191	FR40RV-T primer
+T324	Reagent 5120 5128	FR26RV-N
+T325	Concentration 5158 5164	10 μ M
+T326	Concentration 5220 5225	50 nM
+T327	Reagent 5017 5031	cDNA synthesis
+T328	Reagent 5238 5246	reaction
+T329	Temperature 5261 5265	65°C
+T330	Time 5270 5275	5 min
+T331	Reagent 5281 5289	reaction
+T332	Location 5309 5312	ice
+T333	Time 5317 5322	3 min
+T334	Reagent 5336 5343	primers
+T335	Action 5347 5353	anneal
+E92	Action:T335 
+T336	Location 5370 5373	ice
+T337	Amount 5375 5379	1 μL
+T338	Reagent 5380 5383	DTT
+T339	Reagent 5414 5422	reaction
+T340	Reagent 5429 5457	enzyme stabilization reagent
+T341	Amount 5463 5467	1 μL
+T342	Reagent 5468 5477	RNase OUT
+T343	Action 5494 5501	protect
+E93	Action:T343 
+T344	Reagent 5506 5512	sample
+T345	Method 5518 5532	RNAse activity
+T346	Modifier 5538 5551	complementary
+T347	Reagent 5552 5562	DNA strand
+T348	Generic-Measure 5584 5589	200 U
+T349	Reagent 5593 5630	Superscript III reverse transcriptase
+T350	Reagent 5636 5644	reaction
+T351	Modifier 5659 5668	initially
+T352	Temperature 5672 5676	25°C
+T353	Time 5681 5687	10 min
+T355	Reagent 5714 5723	hexamer 3
+T354	Action 5697 5706	annealing
+E94	Action:T354 
+T356	Reagent 5732 5747	primer FR26RV-N
+T357	Reagent 5756 5772	poly(T)20 3′ end
+T358	Reagent 5776 5791	primer FR40RV-T
+T359	Action 5799 5807	template
+E95	Action:T359 
+T360	Method 5814 5828	cDNA synthesis
+T361	Measure-Type 5844 5855	temperature
+T362	Temperature 5878 5882	50°C
+T363	Reagent 5887 5893	60 min
+T364	Modifier 5899 5904	first
+T365	Reagent 5905 5930	strand synthesis reaction
+T366	Modifier 5942 5953	immediately
+T367	Temperature 5957 5961	94°C
+T368	Time 5966 5971	3 min
+T369	Modifier 5981 5988	rapidly
+T370	Location 5999 6002	ice
+T371	Modifier 6006 6019	complementary
+T372	Reagent 6020 6033	second strand
+T373	Modifier 6038 6050	subsequently
+T374	Temperature 6066 6070	37°C
+T375	Time 6075 6081	60 min
+T376	Action 6091 6099	addition
+E96	Action:T376 
+T377	Amount 6103 6107	1 μL
+T378	Reagent 6108 6123	Klenow Fragment
+T379	Reagent 6149 6164	Klenow reaction
+T380	Action 6193 6203	incubation
+E97	Action:T380 
+T381	Modifier 6187 6192	final
+T382	Temperature 6207 6211	75°C
+T383	Time 6216 6222	20 min
+T384	Action 6224 6241	PCR amplification
+E98	Action:T384 
+T385	Reagent 6249 6278	SISPA primer labeled template
+T386	Numerical 6305 6315	triplicate
+T387	Amount 6316 6321	25 μL
+T388	Reagent 6322 6331	reactions
+T389	Reagent 6348 6356	reaction
+T390	Temperature 6374 6378	95°C
+T391	Time 6383 6389	10 min
+T392	Reagent 6395 6403	reaction
+T393	Generic-Measure 6419 6428	30 cycles
+T394	Method 6432 6444	denaturation
+T395	Reagent 6453 6466	PCR reactions
+T396	Concentration 6487 6491	0.8%
+T397	Reagent 6492 6503	agarose gel
+T398	Concentration 6507 6509	1×
+T399	Reagent 6509 6512	TAE
+T400	Generic-Measure 6516 6521	100 V
+T401	Time 6526 6532	30 min
+T65	Reagent 6898 6906	reaction
+T402	Temperature 6924 6928	95°C
+T403	Time 6933 6939	10 min
+T404	Reagent 6945 6953	reaction
+T405	Generic-Measure 6969 6977	5 cycles
+T406	Method 6981 6993	denaturation
+T407	Reagent 6998 7007	Reactions
+T408	Measure-Type 7025 7027	QC
+T409	Reagent 7063 7070	samples
+T410	Reagent 7091 7111	QIAamp® DNA Mini kit
+T411	Reagent 7141 7171	MinElute® PCR purification kit
+T412	Reagent 7184 7191	Samples
+T413	Measure-Type 7209 7223	quantification
+T414	Reagent 7232 7255	Quant-iT PicoGreen® kit
+T415	Device 7261 7292	NanoDrop 3300 fluorospecrometer
+T416	Measure-Type 7298 7305	quality
+T417	Generic-Measure 7307 7321	260:280 ratios
+T418	Device 7328 7341	NanoDrop 2000
+T419	Concentration 7361 7365	0.8%
+T420	Reagent 7366 7377	agarose gel
+T421	Concentration 7381 7383	1×
+T422	Reagent 7384 7387	TAE
+T423	Generic-Measure 7391 7396	100 V
+T424	Time 7401 7407	30 min
+T425	Action 7411 7418	confirm
+E65	Action:T425 
+T426	Modifier 7432 7443	appropriate
+T427	Action 7550 7559	sequenced
+E99	Action:T427 
+T428	Reagent 7533 7544	metagenomes
+T429	Modifier 7529 7532	All
+T430	Device 7566 7582	Nextera XT MiSeq
+T431	Generic-Measure 7583 7589	250 bp
+T432	Method 7590 7611	paired-end sequencing
+T433	Reagent 7699 7717	Raw sequence reads
+T434	Device 7736 7762	CLC Genomics Workbench 5.5
+T435	Reagent 7764 7773	Sequences
+T436	Reagent 7791 7816	Illumina paired-end reads

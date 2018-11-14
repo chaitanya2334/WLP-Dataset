@@ -1,0 +1,231 @@
+T1	Action 32 36	Soak
+E1	Action:T1 Acts-on:T39 Site:T40
+T2	Action 104 109	Rinse
+E2	Action:T2 Acts-on:T44 Using:T46
+T3	Action 172 177	Place
+E3	Action:T3 Site:T47
+T4	Action 198 203	Rinse
+E4	Action:T4 Acts-on:T48 Acts-on2:T51 Using:T52
+T5	Action 262 270	Assemble
+E5	Action:T5 Acts-on:T53 Site:T54 Using:T55 Using2:T58
+T6	Action 335 341	Attach
+E6	Action:T6 Acts-on:T59 Site:T60
+T8	Action 438 444	Remove
+E8	Action:T8 Acts-on:T7
+T9	Action 470 475	place
+E9	Action:T9 Site:T63
+T11	Action 499 505	Remove
+E11	Action:T11 Acts-on:T64 Site:T65
+T12	Action 541 546	rinse
+E12	Action:T12 Using:T67 Acts-on:T64
+T10	Action 636 642	remove
+E10	Action:T10 Using:T72 Acts-on:T74 Site:T76
+T13	Action 690 695	place
+E13	Action:T13 Site:T77
+T14	Action 751 757	remove
+E14	Action:T14 Acts-on:T81 Site:T82 Using:T79
+T15	Action 804 809	place
+E15	Action:T15 Site:T85
+T16	Action 906 911	Place
+E16	Action:T16 Acts-on:T89 Site:T91
+T17	Action 953 958	twist
+E17	Action:T17 
+T18	Action 963 967	Open
+E18	Action:T18 Acts-on:T93 Using:E19
+T19	Action 987 994	turning
+E19	Action:T19 Acts-on:T94 Using:T95
+T20	Action 1083 1089	remove
+E20	Action:T20 Using:T96 Using2:T98 Acts-on:T100
+T21	Action 1121 1126	pipet
+E21	Action:T21 Site:T102
+T22	Action 1328 1335	turn on
+E22	Action:T22 Acts-on:T24
+T23	Action 1342 1348	Adujst
+E23	Action:T23 Acts-on:T103
+T25	Action 1555 1559	turn
+E25	Action:T25 Acts-on:T105 Using:T106
+T26	Action 1670 1678	turn off
+E26	Action:T26 Acts-on:T107
+T27	Action 1685 1694	Twist off
+E27	Action:T27 Acts-on:T108
+T28	Action 1727 1732	place
+E28	Action:T28 Using:T110 Site:T111 Acts-on:T108
+T29	Action 1793 1799	remove
+E29	Action:T29 Using:T112 Acts-on:T114
+T30	Action 1835 1840	place
+E30	Action:T30 Site:T118
+T31	Action 1908 1913	place
+E31	Action:T31 Using:T119 Acts-on:T120 Site:T122
+T32	Action 1936 1942	Repeat
+E32	Action:T32 Using:T123 Acts-on:T125 Site:T127
+T33	Action 1992 1998	Repeat
+E33	Action:T33 Using:T128 Acts-on:T129
+T34	Action 2142 2147	Leave
+E34	Action:T34 Acts-on:T138 Using:T139 Site:T141
+T35	Action 2228 2233	place
+E35	Action:T35 Using:T144
+T36	Concentration 65 68	10%
+T37	Modifier 37 40	all
+T38	Modifier 41 46	small
+T39	Reagent 47 61	rig components
+T40	Reagent 69 73	acid
+T41	Modifier 80 87	minimum
+T42	Time 91 101	30 minutes
+T43	Modifier 110 113	all
+T44	Reagent 114 124	components
+T45	Modifier 125 135	thoroughly
+T46	Reagent 142 148	MilliQ
+T47	Location 181 184	rig
+T48	Location 204 213	red tubes
+T49	Modifier 218 223	large
+T50	Modifier 224 231	plastic
+T51	Location 232 248	Erlenmeyer flask
+T52	Reagent 254 260	MilliQ
+T53	Device 271 275	pump
+T54	Location 279 282	rig
+T55	Location 289 298	red tubes
+T56	Modifier 303 308	large
+T57	Modifier 309 316	plastic
+T58	Location 317 333	Erlenmeyer flask
+T59	Location 342 346	tube
+T60	Location 350 360	right side
+T61	Device 364 368	pump
+T7	Location 445 465	filter top component
+T62	Modifier 476 487	upside down
+T63	Location 491 496	bench
+T64	Device 506 523	micropore forceps
+T65	Reagent 529 536	ethanol
+T66	Modifier 547 551	well
+T67	Reagent 557 563	MilliQ
+T68	Action 565 569	Hold
+E7	Action:T68 Site:T71
+T69	Modifier 575 578	new
+T70	Modifier 579 586	sterile
+T71	Location 587 598	Falcon tube
+T72	Device 618 635	micropore forceps
+T73	Size 643 648	0.8μm
+T74	Device 649 661	backing disk
+T75	Device 675 685	blue disks
+T76	Location 667 674	between
+T77	Device 704 714	rig filter
+T78	Modifier 699 703	each
+T79	Device 733 750	micropore forceps
+T80	Size 758 763	0.2μm
+T81	Device 764 775	filter disk
+T82	Location 781 788	between
+T83	Device 789 799	blue disks
+T84	Modifier 810 819	carefully
+T85	Location 823 826	top
+T86	Modifier 830 834	each
+T87	Size 835 840	0.8μm
+T88	Device 841 845	disk
+T89	Location 912 925	top component
+T90	Modifier 937 941	each
+T91	Device 942 948	filter
+T92	Modifier 968 972	each
+T93	Device 973 983	rig filter
+T94	Device 995 1006	orange knob
+T95	Method 1010 1027	verticle position
+T96	Device 1037 1054	serological pipet
+T97	Modifier 1059 1066	sterile
+T98	Device 1067 1082	glass pipet tip
+T99	Amount 1090 1104	desired amount
+T100	Location 1110 1116	bucket
+T101	Modifier 1127 1135	directly
+T102	Device 1141 1146	disks
+T24	Device 1336 1340	pump
+T103	Device 1349 1363	top right knob
+T104	Device 1367 1371	pump
+T105	Device 1560 1571	orange knob
+T106	Method 1586 1605	horizontal position
+T107	Device 1679 1683	pump
+T108	Location 1695 1708	top component
+T109	Device 1712 1722	rig filter
+T110	Method 1733 1744	upside down
+T111	Location 1748 1753	bench
+T112	Device 1765 1782	micropore forceps
+T113	Modifier 1783 1792	carefully
+T114	Location 1809 1812	top
+T115	Size 1813 1818	0.2μm
+T116	Device 1819 1830	filter disk
+T117	Modifier 1846 1853	labeled
+T118	Location 1854 1869	TCBS Agar plate
+T119	Method 1877 1904	sweeping or dragging motion
+T120	Device 1914 1920	filter
+T121	Modifier 1921 1925	flat
+T122	Location 1929 1934	plate
+T123	Method 1943 1950	Step 12
+T124	Numerical 1959 1960	6
+T125	Device 1961 1968	filters
+T126	Modifier 1974 1982	separate
+T127	Location 1983 1989	plates
+T128	Method 1999 2009	Steps 7-13
+T129	Reagent 2035 2040	water
+T130	Amount 2014 2031	remaining volumes
+T131	Size 2046 2051	0.8μm
+T132	Device 2052 2064	filter disks
+T133	Device 2083 2090	filters
+T134	Action 2069 2075	remain
+E24	Action:T134 Acts-on:T132 Site:T133
+T135	Modifier 2097 2100	new
+T136	Size 2101 2106	0.2μm
+T137	Device 2107 2119	filter disks
+T138	Location 2148 2154	plates
+T139	Method 2155 2168	right side up
+T140	Temperature 2172 2188	room temperature
+T141	Location 2192 2197	bench
+T142	Modifier 2202 2210	at least
+T143	Time 2211 2221	10 minutes
+T144	Method 2234 2245	upside down
+T145	Action 2259 2263	grow
+E36	Action:T145 
+T146	Modifier 2268 2276	at least
+T147	Time 2277 2285	24 hours
+R1	Mod-Link Arg1:T39 Arg2:T38	
+R2	Mod-Link Arg1:T39 Arg2:T37	
+R3	Measure Arg1:T40 Arg2:T36	
+R4	Mod-Link Arg1:T42 Arg2:T41	
+R5	Setting Arg1:E1 Arg2:T42	
+R6	Mod-Link Arg1:T44 Arg2:T43	
+R7	Mod-Link Arg1:E2 Arg2:T45	
+R8	Mod-Link Arg1:T51 Arg2:T50	
+R9	Mod-Link Arg1:T51 Arg2:T49	
+R10	Mod-Link Arg1:T58 Arg2:T57	
+R11	Mod-Link Arg1:T58 Arg2:T56	
+R12	Meronym Arg1:T60 Arg2:T61	
+R13	Mod-Link Arg1:E9 Arg2:T62	
+R14	Mod-Link Arg1:E12 Arg2:T66	
+R15	Mod-Link Arg1:T71 Arg2:T70	
+R16	Mod-Link Arg1:T71 Arg2:T69	
+R17	Setting Arg1:T74 Arg2:T73	
+R18	Meronym Arg1:T76 Arg2:T75	
+R19	Meronym Arg1:T82 Arg2:T83	
+R20	Setting Arg1:T81 Arg2:T80	
+R21	Mod-Link Arg1:T77 Arg2:T78	
+R22	Mod-Link Arg1:E15 Arg2:T84	
+R23	Meronym Arg1:T85 Arg2:T88	
+R24	Setting Arg1:T88 Arg2:T87	
+R25	Mod-Link Arg1:T88 Arg2:T86	
+R26	Mod-Link Arg1:T91 Arg2:T90	
+R27	Mod-Link Arg1:T93 Arg2:T92	
+R28	Mod-Link Arg1:T98 Arg2:T97	
+R29	Measure Arg1:T100 Arg2:T99	
+R30	Mod-Link Arg1:E21 Arg2:T101	
+R31	Meronym Arg1:T103 Arg2:T104	
+R32	Meronym Arg1:T108 Arg2:T109	
+R33	Mod-Link Arg1:E29 Arg2:T113	
+R34	Setting Arg1:T116 Arg2:T115	
+R35	Meronym Arg1:T114 Arg2:T116	
+R36	Mod-Link Arg1:T118 Arg2:T117	
+R37	Mod-Link Arg1:E31 Arg2:T121	
+R38	Setting Arg1:T125 Arg2:T124	
+R39	Mod-Link Arg1:T127 Arg2:T126	
+R40	Measure Arg1:T129 Arg2:T130	
+R41	Setting Arg1:T132 Arg2:T131	
+R42	Setting Arg1:T137 Arg2:T136	
+R43	Mod-Link Arg1:T137 Arg2:T135	
+R44	Setting Arg1:E34 Arg2:T140	
+R45	Mod-Link Arg1:T143 Arg2:T142	
+R46	Setting Arg1:E34 Arg2:T143	
+R47	Setting Arg1:E36 Arg2:T147	
+R48	Mod-Link Arg1:T147 Arg2:T146	

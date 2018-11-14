@@ -1,0 +1,73 @@
+T3	Action 118 124	Filter
+E3	Action:T3 Acts-on:T17 Using:T19
+T4	Action 218 227	Autoclave
+E4	Action:T4 Acts-on:T25 Site:T26
+T5	Action 287 291	cool
+E5	Action:T5 
+T6	Action 304 311	Prepare
+E6	Action:T6 Acts-on:T31
+T7	Action 334 341	Prepare
+E7	Action:T7 Acts-on:T33
+T8	Action 372 379	Prepare
+E8	Action:T8 Creates:T34
+T9	Action 409 416	Prepare
+E9	Action:T9 Creates:T35
+T10	Action 467 470	add
+E10	Action:T10 Acts-on:T39 Creates:T36 Acts-on2:T11 Site:T42
+T12	Action 696 701	Store
+E12	Action:T12 
+T13	Device 46 65	glass filter funnel
+T2	Location 70 75	flask
+T14	Action 79 87	cleaning
+E2	Action:T14 Using:T15 Using2:T16 Acts-on:T13 Acts-on2:T2
+T15	Reagent 93 97	acid
+T16	Reagent 102 115	Milli-Q water
+T1	Modifier 125 128	raw
+T17	Reagent 129 137	seawater
+T18	Size 146 150	47mm
+T19	Device 151 163	Whatman GF/F
+T20	Action 164 171	stacked
+E1	Action:T20 Acts-on:T19 Site:T21
+T21	Location 175 178	top
+T22	Size 184 188	47mm
+T23	Size 189 194	0.2µm
+T24	Device 195 215	polycarbonate filter
+R1	Mod-Link Arg1:T17 Arg2:T1	
+R2	Setting Arg1:T19 Arg2:T18	
+R3	Setting Arg1:T24 Arg2:T23	
+R4	Setting Arg1:T24 Arg2:T22	
+R5	Meronym Arg1:T21 Arg2:T24	
+T25	Reagent 228 236	seawater
+T26	Location 242 255	Teflon bottle
+T27	Time 257 267	60 minutes
+T28	Amount 272 274	2L
+R6	Setting Arg1:E4 Arg2:T27	
+R7	Measure Arg1:T26 Arg2:T28	
+T29	Time 292 301	overnight
+R8	Setting Arg1:E5 Arg2:T29	
+T30	Concentration 312 316	0.5M
+T31	Reagent 317 331	NH4Cl solution
+R9	Measure Arg1:T31 Arg2:T30	
+T32	Concentration 342 348	0.025M
+T33	Reagent 349 369	NaH2PO4·H2O solution
+R10	Measure Arg1:T33 Arg2:T32	
+T34	Reagent 380 407	primary trace metal stocks.
+T35	Reagent 417 443	trace metal working stock.
+T36	Reagent 460 465	media
+T37	Amount 471 488	following volumes
+T38	Modifier 492 499	sterile
+T39	Reagent 500 509	nutrients
+T11	Reagent 514 531	trace metal stock
+T40	Amount 535 544	one liter
+T41	Modifier 552 562	autoclaved
+T42	Reagent 563 571	seawater
+R11	Mod-Link Arg1:T42 Arg2:T41	
+R12	Mod-Link Arg1:T39 Arg2:T38	
+R13	Measure Arg1:T39 Arg2:T37	
+R14	Measure Arg1:T42 Arg2:T40	
+T43	Temperature 705 721	room temperature
+T44	Modifier 726 731	up to
+T45	Time 732 741	one month
+R15	Mod-Link Arg1:T45 Arg2:T44	
+R16	Setting Arg1:E12 Arg2:T43	
+R17	Setting Arg1:E12 Arg2:T45	

@@ -1,0 +1,108 @@
+T1	Action 31 34	Run
+E1	Action:T1 Acts-on:T15 Using:T17
+T2	Action 64 72	Transfer
+E2	Action:T2 Acts-on:T18 Site:T19 Using:T22
+T3	Action 134 137	Cut
+E3	Action:T3 Acts-on:T24
+T4	Action 212 215	Cut
+E4	Action:T4 Acts-on:T27
+T6	Action 887 892	Rinse
+E6	Action:T6 Acts-on:T47 Count:T48 Using:T51
+T7	Action 1076 1081	Rinse
+E7	Action:T7 Count:T60 Using:T61
+T8	Action 1111 1119	Activate
+E8	Action:T8 Acts-on:T64 Using:T65
+T9	Action 1144 1153	Visualize
+E9	Action:T9 Acts-on:T66
+T10	Action 835 840	Probe
+E10	Action:T10 Site:T46
+T5	Action 596 601	Block
+E5	Action:T5 Acts-on:T29 Using:T31
+T11	Action 667 672	Probe
+E11	Action:T11 Acts-on:T37 Using:T38 Using2:T39
+T12	Action 942 947	Block
+E12	Action:T12 Acts-on:T52 Site:T54
+T13	Action 981 986	Probe
+E13	Action:T13 Acts-on:T56
+T14	Concentration 35 38	40%
+T15	Reagent 42 51	IP eluate
+T16	Concentration 55 58	10%
+T17	Reagent 59 62	gel
+R1	Measure Arg1:T17 Arg2:T16	
+R2	Measure Arg1:T15 Arg2:T14	
+T18	Reagent 73 80	protein
+T19	Reagent 84 97	PVDF membrane
+T20	Time 102 105	1hr
+T21	Temperature 109 111	RT
+T22	Device 117 125	ice pack
+T23	Generic-Measure 127 131	100V
+R3	Setting Arg1:E2 Arg2:T20	
+R4	Setting Arg1:E2 Arg2:T21	
+R5	Setting Arg1:T22 Arg2:T23	
+T24	Reagent 138 146	membrane
+T25	Modifier 147 157	just below
+T26	Generic-Measure 158 163	180kD
+R6	Mod-Link Arg1:T26 Arg2:T25	
+R7	Setting Arg1:E3 Arg2:T26	
+T27	Reagent 216 224	Membrane
+T28	Generic-Measure 228 233	~82kD
+R8	Setting Arg1:E4 Arg2:T28	
+T29	Reagent 602 610	membrane
+T30	Concentration 616 618	5%
+T31	Reagent 619 622	BSA
+T32	Reagent 624 627	IgG
+T33	Reagent 632 645	Protease-Free
+T34	Reagent 647 651	TBST
+T35	Time 656 660	2hrs
+T36	Temperature 664 666	RT
+T37	Reagent 673 681	membrane
+T38	Reagent 687 721	rabbit-anti-phosphoserine antibody
+T39	Reagent 727 736	millipore
+T40	Reagent 740 771	IgG-Free/Protease-Free BSA/TBST
+T41	Generic-Measure 773 779	1:2000
+T42	Generic-Measure 793 799	1:1000
+R9	Measure Arg1:T31 Arg2:T30	
+R10	Meronym Arg1:T32 Arg2:T31	
+R11	Meronym Arg1:T33 Arg2:T31	
+R12	Or Arg1:T31 Arg2:T34	
+R13	Setting Arg1:E5 Arg2:T35	
+R14	Setting Arg1:E5 Arg2:T36	
+R15	Meronym Arg1:T40 Arg2:T39	
+R16	Measure Arg1:T40 Arg2:T41	
+R17	Or Arg1:T41 Arg2:T42	
+T43	Time 841 850	overnight
+T44	Temperature 854 856	4C
+T45	Location 860 869	cold room
+T46	Location 873 885	tilting tray
+R18	Setting Arg1:E10 Arg2:T43	
+R19	Setting Arg1:E10 Arg2:T44	
+R20	Meronym Arg1:T46 Arg2:T45	
+T47	Reagent 893 901	membrane
+T48	Numerical 902 904	8x
+T49	Time 924 928	2hrs
+T50	Concentration 934 936	1x
+T51	Reagent 937 941	TBST
+T52	Reagent 948 956	membrane
+T53	Concentration 960 962	5%
+T54	Reagent 963 972	milk/TBST
+T55	Time 977 980	1hr
+T56	Reagent 992 1049	mouse-anti-rabbit light-chain specific secondary antibody
+T57	Generic-Measure 1053 1059	1:2000
+T58	Time 1064 1068	2hrs
+T59	Temperature 1072 1074	RT
+R21	Setting Arg1:E6 Arg2:T49	
+R22	Measure Arg1:T51 Arg2:T50	
+R23	Measure Arg1:T54 Arg2:T53	
+R24	Setting Arg1:E12 Arg2:T55	
+R25	Measure Arg1:T56 Arg2:T57	
+R26	Setting Arg1:E13 Arg2:T58	
+R27	Setting Arg1:E13 Arg2:T59	
+T60	Numerical 1082 1084	6x
+T61	Reagent 1090 1094	TBST
+T62	Time 1100 1103	1hr
+T63	Temperature 1107 1109	RT
+R28	Setting Arg1:E7 Arg2:T62	
+R29	Setting Arg1:E7 Arg2:T63	
+T64	Reagent 1120 1128	membrane
+T65	Reagent 1134 1142	pico ECL
+T66	Reagent 1159 1172	Amersham film

@@ -1,0 +1,113 @@
+T1	Action 60 65	Place
+E1	Action:T1 
+T2	Action 104 113	Resuspend
+E2	Action:T2 Acts-on:T27 Site:T29
+T3	Action 298 305	Prepare
+E3	Action:T3 Acts-on:T30
+T4	Action 416 425	resuspend
+E4	Action:T4 Acts-on:T32 Site:T33 Using:T34
+T5	Action 578 584	Filter
+E5	Action:T5 Acts-on:T35 Using:T37
+T6	Action 719 724	Count
+E6	Action:T6 Acts-on:T45
+T7	Action 780 787	Aliquot
+E7	Action:T7 Acts-on:T48 Site:T49
+T8	Action 843 846	Add
+E8	Action:T8 Acts-on:T68
+T10	Action 1211 1220	Resuspend
+E10	Action:T10 Acts-on:T60 Using:T61
+T11	Action 1271 1274	Add
+E11	Action:T11 Acts-on:T52
+T12	Action 1308 1311	Mix
+E12	Action:T12 
+T13	Action 1321 1329	incubate
+E13	Action:T13 Site:T54
+T16	Action 1530 1534	Wash
+E16	Action:T16 Acts-on:T14 Using:T15
+T17	Action 1581 1591	centrifuge
+E17	Action:T17 Acts-on:T14
+T18	Action 1618 1625	discard
+E18	Action:T18 Acts-on:T57
+T21	Action 1825 1828	add
+E21	Action:T21 Acts-on:T20
+T22	Action 1858 1864	repeat
+E22	Action:T22 Using:T58 Count:T66 Using2:T65
+T23	Action 1944 1948	pool
+E23	Action:T23 Acts-on:T59
+T24	Device 70 74	tube
+T25	Location 82 88	magnet
+T26	Time 93 102	5 minutes
+T27	Reagent 118 123	cells
+T28	Amount 127 131	3 mL
+T29	Reagent 135 151	MojoSort™ Buffer
+R1	Measure Arg1:T29 Arg2:T28	
+T30	Reagent 306 311	cells
+T31	Reagent 322 340	tissue of interest
+R2	Meronym Arg1:T30 Arg2:T31	
+T32	Reagent 430 435	cells
+T33	Location 439 455	MojoSort™ Buffer
+T34	Method 459 515	adding up to 4mL in a 5 mL (12 x 75 mm) polystyrene tube
+T35	Reagent 589 594	cells
+T36	Size 602 607	70 μm
+T37	Device 608 621	cell strainer
+T38	Action 623 633	centrifuge
+E24	Action:T38 Acts-on:T35
+T39	Speed 637 644	300 x g
+T40	Time 649 658	5 minutes
+T41	Action 664 673	resuspend
+E25	Action:T41 Acts-on2:T35 Site:T42
+T42	Reagent 701 717	MojoSort™ Buffer
+T43	Modifier 677 697	anappropriate volume
+R3	Mod-Link Arg1:T42 Arg2:T43	
+R4	Measure Arg1:T37 Arg2:T36	
+R5	Setting Arg1:E24 Arg2:T39	
+R6	Setting Arg1:E24 Arg2:T40	
+T44	Action 729 735	adjust
+E26	Action:T44 Acts-on:T45
+T45	Reagent 740 758	cell concentration
+T46	Concentration 762 778	1 x 108 cells/mL
+R7	Measure Arg1:T45 Arg2:T46	
+T47	Amount 788 794	100 μL
+T48	Reagent 798 813	cell suspension
+T49	Location 833 841	new tube
+R8	Measure Arg1:T48 Arg2:T47	
+T50	Time 1341 1351	15 minutes
+T51	Amount 1275 1280	10 μL
+T52	Reagent 1284 1306	Streptavidin Nanobeads
+T53	Modifier 1312 1316	well
+R9	Mod-Link Arg1:E12 Arg2:T53	
+T54	Location 1333 1336	ice
+T14	Reagent 1539 1544	cells
+T15	Method 1545 1579	by adding 3 mL of MojoSort™ Buffer
+T55	Speed 1595 1602	300 x g
+T56	Time 1607 1616	5 minutes
+T57	Reagent 1626 1637	supernatant
+T19	Amount 1829 1833	3 mL
+T20	Reagent 1837 1853	MojoSort™ Buffer
+T58	Method 1865 1878	steps 8 and 9
+T59	Reagent 1953 1972	unlabeled fractions
+T60	Device 1225 1230	beads
+T61	Method 1234 1243	vortexing
+T62	Speed 1245 1258	maximum speed
+T63	Generic-Measure 1260 1269	5 touches
+R10	Measure Arg1:T52 Arg2:T51	
+R11	Setting Arg1:E10 Arg2:T62	
+R12	Setting Arg1:E10 Arg2:T63	
+R13	Setting Arg1:E13 Arg2:T50	
+R14	Setting Arg1:E17 Arg2:T55	
+R15	Setting Arg1:E17 Arg2:T56	
+R16	Measure Arg1:T20 Arg2:T19	
+T65	Device 1888 1917	magnetically labeled fraction
+T66	Numerical 1924 1933	two times
+T67	Amount 847 852	10 μL
+T68	Reagent 860 884	Biotin-Antibody Cocktail
+T69	Action 886 889	mix
+E14	Action:T69 
+T70	Modifier 890 894	well
+T71	Action 899 907	incubate
+E15	Action:T71 Site:T72
+T72	Location 911 914	ice
+T73	Time 919 929	15 minutes
+R17	Measure Arg1:T68 Arg2:T67	
+R18	Mod-Link Arg1:E14 Arg2:T70	
+R19	Setting Arg1:E15 Arg2:T73	

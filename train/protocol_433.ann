@@ -1,0 +1,64 @@
+T1	Action 51 58	Prepare
+E1	Action:T1 Acts-on:T3 Site:T4
+T2	Generic-Measure 59 63	0.5%
+T3	Reagent 64 94	Neu5Gc Assay Blocking Solution
+T4	Location 98 101	PBS
+R1	Measure Arg1:T3 Arg2:T2	
+T5	Action 940 944	Wash
+E2	Action:T5 
+T6	Action 1017 1023	remove
+E3	Action:T6 Acts-on:T8
+T7	Action 1040 1047	discard
+E4	Action:T7 Acts-on:T8
+T8	Reagent 1024 1035	supernatant
+T9	Modifier 1007 1016	Carefully
+T10	Modifier 1049 1055	Gently
+T11	Action 1056 1065	resuspend
+E5	Action:T11 Acts-on:T12 Site:T16
+T12	Reagent 1066 1071	cells
+T13	Amount 1075 1081	100 μl
+T14	Modifier 1089 1100	appropriate
+T15	Modifier 1101 1108	diluted
+T16	Reagent 1109 1117	antibody
+T17	Action 1137 1145	Incubate
+E6	Action:T17 Acts-on:T36 Site:T37
+T18	Action 1181 1185	Wash
+E7	Action:T18 Acts-on:T40
+T19	Action 1210 1219	resuspend
+E8	Action:T19 Acts-on:T21 Site:T32
+T20	Modifier 1203 1209	Gently
+T21	Reagent 1220 1225	cells
+T22	Amount 1229 1235	100 μl
+T23	Amount 1353 1359	400 μl
+T24	Action 1328 1337	Resuspend
+E9	Action:T24 Acts-on:T30 Site:T31
+T25	Action 1306 1310	Wash
+E10	Action:T25 Acts-on:T26
+T26	Reagent 1311 1316	cells
+T27	Action 1380 1383	Run
+E11	Action:T27 Acts-on:T28 Site:T29
+T28	Reagent 1384 1389	cells
+T29	Device 1402 1416	flow cytometer
+T30	Reagent 1338 1349	cell pellet
+T31	Location 1363 1377	diluent buffer
+T32	Reagent 1236 1272	Secondary Antibody in diluent buffer
+T33	Action 1278 1286	incubate
+E12	Action:T33 Acts-on:T21 Site:T35
+T34	Time 1291 1297	1 hour
+T35	Location 1301 1304	ice
+R2	Mod-Link Arg1:E8 Arg2:T20	
+R3	Mod-Link Arg1:E3 Arg2:T9	
+R4	Mod-Link Arg1:E5 Arg2:T10	
+R5	Measure Arg1:T16 Arg2:T13	
+R6	Mod-Link Arg1:T16 Arg2:T14	
+R7	Mod-Link Arg1:T16 Arg2:T15	
+T36	Reagent 1146 1151	cells
+T37	Location 1155 1158	ice
+T38	Time 1172 1178	1 hour
+T39	Modifier 1163 1171	at least
+R8	Mod-Link Arg1:T38 Arg2:T39	
+R9	Setting Arg1:E6 Arg2:T38	
+T40	Reagent 1186 1191	cells
+R10	Measure Arg1:T32 Arg2:T22	
+R11	Setting Arg1:E12 Arg2:T34	
+R12	Measure Arg1:T31 Arg2:T23	

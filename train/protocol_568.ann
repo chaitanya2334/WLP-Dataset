@@ -1,0 +1,143 @@
+T1	Action 44 49	Bring
+E1	Action:T1 Acts-on:T30
+T2	Action 94 100	Dilute
+E2	Action:T2 Acts-on:T32
+T3	Action 226 229	Add
+E3	Action:T3 Acts-on:T40
+T4	Action 336 339	Mix
+E4	Action:T4 Using:T45
+T5	Action 366 370	Seal
+E5	Action:T5 Acts-on:T46
+T6	Action 382 392	centrifuge
+E6	Action:T6 
+T7	Action 452 458	Remove
+E7	Action:T7 Acts-on:T50
+T8	Action 469 472	put
+E8	Action:T8 
+T9	Action 494 504	illuminate
+E9	Action:T9 Using:T52
+T10	Action 596 600	Seal
+E10	Action:T10 Acts-on:T54
+T11	Action 612 620	incubate
+E11	Action:T11 
+T12	Action 779 787	Transfer
+E12	Action:T12 Acts-on:T58
+T13	Action 913 921	Incubate
+E13	Action:T13 Site:T64
+T14	Action 1462 1468	adding
+E14	Action:T14 Acts-on:T68
+T15	Action 1568 1571	add
+E15	Action:T15 
+T16	Action 1603 1610	pipette
+E16	Action:T16 
+T17	Action 1645 1649	Seal
+E17	Action:T17 Acts-on:T69
+T18	Action 1664 1672	incubate
+E18	Action:T18 
+T19	Action 1941 1948	Prepare
+E19	Action:T19 Acts-on:T71
+T20	Action 1996 2006	centrifuge
+E20	Action:T20 Acts-on:T72
+T21	Action 2049 2053	Keep
+E21	Action:T21 Acts-on:T76
+T22	Action 2074 2077	Add
+E22	Action:T22 
+T23	Action 2141 2147	Adjust
+E23	Action:T23 
+T24	Action 2190 2193	Add
+E24	Action:T24 Acts-on:T83
+T25	Action 2431 2439	Incubate
+E25	Action:T25 Site:T88
+T26	Action 2475 2479	Wash
+E26	Action:T26 Acts-on:T89
+T27	Action 2522 2531	Resuspend
+E27	Action:T27 Acts-on:T90
+T28	Action 2560 2567	Acquire
+E28	Action:T28 
+T29	Temperature 66 69	0°C
+T30	Location 89 92	ice
+R1	Setting Arg1:E1 Arg2:T29	
+T31	Concentration 101 105	10mM
+T32	Reagent 106 133	stock solutions of peptides
+R2	Measure Arg1:T32 Arg2:T31	
+T33	Concentration 147 152	400μM
+T34	Amount 163 166	5μl
+T35	Reagent 170 192	peptide stock solution
+R3	Measure Arg1:T35 Arg2:T34	
+T36	Amount 198 203	120μl
+T37	Reagent 204 207	PBS
+R4	Measure Arg1:T37 Arg2:T36	
+T38	Location 221 224	ice
+T39	Amount 230 234	20μl
+T40	Reagent 235 250	diluted peptide
+R5	Measure Arg1:T40 Arg2:T39	
+T41	Amount 263 267	20μl
+T42	Reagent 280 295	Flex-T™ monomer
+T43	Concentration 297 305	200μg/mL
+R6	Measure Arg1:T42 Arg2:T43	
+R7	Or Arg1:T41 Arg2:T42	
+T44	Device 312 334	96-well U-bottom plate
+T45	Method 343 352	pipetting
+T46	Device 375 380	plate
+T47	Speed 396 402	3300xg
+R8	Setting Arg1:E6 Arg2:T47	
+T48	Time 407 416	2 minutes
+T49	Temperature 420 423	4°C
+R9	Setting Arg1:E6 Arg2:T48	
+R10	Setting Arg1:E6 Arg2:T49	
+T50	Device 463 467	seal
+T51	Device 477 482	plate
+T52	Device 510 518	UV light
+T53	Time 523 533	30 minutes
+R11	Setting Arg1:T52 Arg2:T53	
+T54	Device 605 610	plate
+T55	Time 625 635	30 minutes
+T56	Temperature 639 643	37°C
+R12	Setting Arg1:E11 Arg2:T55	
+R13	Setting Arg1:E11 Arg2:T56	
+T57	Amount 788 792	30μl
+T58	Reagent 796 821	peptide-exchanged monomer
+R14	Measure Arg1:T58 Arg2:T57	
+T59	Device 829 838	new plate
+T60	Amount 849 854	3.3μl
+T61	Reagent 858 881	conjugated streptavidin
+R15	Measure Arg1:T61 Arg2:T60	
+T62	Action 883 886	mix
+E29	Action:T62 Using:T63
+T63	Method 890 899	pipetting
+T64	Location 925 928	ice
+T65	Time 945 955	30 minutes
+R16	Setting Arg1:E13 Arg2:T65	
+T66	Amount 1469 1474	1.6μl
+T67	Concentration 1475 1479	50mM
+T68	Reagent 1480 1488	D-Biotin
+R17	Measure Arg1:T68 Arg2:T67	
+R18	Measure Arg1:T68 Arg2:T66	
+T69	Device 1654 1659	plate
+T70	Temperature 1676 1683	2 - 8°C
+R19	Setting Arg1:E18 Arg2:T70	
+T71	Reagent 1949 1954	cells
+T72	Device 2011 2016	plate
+T73	Speed 2020 2026	3300xg
+R20	Setting Arg1:E20 Arg2:T73	
+T74	Time 2031 2040	5 minutes
+T75	Temperature 2044 2047	4°C
+T76	Location 2057 2060	ice
+T77	Amount 2078 2091	2 x 106 cells
+T78	Device 2097 2119	96-well U-bottom plate
+T79	Device 2123 2139	12 x 75 mm tubes
+T80	Amount 2158 2163	200μl
+T81	Reagent 2169 2188	CellStaining Buffer
+T82	Amount 2194 2197	2μl
+T83	Reagent 2212 2227	Flex-T™ complex
+T84	Action 2261 2269	incubate
+E30	Action:T84 Acts-on:T85
+T85	Location 2273 2276	ice
+T86	Time 2292 2302	30 minutes
+T87	Time 2444 2454	30 minutes
+T88	Location 2458 2461	ice
+T89	Reagent 2495 2510	Staining Buffer
+T90	Reagent 2543 2558	Staining Buffer
+R21	Setting Arg1:E25 Arg2:T87	
+R22	Measure Arg1:T83 Arg2:T82	
+R23	Setting Arg1:E30 Arg2:T86	

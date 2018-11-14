@@ -1,0 +1,52 @@
+T1	Action 35 39	Take
+E1	Action:T1 Acts-on:T12 Site:T13
+T2	Action 83 86	add
+E2	Action:T2 Acts-on:T15
+T3	Action 122 127	Shake
+E3	Action:T3 
+T6	Action 361 369	dialyzed
+E6	Action:T6 Acts-on:T20 Using:T21 Using2:T24
+T7	Action 467 474	Measure
+E7	Action:T7 
+T8	Action 569 574	dried
+E8	Action:T8 Acts-on:T32 Using:T30
+T10	Amount 40 44	20 g
+T11	Reagent 45 49	soil
+T12	Reagent 53 59	manure
+R1	Or Arg1:T11 Arg2:T12	
+R2	Measure Arg1:T11 Arg2:T10	
+T13	Location 65 78	conical flask
+T14	Amount 87 93	100 mL
+T15	Reagent 97 107	extractant
+R3	Measure Arg1:T15 Arg2:T14	
+T16	Concentration 109 118	1:5 ratio
+R4	Setting Arg1:E2 Arg2:T16	
+T17	Modifier 128 132	well
+T18	Time 156 160	18 h
+T4	Action 143 151	standing
+E4	Action:T4 
+R5	Setting Arg1:E4 Arg2:T18	
+R6	Mod-Link Arg1:E3 Arg2:T17	
+T19	Device 180 206	Whatman filter paper no. 1
+T5	Action 165 171	Filter
+E5	Action:T5 Using:T19
+T20	Reagent 352 357	humus
+T21	Device 373 387	dialysis tubes
+T22	Device 391 406	parchment paper
+R7	Or Arg1:T21 Arg2:T22	
+T23	Time 437 441	24 h
+T24	Reagent 415 432	running tap water
+R8	Setting Arg1:E6 Arg2:T23	
+T25	Generic-Measure 479 485	volume
+R9	Setting Arg1:E7 Arg2:T25	
+T26	Size 540 546	100 mL
+T27	Location 547 553	beaker
+R10	Measure Arg1:T27 Arg2:T26	
+T28	Action 532 539	weighed
+E10	Action:T28 Site:T27
+T29	Generic-Measure 493 505	known volume
+R11	Setting Arg1:E10 Arg2:T29	
+T30	Device 581 585	oven
+T31	Temperature 589 593	70°C
+T32	Location 559 565	beaker
+R12	Setting Arg1:E8 Arg2:T31	

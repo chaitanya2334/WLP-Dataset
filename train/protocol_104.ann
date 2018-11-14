@@ -1,0 +1,103 @@
+T1	Action 42 45	Add
+E1	Action:T1 Acts-on:T18 Site:T20
+T2	Action 205 213	Incubate
+E2	Action:T2 Using:T23
+T3	Action 265 271	Dilute
+E3	Action:T3 Acts-on:T25 Using:T27
+T4	Action 380 384	Warm
+E4	Action:T4 
+T5	Action 419 422	Add
+E5	Action:T5 Acts-on:T31 Site:T32
+T6	Action 485 493	Incubate
+E6	Action:T6 
+T7	Action 530 540	Centrifuge
+E7	Action:T7 Creates:T37
+T8	Action 567 574	discard
+E8	Action:T8 Acts-on:T37
+T9	Action 592 596	Wash
+E9	Action:T9 Count:T38 Using:T41
+T10	Action 646 660	centrifugation
+E10	Action:T10 Creates:T45
+T11	Action 725 734	resuspend
+E11	Action:T11 Acts-on:T44
+T12	Action 765 768	add
+E12	Action:T12 Acts-on:T46
+T13	Action 917 925	incubate
+E13	Action:T13 Using:T47
+T14	Action 957 961	Wash
+E14	Action:T14 Count:T49 Using:T52
+T15	Action 1011 1025	centrifugation
+E15	Action:T15 
+T16	Action 1052 1061	Resuspend
+E16	Action:T16 Acts-on:T55 Using:T57
+T17	Action 1150 1157	Analyze
+E17	Action:T17 Using:T61
+T18	Reagent 144 162	primary antibodies
+T19	Amount 166 172	100 μl
+T20	Reagent 176 203	anti-coagulated whole blood
+R1	Measure Arg1:T20 Arg2:T19	
+T21	Temperature 217 233	room temperature
+T22	Time 238 251	15-20 minutes
+T23	Method 259 263	dark
+R2	Setting Arg1:E2 Arg2:T21	
+R3	Setting Arg1:E2 Arg2:T22	
+T24	Concentration 272 275	10X
+T25	Reagent 276 309	Red Blood Cell (RBC) Lysis Buffer
+R4	Measure Arg1:T25 Arg2:T24	
+T26	Concentration 341 343	1X
+R5	Setting Arg1:E3 Arg2:T26	
+T27	Reagent 370 378	DI water
+T28	Temperature 388 404	room temperature
+R6	Setting Arg1:E4 Arg2:T28	
+T29	Amount 423 427	2 ml
+T30	Concentration 431 433	1X
+T31	Reagent 434 452	RBC lysis solution
+T32	Reagent 456 483	wholeblood/antibody mixture
+R7	Measure Arg1:T31 Arg2:T30	
+R8	Measure Arg1:T31 Arg2:T29	
+T33	Temperature 497 513	room temperature
+T34	Time 518 528	10 minutes
+R9	Setting Arg1:E6 Arg2:T33	
+R10	Setting Arg1:E6 Arg2:T34	
+T35	Speed 544 551	350 X g
+T36	Time 556 565	5 minutes
+T37	Reagent 579 590	supernatant
+R11	Setting Arg1:E7 Arg2:T35	
+R12	Setting Arg1:E7 Arg2:T36	
+T38	Numerical 597 599	1X
+T39	Amount 614 618	2 ml
+T40	Modifier 605 613	at least
+R13	Mod-Link Arg1:T39 Arg2:T40	
+T41	Reagent 622 642	Cell Staining Buffer
+R14	Measure Arg1:T41 Arg2:T39	
+T42	Speed 664 671	350 x g
+T43	Time 676 685	5 minutes
+R15	Setting Arg1:E10 Arg2:T42	
+R16	Setting Arg1:E10 Arg2:T43	
+T44	Reagent 735 741	pellet
+T45	Reagent 745 760	residual buffer
+T46	Reagent 869 887	secondary antibody
+T47	Method 933 937	dark
+T48	Time 942 955	15-20 minutes
+R17	Setting Arg1:E13 Arg2:T48	
+T49	Numerical 962 964	1X
+T50	Amount 979 983	2 ml
+T51	Modifier 970 978	at least
+R18	Mod-Link Arg1:T50 Arg2:T51	
+T52	Reagent 987 1007	Cell Staining Buffer
+R19	Measure Arg1:T52 Arg2:T50	
+T53	Speed 1029 1036	350 x g
+T54	Time 1041 1050	5 minutes
+R20	Setting Arg1:E15 Arg2:T53	
+R21	Setting Arg1:E15 Arg2:T54	
+T55	Reagent 1062 1067	cells
+T56	Amount 1071 1077	0.5 ml
+T57	Reagent 1078 1098	Cell Staining Buffer
+T58	Amount 1102 1108	0.5 ml
+T59	Concentration 1109 1111	2%
+T60	Reagent 1112 1148	paraformaldehyde-PBS fixation buffer
+R22	Measure Arg1:T60 Arg2:T59	
+R23	Measure Arg1:T60 Arg2:T58	
+R24	Measure Arg1:T57 Arg2:T56	
+R25	Or Arg1:T57 Arg2:T60	
+T61	Device 1165 1179	Flow Cytometer

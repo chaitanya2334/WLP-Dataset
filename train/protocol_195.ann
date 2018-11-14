@@ -1,0 +1,157 @@
+T1	Action 28 37	Inoculate
+E1	Action:T1 Acts-on:T30 Acts-on2:T32
+T2	Action 142 148	Freeze
+E2	Action:T2 Acts-on:T37 Acts-on2:T38
+T3	Action 117 121	Grow
+E3	Action:T3 
+T4	Action 193 196	Add
+E4	Action:T4 
+T5	Action 261 266	grind
+E5	Action:T5 Using:T42
+T6	Action 311 314	Add
+E6	Action:T6 Acts-on:T46
+T7	Action 357 363	Vortex
+E7	Action:T7 
+T8	Action 367 370	mix
+E8	Action:T8 
+T9	Action 397 404	shaking
+E9	Action:T9 
+T10	Action 418 421	Add
+E10	Action:T10 Acts-on:T52 Site:T53
+T11	Action 475 481	Vortex
+E11	Action:T11 
+T12	Action 490 500	Centrifuge
+E12	Action:T12 
+T13	Action 548 556	Transfer
+E13	Action:T13 Acts-on:T57 Site:T59
+T14	Action 618 621	Add
+E14	Action:T14 Acts-on:T62
+T15	Action 715 725	Centrifuge
+E15	Action:T15 
+T16	Action 774 780	Decant
+E16	Action:T16 Acts-on:T68
+T17	Action 867 877	Centrifuge
+E17	Action:T17 
+T18	Action 925 932	Discard
+E18	Action:T18 Acts-on:T77
+T19	Action 946 952	Repeat
+E19	Action:T19 Acts-on:T80
+T20	Action 996 1000	Spin
+E20	Action:T20 Acts-on:T81
+T21	Action 1005 1012	discard
+E21	Action:T21 Acts-on:T81
+T22	Action 1026 1029	Dry
+E22	Action:T22 Acts-on:T82
+T23	Action 1076 1086	Re-suspend
+E23	Action:T23 Site:T85 Site2:T86
+T24	Action 1169 1172	Add
+E24	Action:T24 Acts-on:T89
+T25	Action 485 488	mix
+E25	Action:T25 
+T26	Action 681 684	mix
+E26	Action:T26 
+T27	Action 691 699	incubate
+E27	Action:T27 
+T28	Action 791 799	aspirate
+E28	Action:T28 Acts-on:T68
+T29	Action 827 830	add
+E29	Action:T29 Acts-on:T71
+T30	Reagent 38 53	fungal material
+T31	Amount 59 65	300 µL
+T32	Reagent 66 84	rich growth medium
+R1	Measure Arg1:T32 Arg2:T31	
+T33	Modifier 90 94	2 mL
+T34	Device 95 116	micro-centrifuge tube
+R2	Mod-Link Arg1:T34 Arg2:T33	
+T35	Temperature 125 127	RT
+R3	Setting Arg1:E3 Arg2:T35	
+T36	Time 132 140	3-4 days
+R4	Setting Arg1:E3 Arg2:T36	
+T37	Reagent 149 162	culture tubes
+T38	Reagent 166 175	LN2Freeze
+T39	Amount 197 202	50 µL
+T40	Modifier 203 208	0.6mm
+T41	Reagent 209 220	glass beads
+R6	Measure Arg1:T41 Arg2:T39	
+R5	Mod-Link Arg1:T41 Arg2:T40	
+T42	Device 273 288	Tissue-Lyser LT
+T43	Time 293 299	5 mins
+T44	Amount 303 308	50 Hz
+R7	Setting Arg1:T42 Arg2:T43	
+R8	Setting Arg1:T42 Arg2:T44	
+T45	Amount 315 321	500 µL
+T46	Reagent 322 334	lysis buffer
+R9	Measure Arg1:T46 Arg2:T45	
+T47	Temperature 379 384	45 ˚C
+T48	Time 389 395	5 mins
+R11	Setting Arg1:E7 Arg2:T48	
+T49	Speed 408 416	1200 rpm
+R10	Setting Arg1:E9 Arg2:T49	
+T50	Amount 422 438	0.5 vol (250 µL)
+T51	Concentration 439 442	3 M
+T52	Reagent 443 460	Potassium Acetate
+T53	Reagent 464 473	lysis mix
+R12	Measure Arg1:T52 Arg2:T51	
+R13	Measure Arg1:T52 Arg2:T50	
+T54	Speed 504 512	12 K rpm
+T55	Time 530 540	15 minutes
+T56	Temperature 543 546	4˚C
+R14	Setting Arg1:E12 Arg2:T54	
+R15	Setting Arg1:E12 Arg2:T55	
+R16	Setting Arg1:E12 Arg2:T56	
+T57	Reagent 557 568	supernatant
+T58	Modifier 589 595	1.5 mL
+T59	Device 596 616	microcentrifuge tube
+R17	Mod-Link Arg1:T59 Arg2:T58	
+T60	Amount 622 627	1 vol
+T61	Modifier 628 635	chilled
+T62	Reagent 636 647	Isopropanol
+R18	Mod-Link Arg1:T62 Arg2:T61	
+R19	Measure Arg1:T62 Arg2:T60	
+T63	Temperature 700 705	-20˚C
+T64	Time 710 713	1hr
+R20	Setting Arg1:E27 Arg2:T64	
+R21	Setting Arg1:E27 Arg2:T63	
+T65	Speed 729 737	12 K rpm
+R22	Setting Arg1:E15 Arg2:T65	
+T66	Time 755 765	15 minutes
+R23	Setting Arg1:E15 Arg2:T66	
+T67	Temperature 769 772	4°C
+R24	Setting Arg1:E15 Arg2:T67	
+T68	Reagent 800 811	supernatant
+T69	Amount 831 837	500 µL
+T70	Concentration 838 841	70%
+T71	Reagent 842 849	ethanol
+T72	Action 850 856	stored
+E30	Action:T72 
+T73	Temperature 860 865	-20°C
+R25	Measure Arg1:T71 Arg2:T70	
+R26	Measure Arg1:T71 Arg2:T69	
+R27	Setting Arg1:E30 Arg2:T73	
+T74	Speed 881 889	12 K rpm
+T75	Time 907 916	3 minutes
+T76	Temperature 920 923	4°C
+R28	Setting Arg1:E17 Arg2:T74	
+R29	Setting Arg1:E17 Arg2:T75	
+R30	Setting Arg1:E17 Arg2:T76	
+T77	Reagent 933 944	supernatant
+T78	Amount 968 974	500 µL
+T79	Concentration 983 986	70%
+T80	Reagent 987 994	ethanol
+R31	Measure Arg1:T80 Arg2:T79	
+R32	Measure Arg1:T80 Arg2:T78	
+T81	Reagent 1013 1024	supernatant
+T82	Reagent 1030 1036	pellet
+T83	Temperature 1053 1057	45˚C
+T84	Time 1062 1074	5-10 minutes
+R33	Setting Arg1:E22 Arg2:T83	
+R34	Setting Arg1:E22 Arg2:T84	
+T85	Reagent 1097 1116	nuclease free water
+T86	Reagent 1120 1129	TE buffer
+T87	Amount 1173 1178	50 µL
+T88	Concentration 1179 1181	3M
+T89	Reagent 1182 1196	Sodium Acetate
+T90	pH 1197 1203	pH 5.5
+R35	Measure Arg1:T89 Arg2:T88	
+R36	Measure Arg1:T89 Arg2:T87	
+R37	Measure Arg1:T89 Arg2:T90	

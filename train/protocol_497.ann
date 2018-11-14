@@ -1,0 +1,121 @@
+T1	Action 33 42	Resuspend
+E1	Action:T1 Acts-on:T14 Site:T15
+T2	Action 88 91	Add
+E2	Action:T2 Acts-on:T10
+T3	Action 112 115	Add
+E3	Action:T3 Acts-on:T11
+T4	Action 136 139	Add
+E4	Action:T4 Acts-on:T12
+T5	Action 164 167	Add
+E5	Action:T5 Acts-on:T13
+T6	Amount 168 173	35 μL
+T7	Amount 140 144	5 μL
+T8	Amount 116 119	5ul
+T9	Amount 92 95	5ul
+T10	Reagent 96 109	Forward oligo
+T11	Reagent 120 133	Reverse oligo
+T12	Reagent 145 161	10x NEB buffer 2
+T13	Reagent 174 179	ddH2O
+T14	Reagent 43 49	oligos
+T15	Reagent 53 58	ddH2O
+T16	Concentration 81 86	20 μM
+R1	Setting Arg1:E1 Arg2:T16	
+T17	Action 1458 1467	Transform
+E6	Action:T17 Acts-on:T28 Creates:T29
+T18	Action 1425 1433	Incubate
+E7	Action:T18 
+T19	Temperature 1437 1441	16°C
+T20	Time 1446 1456	4-20 hours
+T21	Amount 1468 1472	2 μL
+T22	Amount 1494 1499	25 μL
+T23	Action 1061 1068	Measure
+E8	Action:T23 Acts-on:T24
+T24	Device 1073 1090	DNA concentration
+T25	Action 1036 1041	Elute
+E9	Action:T25 Acts-on:T27
+T26	Amount 1045 1050	30 μL
+T27	Reagent 1054 1059	ddH2O
+R2	Measure Arg1:T27 Arg2:T26	
+T28	Reagent 1476 1488	ligation mix
+T29	Reagent 1500 1525	competent DH5 alpha cells
+R3	Measure Arg1:T29 Arg2:T22	
+R4	Measure Arg1:T28 Arg2:T21	
+R5	Setting Arg1:E7 Arg2:T19	
+R6	Setting Arg1:E7 Arg2:T20	
+T30	Action 984 990	Purify
+E10	Action:T30 Acts-on:T43 Using:T44
+T31	Action 918 925	Cut out
+E11	Action:T31 Acts-on:T46
+T32	Action 802 805	Run
+E12	Action:T32 Acts-on:T42 Site:T51
+T33	Action 616 622	Digest
+E13	Action:T33 Acts-on:T52 Using:T53
+T34	Action 772 780	Incubate
+E14	Action:T34 
+T35	Action 548 554	Purify
+E15	Action:T35 Using:T54
+T36	Action 518 526	Incubate
+E16	Action:T36 
+T37	Temperature 530 534	37°C
+T38	Time 539 546	2 hours
+T39	Temperature 784 788	37°C
+T40	Time 793 800	2 hours
+T41	Modifier 806 814	digested
+T42	Reagent 815 818	DNA
+T43	Reagent 995 998	DNA
+T44	Device 1007 1034	Qiaquick gel extraction kit
+T45	Generic-Measure 930 933	7kb
+T46	Device 934 938	band
+R7	Measure Arg1:T46 Arg2:T45	
+T47	Action 943 948	place
+E17	Action:T47 Acts-on:T46 Site:T49
+T48	Modifier 954 961	sterile
+T49	Location 962 982	microcentrifuge tube
+R8	Mod-Link Arg1:T49 Arg2:T48	
+T50	Generic-Measure 822 826	0.8%
+R9	Mod-Link Arg1:T42 Arg2:T41	
+T51	Location 827 856	low melting point agarose gel
+R10	Measure Arg1:T51 Arg2:T50	
+R11	Setting Arg1:E14 Arg2:T39	
+R12	Setting Arg1:E14 Arg2:T40	
+T52	Reagent 623 629	eluate
+T53	Reagent 635 640	EcoRI
+T54	Device 560 587	Qiaquick gel extraction kit
+R13	Setting Arg1:E16 Arg2:T37	
+R14	Setting Arg1:E16 Arg2:T38	
+T55	Action 390 393	Mix
+E18	Action:T55 Acts-on:T63 Using:T65 Using2:T67
+T56	Action 331 335	cool
+E19	Action:T56 
+T57	Action 263 271	Incubate
+E20	Action:T57 Acts-on:T70 Site:T73
+T58	Action 182 190	Incubate
+E21	Action:T58 Site:T61
+T59	Time 195 204	4 minutes
+T60	Temperature 208 212	95°C
+T61	Device 218 229	PCR machine
+R15	Setting Arg1:E21 Arg2:T59	
+R16	Setting Arg1:E21 Arg2:T60	
+T62	Amount 395 399	6 μg
+T63	Reagent 400 425	pLKO.1 TRC-cloning vector
+T64	Amount 458 462	5 μL
+T65	Reagent 463 479	10x NEB buffer 1
+T66	Amount 485 489	1 μL
+T67	Reagent 490 494	AgeI
+R17	Measure Arg1:T63 Arg2:T62	
+T68	Modifier 324 330	Slowly
+T69	Temperature 339 355	room temperature
+T70	Reagent 276 282	sample
+T71	Temperature 286 290	70°C
+T72	Time 295 305	10 minutes
+T73	Device 311 322	PCR machine
+R18	Measure Arg1:T13 Arg2:T6	
+R19	Measure Arg1:T12 Arg2:T7	
+R20	Measure Arg1:T11 Arg2:T8	
+R21	Measure Arg1:T10 Arg2:T9	
+R22	Setting Arg1:E20 Arg2:T71	
+R23	Setting Arg1:E20 Arg2:T72	
+R24	Mod-Link Arg1:E19 Arg2:T68	
+R25	Setting Arg1:E19 Arg2:T69	
+R26	Measure Arg1:T65 Arg2:T64	
+R27	Measure Arg1:T67 Arg2:T66	

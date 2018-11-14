@@ -1,0 +1,83 @@
+T1	Action 28 32	Mush
+E1	Action:T1 Acts-on:T2 Site:T3
+T2	Reagent 37 43	banana
+T3	Location 51 65	resealable bag
+T4	Time 76 84	a minute
+R1	Setting Arg1:E1 Arg2:T4
+T5	Action 149 153	Fill
+E2	Action:T5 Site:T6 Using:T7 Using2:T8
+T6	Location 154 159	a cup
+T7	Reagent 169 178	hot water
+T8	Reagent 183 187	salt
+T9	Action 189 193	Pour
+E3	Action:T9 Acts-on:T10 Site:T11
+T10	Reagent 198 211	saltwater mix
+T11	Location 221 224	bag
+T12	Action 230 235	close
+E4	Action:T12 Acts-on:T13
+T13	Location 240 243	bag
+T14	Action 252 265	mix and slosh
+E5	Action:T14 Acts-on:T16 Acts-on2:T17
+T16	Reagent 270 279	saltwater
+T17	Reagent 284 297	mashed banana
+T18	Time 311 327	30 to 45 seconds
+R2	Setting Arg1:E5 Arg2:T18
+T15	Action 329 332	Add
+E6	Action:T15 Acts-on:T19 Site:T20 Creates:T22
+T19	Reagent 333 349	dishwashing soap
+T20	Location 359 362	bag
+T21	Action 374 377	mix
+E7	Action:T21 Acts-on:T22
+T22	Reagent 382 390	contents
+T23	Action 441 446	Place
+E8	Action:T23 Acts-on:T24 Site:T25
+T24	Device 451 464	coffee filter
+T25	Location 470 485	clear glass cup
+T26	Action 545 549	Pour
+E9	Action:T26 Acts-on:T27 Using:T29
+T27	Reagent 554 562	contents
+T28	Location 570 573	bag
+R3	Meronym Arg1:T28 Arg2:T27
+T29	Device 583 589	filter
+T30	Action 660 678	Remove and discard
+E10	Action:T30 Acts-on:T31
+T31	Device 683 701	used coffee filter
+T32	Action 703 707	Tilt
+E11	Action:T32 Acts-on:T33
+T33	Location 712 717	glass
+T34	Action 729 732	add
+E12	Action:T34 Acts-on:T35 Site:T36
+T35	Reagent 733 745	cold alcohol
+T36	Location 755 759	side
+T37	Location 767 770	cup
+R4	Meronym Arg1:T36 Arg2:T37
+T38	Action 917 920	sit
+E13	Action:T38 Acts-on:T39
+T39	Reagent 897 916	two-layered mixture
+T40	Time 925 938	eight minutes
+R5	Setting Arg1:E13 Arg2:T40
+T41	Action 1040 1045	Stick
+E14	Action:T41 Acts-on:T42 Site:T43
+T42	Device 1050 1064	wooden stirrer
+T43	Location 1074 1077	cup
+T44	Action 1079 1083	Spin
+E15	Action:T44 Acts-on:T45 Using:T48
+T45	Mention 1084 1086	it
+T46	Action 1135 1141	Remove
+E16	Action:T46 Acts-on:T47
+T47	Device 1146 1153	stirrer
+T48	Method 1087 1095	in place
+T49	Modifier 245 251	Gently
+R7	Mod-Link Arg1:E5 Arg2:T49	
+T50	Modifier 367 373	gently
+R8	Mod-Link Arg1:E7 Arg2:T50	
+T51	Action 487 495	securing
+E17	Action:T51 Acts-on:T52 Site:T54
+T52	Location 500 503	top
+T53	Device 511 517	filter
+T54	Location 529 532	lip
+T55	Location 540 543	cup
+R9	Meronym Arg1:T52 Arg2:T53	
+R10	Meronym Arg1:T54 Arg2:T55	
+T56	Modifier 722 728	slowly
+R11	Mod-Link Arg1:E12 Arg2:T56	

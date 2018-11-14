@@ -1,0 +1,154 @@
+T1	Action 275 285	Centrifuge
+E1	Action:T1 
+T2	Speed 289 298	4,000 rpm
+T3	Action 40 44	Pick
+E2	Action:T3 Acts-on:T74 Site:T75
+T4	Time 310 316	10 min
+T5	Action 318 324	Decant
+E3	Action:T5 Acts-on:T6
+T6	Reagent 325 336	supernatant
+T7	Action 341 350	resuspend
+E4	Action:T7 Acts-on:T9
+T8	Amount 354 360	800 µL
+T9	Reagent 361 364	SOC
+T10	Action 627 634	Pipette
+E5	Action:T10 Using:T43
+T11	Action 660 665	Plate
+E6	Action:T11 Acts-on:T45 Using:T48
+T12	Action 701 709	Incubate
+E7	Action:T12 Site:T49
+T13	Action 2356 2362	Select
+E8	Action:T13 Acts-on:T14 Using:T16
+T14	Location 2366 2380	LB agar plates
+T15	Concentration 2386 2394	50 µg/mL
+T16	Reagent 2395 2404	kanamycin
+R1	Measure Arg1:T16 Arg2:T15	
+T17	Action 2311 2320	Transform
+E9	Action:T17 Acts-on:T22 Using:T24
+T18	Action 2408 2416	Miniprep
+E10	Action:T18 Site:T21
+T19	Action 2418 2424	digest
+E11	Action:T19 Site:T21
+T20	Action 2429 2436	analyze
+E12	Action:T20 Site:T21
+T21	Location 2442 2445	gel
+T22	Reagent 2321 2328	E. coli
+T23	Modifier 2334 2348	diatom-derived
+T24	Reagent 2349 2352	DNA
+R2	Mod-Link Arg1:T24 Arg2:T23	
+T25	Action 2246 2253	Perform
+E13	Action:T25 Acts-on:T26
+T26	Device 2256 2271	diatom miniprep
+T27	Action 2040 2046	Purify
+E14	Action:T27 Acts-on:T28 Using:T30
+T28	Reagent 2053 2056	RNA
+T29	Modifier 2047 2052	total
+T30	Reagent 2062 2083	Nou100 diatom culture
+R3	Mod-Link Arg1:T28 Arg2:T29	
+T31	Action 2085 2092	convert
+E15	Action:T31 Acts-on:T28 Creates:T32
+T32	Reagent 2099 2103	cDNA
+T33	Action 2108 2111	use
+E16	Action:T33 Acts-on:T34
+T34	Mention 2112 2114	it
+R4	Coreference-Link Arg1:T34 Arg2:T28	
+T35	Action 1526 1529	Use
+E17	Action:T35 Acts-on:T37
+T36	Amount 1532 1534	µL
+T37	Reagent 1538 1552	diatom culture
+R5	Measure Arg1:T37 Arg2:T36	
+T38	Action 1382 1386	Pick
+E18	Action:T38 Acts-on:T40
+T39	Action 1078 1083	Leave
+E19	Action:T39 Site:T42
+T40	Reagent 1387 1395	colonies
+T41	Action 1439 1448	inoculate
+E20	Action:T41 Acts-on:T40 Acts-on2:T93
+T42	Location 1096 1110	constant light
+T43	Method 635 646	up and down
+T44	Generic-Measure 649 658	few times
+T45	Location 679 690	agar plates
+T46	Generic-Measure 676 678	1%
+T47	Generic-Measure 669 675	1/2xL1
+R6	Measure Arg1:T45 Arg2:T46	
+R7	Measure Arg1:T45 Arg2:T47	
+T48	Reagent 697 699	LB
+T49	Location 713 717	dark
+T50	Generic-Measure 694 696	5%
+R8	Measure Arg1:T48 Arg2:T50	
+T51	Action 553 556	Mix
+E21	Action:T51 Acts-on:T53 Acts-on2:T55 Site:T57
+T52	Amount 557 563	200 µL
+T53	Reagent 564 583	T. pseudonana cells
+T54	Amount 588 594	200 µL
+T55	Reagent 595 608	E. coli cells
+T56	Amount 614 620	1.5 mL
+T57	Location 621 625	tube
+R9	Measure Arg1:T57 Arg2:T56	
+R10	Measure Arg1:T53 Arg2:T52	
+R11	Measure Arg1:T55 Arg2:T54	
+R12	Setting Arg1:E5 Arg2:T44	
+T58	Generic-Measure 721 725	30oC
+T59	Time 730 740	90 minutes
+R13	Setting Arg1:E7 Arg2:T58	
+R14	Setting Arg1:E7 Arg2:T59	
+T62	Size 449 456	2 x 108
+T63	Reagent 457 462	cells
+T64	Speed 466 474	4000 rpm
+T65	Generic-Measure 476 480	10oC
+T66	Time 486 492	10 min
+T67	Action 233 237	Grow
+E22	Action:T67 
+T68	Generic-Measure 241 245	37oC
+T69	Action 137 144	Measure
+E23	Action:T69 
+T70	Generic-Measure 145 150	OD600
+T71	Amount 163 169	150 mL
+T72	Reagent 170 183	LB subculture
+R15	Setting Arg1:E23 Arg2:T70	
+T73	Action 155 160	start
+E24	Action:T73 Acts-on:T72
+R16	Measure Arg1:T72 Arg2:T71	
+T74	Reagent 45 63	bacterial colonies
+T75	Location 74 89	Gent+Kan plates
+T76	Action 94 103	inoculate
+E25	Action:T76 Acts-on:T78
+T77	Amount 104 109	10 mL
+T78	Reagent 110 119	LB medium
+R17	Measure Arg1:T78 Arg2:T77	
+R18	Setting Arg1:E22 Arg2:T68	
+R19	Setting Arg1:E1 Arg2:T2	
+T79	Generic-Measure 300 304	10oC
+R20	Setting Arg1:E1 Arg2:T79	
+R21	Setting Arg1:E1 Arg2:T4	
+R22	Measure Arg1:T9 Arg2:T8	
+R23	Measure Arg1:T63 Arg2:T62	
+T61	Action 439 448	Spin down
+E26	Action:T61 Acts-on:T63
+R24	Setting Arg1:E26 Arg2:T64	
+R25	Setting Arg1:E26 Arg2:T65	
+R26	Setting Arg1:E26 Arg2:T66	
+T80	Reagent 501 512	supernatant
+T81	Action 517 526	resuspend
+E27	Action:T81 Acts-on:T82 Site:T84
+T82	Reagent 527 533	pellet
+T83	Amount 537 541	1 mL
+T84	Location 542 551	L1 medium
+T60	Action 494 500	Decant
+E28	Action:T60 Acts-on:T80
+R27	Measure Arg1:T84 Arg2:T83	
+T85	Action 844 847	Add
+E29	Action:T85 Acts-on:T87
+T86	Amount 848 852	1 mL
+T87	Reagent 853 862	L1 medium
+T88	Action 867 873	scrape
+E30	Action:T88 Acts-on:T89
+T89	Device 881 893	cell scraper
+T90	Device 897 907	L spreader
+R28	Or Arg1:T89 Arg2:T90	
+R29	Measure Arg1:T87 Arg2:T86	
+T91	Generic-Measure 1087 1091	18oC
+R30	Setting Arg1:E19 Arg2:T91	
+T92	Amount 1449 1456	~0.5 mL
+T93	Reagent 1457 1466	L1 medium
+R31	Measure Arg1:T93 Arg2:T92	

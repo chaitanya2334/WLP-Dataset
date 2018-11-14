@@ -1,0 +1,50 @@
+T1	Action 59 64	Rinse
+E1	Action:T1 Acts-on:T9 Using:T10
+T2	Action 128 134	remove
+E2	Action:T2 Acts-on:T11 Using:E1
+T3	Action 438 444	Remove
+E3	Action:T3 Acts-on:T15 Site:T16
+T4	Action 513 520	applied
+E4	Action:T4 Acts-on:T19 Using:T17
+T5	Action 582 595	pulled across
+E5	Action:T5 Acts-on2:T21 Using:T20 Using2:T22
+T6	Action 715 719	done
+E6	Action:T6 Count:T24 Using:E9
+T7	Action 749 755	placed
+E7	Action:T7 Acts-on:T26 Site:T29
+T8	Action 803 807	kept
+E8	Action:T8 Site:T30 Acts-on:T29
+T9	Location 69 77	location
+T10	Reagent 116 124	seawater
+T11	Reagent 139 157	transient microbes
+T12	Modifier 447 452	clean
+T13	Modifier 108 115	sterile
+R1	Mod-Link Arg1:T10 Arg2:T13	
+T14	Modifier 453 460	sterile
+T15	Device 461 465	swab
+R2	Mod-Link Arg1:T15 Arg2:T14	
+R3	Mod-Link Arg1:T15 Arg2:T12	
+T16	Location 475 483	wrapping
+T17	Device 492 502	cotton tip
+T18	Modifier 539 545	rinsed
+T19	Location 546 561	sample location
+R4	Mod-Link Arg1:T19 Arg2:T18	
+R5	Meronym Arg1:T17 Arg2:T15	
+T20	Device 567 571	swab
+T21	Location 600 615	sample location
+T22	Method 621 638	moderate pressure
+T24	Numerical 720 722	10
+T23	Action 645 649	swab
+E9	Action:T23 Using:T25
+T25	Method 663 694	pulling the swab back and forth
+T26	Reagent 734 738	swab
+T27	Modifier 763 770	labeled
+T28	Modifier 771 778	sterile
+T29	Location 779 793	screw cap tube
+T30	Location 811 814	ice
+T31	Reagent 846 851	Swabs
+T32	Action 861 866	ready
+E10	Action:T32 Using:T33 Acts-on:T31
+T33	Method 871 885	DNA extraction
+R6	Mod-Link Arg1:T29 Arg2:T28	
+R7	Mod-Link Arg1:T29 Arg2:T27	

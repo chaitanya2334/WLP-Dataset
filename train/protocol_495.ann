@@ -1,0 +1,88 @@
+T1	Action 1327 1331	Wait
+E1	Action:T1 
+T2	Time 1336 1344	1 minute
+T3	Action 1351 1355	spin
+E2	Action:T3 
+T4	Time 1360 1368	1 minute
+T5	Speed 1372 1382	16,000 x g
+T6	Action 1265 1268	Add
+E3	Action:T6 Acts-on:T8
+T7	Amount 1269 1274	≥ 6 μ
+T8	Reagent 1279 1297	DNA Elution Buffer
+T9	Modifier 1305 1311	center
+T10	Location 1319 1325	matrix
+R1	Mod-Link Arg1:T10 Arg2:T9	
+R2	Setting Arg1:E1 Arg2:T2	
+R3	Setting Arg1:E2 Arg2:T4	
+R4	Setting Arg1:E2 Arg2:T5	
+R5	Measure Arg1:T8 Arg2:T7	
+T11	Action 1084 1092	Transfer
+E4	Action:T11 Acts-on:T14 Site:T13
+T12	Amount 1111 1117	1.5 ml
+T13	Location 1118 1132	microfuge tube
+T14	Device 1093 1099	column
+R6	Measure Arg1:T13 Arg2:T12	
+T15	Action 981 984	Add
+E5	Action:T15 Acts-on:T17
+T16	Amount 985 991	200 μl
+T17	Reagent 992 1007	DNA Wash Buffer
+T18	Action 1012 1016	spin
+E6	Action:T18 
+T19	Time 1021 1029	1 minute
+T20	Speed 1033 1043	16,000 x g
+R7	Measure Arg1:T17 Arg2:T16	
+R8	Setting Arg1:E6 Arg2:T19	
+R9	Setting Arg1:E6 Arg2:T20	
+T21	Action 918 924	Repeat
+E7	Action:T21 Using:T22
+T22	Method 925 931	Step 3
+T23	Action 795 798	Add
+E8	Action:T23 Acts-on:T27
+T24	Action 756 765	Re-insert
+E9	Action:T24 Acts-on:T31 Site:T25
+T25	Location 778 793	collection tube
+T26	Amount 799 805	200 μl
+T27	Reagent 806 821	DNA Wash Buffer
+T28	Action 847 851	spin
+E10	Action:T28 
+T29	Time 856 864	1 minute
+T30	Speed 868 878	16,000 x g
+R10	Setting Arg1:E10 Arg2:T29	
+R11	Setting Arg1:E10 Arg2:T30	
+R12	Measure Arg1:T27 Arg2:T26	
+T31	Device 766 772	column
+T32	Action 696 700	Spin
+E11	Action:T32 
+T33	Time 705 713	1 minute
+T34	Speed 717 727	16,000 x g
+T35	Action 734 741	discard
+E12	Action:T35 
+R13	Setting Arg1:E11 Arg2:T33	
+R14	Setting Arg1:E11 Arg2:T34	
+T37	Device 639 645	column
+T38	Location 651 666	collection tube
+T39	Action 671 675	load
+E13	Action:T39 Acts-on:T40 Site:T41
+T40	Reagent 676 682	sample
+T41	Location 688 694	column
+T36	Action 632 638	Insert
+E14	Action:T36 Acts-on:T37 Site:T38
+T42	Action 360 364	load
+E15	Action:T42 Acts-on:T43
+T43	Reagent 382 388	sample
+T44	Method 403 409	step 2
+T45	Action 390 397	proceed
+E16	Action:T45 Using:T44
+T46	Modifier 367 374	portion
+R15	Mod-Link Arg1:T43 Arg2:T46	
+T47	Action 146 149	Mix
+E17	Action:T47 Using:T52
+T48	Modifier 150 154	well
+T49	Action 70 76	Dilute
+E18	Action:T49 Acts-on:T50 Using:T51
+T50	Reagent 77 83	sample
+T51	Reagent 89 115	DNA Cleanup Binding Buffer
+R16	Mod-Link Arg1:E17 Arg2:T48	
+T52	Method 158 179	pipetting up and down
+T53	Method 183 200	flicking the tube
+R17	Or Arg1:T52 Arg2:T53	

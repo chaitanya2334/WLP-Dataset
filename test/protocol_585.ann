@@ -1,0 +1,101 @@
+T1	Action 146 154	Transfer
+E1	Action:T1 Site:T14
+T2	Action 238 241	Add
+E2	Action:T2 Acts-on:T23 Site:T19
+T3	Action 346 354	Incubate
+E3	Action:T3 Acts-on:T20
+T4	Action 694 700	Insert
+E4	Action:T4 Acts-on:T25 Site:T26
+T5	Action 762 766	Spin
+E5	Action:T5 
+T6	Action 861 864	Add
+E6	Action:T6 Acts-on:T38
+T8	Action 1046 1049	Add
+E8	Action:T8 Acts-on:T46
+T9	Action 1077 1081	spin
+E9	Action:T9 
+T10	Action 1149 1157	Transfer
+E10	Action:T10 Acts-on:T49 Site:T52
+T11	Action 1330 1333	Add
+E11	Action:T11 Acts-on:T54 Acts-on2:T55
+T12	Action 1392 1396	Wait
+E12	Action:T12 
+T13	Action 1415 1419	spin
+E13	Action:T13 
+T14	Location 167 181	microfuge tube
+T15	Reagent 196 205	gel slice
+T16	Action 186 191	weigh
+E14	Action:T16 Acts-on:T15
+T17	Amount 160 166	1.5 ml
+R1	Measure Arg1:T14 Arg2:T17	
+T18	Reagent 255 276	Gel Dissolving Buffer
+T19	Reagent 284 293	gel slice
+T20	Reagent 359 365	sample
+T21	Temperature 393 397	50°C
+T22	Time 455 467	5–10 minutes
+R2	Setting Arg1:E3 Arg2:T21	
+R3	Setting Arg1:E3 Arg2:T22	
+T23	Reagent 244 251	volumes
+R4	Meronym Arg1:T23 Arg2:T18	
+T24	Numerical 242 243	4
+R5	Measure Arg1:T23 Arg2:T24	
+T25	Location 701 707	column
+T26	Location 713 728	collection tube
+T27	Action 733 737	load
+E15	Action:T27 Acts-on:T28 Site:T29
+T28	Reagent 738 744	sample
+T29	Location 754 760	column
+T30	Time 771 779	1 minute
+T31	Speed 783 793	16,000 x g
+T32	Action 800 807	discard
+E16	Action:T32 Acts-on:T33
+T33	Reagent 808 820	flow-through
+R6	Setting Arg1:E5 Arg2:T30	
+R7	Setting Arg1:E5 Arg2:T31	
+T34	Action 822 831	Re-insert
+E17	Action:T34 Acts-on:T35 Site:T36
+T35	Location 832 838	column
+T36	Location 844 859	collection tube
+T37	Amount 865 871	200 μl
+T38	Reagent 872 887	DNA Wash Buffer
+T39	Reagent 894 901	ethanol
+R8	Meronym Arg1:T39 Arg2:T38	
+T40	Action 913 917	spin
+E18	Action:T40 
+T41	Time 922 930	1 minute
+T42	Speed 934 944	16,000 x g
+R9	Setting Arg1:E18 Arg2:T41	
+R10	Setting Arg1:E18 Arg2:T42	
+R11	Measure Arg1:T38 Arg2:T37	
+T7	Action 1007 1016	Re-insert
+E7	Action:T7 Acts-on:T43 Site:T44
+T43	Location 1017 1023	column
+T44	Location 1029 1044	collection tube
+T45	Amount 1050 1056	200 μl
+T46	Reagent 1057 1072	DNA Wash Buffer
+R12	Measure Arg1:T46 Arg2:T45	
+T47	Time 1086 1094	1 minute
+T48	Speed 1098 1108	16,000 x g
+R13	Setting Arg1:E9 Arg2:T47	
+R14	Setting Arg1:E9 Arg2:T48	
+T49	Location 1158 1164	column
+T50	Modifier 1170 1175	clean
+T51	Amount 1176 1182	1.5 ml
+T52	Location 1183 1197	microfuge tube
+R15	Measure Arg1:T52 Arg2:T51	
+R16	Mod-Link Arg1:T52 Arg2:T50	
+T53	Amount 1334 1340	≥ 6 μl
+T54	Reagent 1344 1362	DNA Elution Buffer
+R17	Measure Arg1:T54 Arg2:T53	
+T55	Location 1370 1376	center
+T56	Location 1384 1390	matrix
+R18	Meronym Arg1:T55 Arg2:T56	
+T57	Time 1401 1409	1 minute
+T58	Time 1424 1432	1 minute
+T59	Speed 1436 1446	16,000 x g
+T60	Action 1450 1455	elute
+E19	Action:T60 Acts-on:T61 Using:E12 Using2:E13
+T61	Reagent 1460 1463	DNA
+R19	Setting Arg1:E13 Arg2:T58	
+R20	Setting Arg1:E13 Arg2:T59	
+R21	Setting Arg1:E12 Arg2:T57	

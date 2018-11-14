@@ -1,0 +1,102 @@
+T3	Action 243 249	Pellet
+E3	Action:T3 Acts-on:T1 Using:T2
+T4	Action 324 330	remove
+E4	Action:T4 Acts-on:T24
+T5	Action 335 342	discard
+E5	Action:T5 Acts-on:T24
+T6	Action 360 363	Add
+E6	Action:T6 Acts-on:T27
+T7	Action 407 413	vortex
+E7	Action:T7 Acts-on:T28
+T8	Action 439 447	incubate
+E8	Action:T8 Acts-on:T28
+T9	Action 560 564;580 591	pull up and down
+E9	Action:T9 Acts-on:T33 Count:T34 Using:T32
+T10	Action 683 686	Add
+E10	Action:T10 Acts-on:T37
+T12	Action 836 846	Centrifuge
+E12	Action:T12 Acts-on:T39
+T13	Action 903 911	Transfer
+E13	Action:T13 Acts-on:T42 Site:T43
+T14	Action 943 953	Centrifuge
+E14	Action:T14 Acts-on:T44
+T15	Action 1029 1037	Transfer
+E15	Action:T15 Acts-on:T47 Site:T48
+T16	Action 1088 1091	Add
+E16	Action:T16 Acts-on:T51 Site:T52
+T17	Action 1138 1148	centrifuge
+E17	Action:T17 
+T18	Action 1184 1191	Discard
+E18	Action:T18 Acts-on:T55
+T19	Action 1209 1216	Suspend
+E19	Action:T19 Acts-on:T56 Using:T58 Creates:T59
+T20	Action 1296 1300	keep
+E20	Action:T20 Acts-on:T59
+T21	Action 1375 1381	stored
+E21	Action:T21 
+T1	Reagent 254 269	harvested cells
+T2	Method 273 287	centrifugation
+T22	Speed 291 299	~800 x g
+T23	Time 304 312	1 minute
+R1	Setting Arg1:E3 Arg2:T22	
+R2	Setting Arg1:E3 Arg2:T23	
+T24	Reagent 347 358	supernatant
+T25	Amount 364 369	500µl
+T26	Temperature 373 381	ice cold
+T27	Reagent 382 398	SubCell Buffer-I
+R3	Measure Arg1:T27 Arg2:T25	
+R4	Setting Arg1:E6 Arg2:T26	
+T28	Reagent 429 434	cells
+T29	Temperature 451 454	ice
+T30	Time 459 469	10 minutes
+R5	Setting Arg1:E8 Arg2:T29	
+R6	Setting Arg1:E8 Arg2:T30	
+T31	Size 527 535	20 gauge
+T32	Device 537 551	syringe needle
+R7	Measure Arg1:T32 Arg2:T31	
+T33	Reagent 569 579	suspension
+T34	Numerical 592 603	10-30 times
+T35	Amount 687 692	250µl
+T36	Concentration 693 695	3X
+T37	Reagent 696 713	SubCell Buffer-II
+R8	Measure Arg1:T37 Arg2:T36	
+R9	Measure Arg1:T37 Arg2:T35	
+T38	Action 756 759	mix
+E2	Action:T38 Using:T11
+T11	Method 763 772	inverting
+T39	Location 851 855	tube
+T40	Speed 859 865	700x g
+T41	Time 870 880	10 minutes
+R10	Setting Arg1:E12 Arg2:T40	
+R11	Setting Arg1:E12 Arg2:T41	
+T42	Reagent 916 927	supernatant
+T43	Location 937 941	tube
+T44	Reagent 954 965	supernatant
+T45	Speed 969 978	12,000x g
+T46	Time 983 993	15 minutes
+R12	Setting Arg1:E14 Arg2:T45	
+R13	Setting Arg1:E14 Arg2:T46	
+T47	Reagent 1042 1053	supernatant
+T48	Location 1082 1086	tube
+T49	Amount 1092 1097	500µl
+T50	Concentration 1098 1100	1X
+T51	Reagent 1101 1118	SubCell Buffer-II
+T52	Reagent 1126 1132	pellet
+R14	Measure Arg1:T51 Arg2:T50	
+R15	Measure Arg1:T51 Arg2:T49	
+T53	Speed 1158 1168	12,000 x g
+T54	Time 1173 1182	5 minutes
+R16	Setting Arg1:E17 Arg2:T53	
+R17	Setting Arg1:E17 Arg2:T54	
+T55	Reagent 1196 1207	supernatant
+T56	Reagent 1221 1241	mitochondrial pellet
+T57	Amount 1245 1253	50-100µl
+T58	Reagent 1256 1291	Working Mitochondria Storage Buffer
+R18	Measure Arg1:T58 Arg2:T57	
+T59	Reagent 1305 1315	suspension
+T60	Temperature 1319 1322	ice
+R19	Setting Arg1:E20 Arg2:T60	
+T61	Temperature 1385 1388	ice
+T62	Time 1399 1407	48 hours
+R20	Setting Arg1:E21 Arg2:T61	
+R21	Setting Arg1:E21 Arg2:T62	

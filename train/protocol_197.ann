@@ -1,0 +1,451 @@
+T1	Action 60 64	Thaw
+E1	Action:T1 Site:T204 Acts-on:T203
+T2	Action 171 175	Lyse
+E2	Action:T2 Using:T206 Acts-on:T205
+T3	Action 252 255	Add
+E3	Action:T3 Acts-on:T210
+T4	Action 342 345	Add
+E4	Action:T4 Acts-on:T213
+T5	Action 389 395	Vortex
+E5	Action:T5 
+T6	Action 441 449	Transfer
+E6	Action:T6 
+T7	Action 600 603	Add
+E7	Action:T7 Acts-on:T224
+T8	Action 664 674	Centrifuge
+E8	Action:T8 
+T9	Action 814 822	Pre-heat
+E9	Action:T9 Acts-on:T230
+T10	Action 874 877	Add
+E10	Action:T10 Acts-on:T235
+T11	Action 1004 1014	Centrifuge
+E11	Action:T11 
+T12	Action 1067 1072	Apply
+E12	Action:T12 
+T13	Action 1193 1198	Apply
+E13	Action:T13 
+T14	Action 1298 1301	Put
+E14	Action:T14 
+T15	Action 1420 1428	Transfer
+E15	Action:T15 
+T16	Action 1587 1591	Spin
+E16	Action:T16 
+T17	Action 1694 1697	Add
+E17	Action:T17 
+T18	Action 1970 1973	Add
+E18	Action:T18 
+T19	Action 2092 2102	Centrifuge
+E19	Action:T19 
+T20	Action 2209 2217	Pre-heat
+E20	Action:T20 
+T21	Action 2348 2351	Add
+E21	Action:T21 
+T22	Action 2397 2400	Add
+E22	Action:T22 
+T23	Action 2601 2608	Discard
+E23	Action:T23 
+T24	Action 2697 2705	Transfer
+E24	Action:T24 
+T26	Action 2753 2758	Pipet
+E26	Action:T26 
+T27	Action 2813 2823	Centrifuge
+E27	Action:T27 
+T28	Action 2857 2864	Discard
+E28	Action:T28 
+T29	Action 2883 2888	Reuse
+E29	Action:T29 
+T30	Action 2910 2913	Add
+E30	Action:T30 
+T31	Action 202 208	Remove
+E31	Action:T31 
+T32	Action 243 250	discard
+E32	Action:T32 
+T33	Action 294 300	vortex
+E33	Action:T33 
+T34	Action 326 330	lyse
+E34	Action:T34 Acts-on:T211
+T35	Action 399 402	mix
+E35	Action:T35 
+T36	Action 404 409	Leave
+E36	Action:T36 Site:T215 Acts-on:T216
+T37	Action 635 641	vortex
+E37	Action:T37 
+T38	Action 659 662	mix
+E38	Action:T38 
+T39	Action 724 730	remove
+E39	Action:T39 Acts-on:T228
+T40	Action 785 793	transfer
+E40	Action:T40 
+T41	Action 932 935	mix
+E41	Action:T41 
+T42	Action 942 946	load
+E42	Action:T42 
+T43	Action 1041 1048	discard
+E43	Action:T43 
+T44	Action 1130 1140	centrifuge
+E44	Action:T44 
+T45	Action 1167 1174	discard
+E45	Action:T45 
+T46	Action 1225 1229	spin
+E46	Action:T46 
+T47	Action 1256 1263	discard
+E47	Action:T47 
+T48	Action 1341 1351	centrifuge
+E48	Action:T48 
+T49	Action 1381 1387	remove
+E49	Action:T49 
+T50	Action 1480 1485	apply
+E50	Action:T50 
+T51	Action 1772 1775	mix
+E51	Action:T51 
+T52	Action 1780 1788	incubate
+E52	Action:T52 
+T53	Action 2024 2027	mix
+E53	Action:T53 
+T54	Action 2034 2042	incubate
+E54	Action:T54 
+T55	Action 2060 2068	flicking
+E55	Action:T55 
+T56	Action 2130 2138	transfer
+E56	Action:T56 
+T57	Action 2192 2197	store
+E57	Action:T57 
+T58	Action 2251 2258	Combine
+E58	Action:T58 
+T59	Action 2375 2378	mix
+E59	Action:T59 
+T60	Action 2422 2425	mix
+E60	Action:T60 
+T61	Action 2541 2546	close
+E61	Action:T61 
+T62	Action 2564 2574	centrifuge
+E62	Action:T62 
+T63	Action 2482 2486	load
+E63	Action:T63 
+T25	Action 2641 2648	process
+E25	Action:T25 
+T64	Action 2951 2956	close
+E64	Action:T64 
+T65	Action 2970 2980	Centrifuge
+E65	Action:T65 
+T66	Action 3007 3014	discard
+E66	Action:T66 
+T67	Action 3029 3037	Transfer
+E67	Action:T67 
+T68	Action 3080 3084	OPEN
+E68	Action:T68 
+T69	Action 3110 3120	centrifuge
+E69	Action:T69 
+T70	Action 3146 3153	discard
+E70	Action:T70 
+T71	Action 3168 3173	Elute
+E71	Action:T71 
+T72	Action 3239 3247	Transfer
+E72	Action:T72 
+T73	Action 3286 3291	pipet
+E73	Action:T73 
+T74	Action 3361 3365	wait
+E74	Action:T74 
+T75	Action 3383 3388	close
+E75	Action:T75 
+T76	Action 3397 3407	Centrifuge
+E76	Action:T76 
+T77	Action 3442 3448	Repeat
+E77	Action:T77 
+T78	Action 3489 3494	Store
+E78	Action:T78 
+T79	Action 3861 3866	Order
+E79	Action:T79 
+T80	Action 3898 3909	PCR amplify
+E80	Action:T80 
+T81	Action 3916 3924	Template
+E81	Action:T81 
+T82	Action 3989 3995	Purify
+E82	Action:T82 
+T83	Action 4065 4072	elution
+E83	Action:T83 
+T84	Action 4101 4109	quantify
+E84	Action:T84 
+T85	Action 4231 4238	Prepare
+E85	Action:T85 
+T86	Action 4715 4718	mix
+E86	Action:T86 
+T87	Action 4749 4757	Incubate
+E87	Action:T87 
+T88	Action 4797 4800	add
+E88	Action:T88 
+T89	Action 4850 4856	remove
+E89	Action:T89 
+T90	Action 4875 4883	Incubate
+E90	Action:T90 
+T91	Action 4918 4924	Purify
+E91	Action:T91 
+T92	Action 4973 4980	elution
+E92	Action:T92 
+T93	Action 5008 5016	Quantify
+E93	Action:T93 
+T94	Action 5146 5151	Store
+E94	Action:T94 
+T95	Action 5250 5258	transfer
+E95	Action:T95 
+T97	Action 5357 5366	pipet off
+E97	Action:T97 
+T98	Action 5371 5378	discard
+E98	Action:T98 
+T99	Action 5392 5402	re-suspend
+E99	Action:T99 
+T100	Action 5486 5492	vortex
+E100	Action:T100 
+T101	Action 5496 5506	re-suspend
+E101	Action:T101 
+T102	Action 5519 5526	re-bind
+E102	Action:T102 
+T103	Action 5541 5550	pipet off
+E103	Action:T103 
+T96	Action 5302 5306	bind
+E96	Action:T96 
+T104	Action 5655 5660	leave
+E104	Action:T104 
+T105	Action 5870 5878	incubate
+E105	Action:T105 
+T106	Action 5927 5935	Rampdown
+E106	Action:T106 
+T107	Action 5982 5988	Remove
+E107	Action:T107 
+T108	Action 6010 6013	sit
+E108	Action:T108 
+T109	Action 6090 6097	capture
+E109	Action:T109 
+T110	Action 6164 6173	pipet off
+E110	Action:T110 
+T111	Action 6195 6201	remove
+E111	Action:T111 
+T112	Action 6227 6233	Dilute
+E112	Action:T112 
+T113	Action 6315 6318	Add
+E113	Action:T113 
+T114	Action 6379 6387	Incubate
+E114	Action:T114 
+T115	Action 6422 6430	flicking
+E115	Action:T115 
+T116	Action 6434 6437	mix
+E116	Action:T116 
+T117	Action 6459 6463	spin
+E117	Action:T117 
+T118	Action 6475 6482	Capture
+E118	Action:T118 
+T119	Action 6525 6533	Transfer
+E119	Action:T119 
+T120	Action 6610 6620	Re-suspend
+E120	Action:T120 
+T121	Action 6681 6689	transfer
+E121	Action:T121 
+T122	Action 6749 6755	Purify
+E122	Action:T122 
+T123	Action 6783 6789	remove
+E123	Action:T123 
+T124	Action 6830 6835	Elute
+E124	Action:T124 
+T125	Action 6898 6901	Run
+E125	Action:T125 
+T126	Action 7014 7019	Store
+E126	Action:T126 
+T127	Action 7073 7081	speedvac
+E127	Action:T127 
+T128	Action 7225 7233	assemble
+E128	Action:T128 
+T129	Action 7358 7365	placing
+E129	Action:T129 
+T130	Action 7590 7593	mix
+E130	Action:T130 
+T131	Action 7638 7641	Add
+E131	Action:T131 
+T132	Action 7721 7724	mix
+E132	Action:T132 
+T133	Action 7739 7747	Incubate
+E133	Action:T133 
+T134	Action 7805 7809	Cool
+E134	Action:T134 
+T135	Action 7861 7867	Remove
+E135	Action:T135 
+T136	Action 7914 7917	add
+E136	Action:T136 
+T137	Action 7951 7954	mix
+E137	Action:T137 
+T138	Action 8048 8056	Incubate
+E138	Action:T138 
+T139	Action 8082 8090	Incubate
+E139	Action:T139 
+T140	Action 8213 8220	prepare
+E140	Action:T140 
+T141	Action 8428 8434	Remove
+E141	Action:T141 
+T142	Action 8499 8502	add
+E142	Action:T142 
+T143	Action 8551 8554	mix
+E143	Action:T143 
+T144	Action 8569 8575	Return
+E144	Action:T144 
+T145	Action 8641 8649	Incubate
+E145	Action:T145 
+T146	Action 8689 8697	Incubate
+E146	Action:T146 
+T147	Action 8741 8745	cool
+E147	Action:T147 
+T148	Action 8818 8824	purify
+E148	Action:T148 
+T149	Action 8858 8862	Warm
+E149	Action:T149 
+T150	Action 8912 8919	Prepare
+E150	Action:T150 
+T151	Action 8982 8985	Add
+E151	Action:T151 
+T152	Action 9068 9071	Mix
+E152	Action:T152 
+T153	Action 9106 9114	Transfer
+E153	Action:T153 
+T154	Action 9138 9146	Incubate
+E154	Action:T154 
+T155	Action 9176 9181	Place
+E155	Action:T155 
+T156	Action 9262 9268	Remove
+E156	Action:T156 
+T157	Action 9273 9280	discard
+E157	Action:T157 
+T158	Action 9378 9381	add
+E158	Action:T158 
+T159	Action 9461 9469	Incubate
+E159	Action:T159 
+T160	Action 9491 9497	remove
+E160	Action:T160 
+T161	Action 9502 9509	discard
+E161	Action:T161 
+T162	Action 9561 9564	add
+E162	Action:T162 
+T163	Action 9644 9652	Incubate
+E163	Action:T163 
+T164	Action 9674 9680	remove
+E164	Action:T164 
+T165	Action 9685 9692	discard
+E165	Action:T165 
+T166	Action 9721 9728	air-dry
+E166	Action:T166 
+T167	Action 9776 9779	Add
+E167	Action:T167 
+T168	Action 9828 9834	remove
+E168	Action:T168 
+T169	Action 9867 9876	resuspend
+E169	Action:T169 
+T170	Action 9906 9914	Incubate
+E170	Action:T170 
+T171	Action 9955 9960	Place
+E171	Action:T171 
+T172	Action 10046 10054	Transfer
+E172	Action:T172 
+T173	Action 10148 10153	place
+E173	Action:T173 
+T174	Action 10577 10582	Bring
+E174	Action:T174 
+T175	Action 10716 10722	purify
+E175	Action:T175 
+T176	Action 10743 10749	remove
+E176	Action:T176 
+T177	Action 10795 10799	Warm
+E177	Action:T177 
+T178	Action 10849 10856	Prepare
+E178	Action:T178 
+T179	Action 10919 10922	Add
+E179	Action:T179 
+T180	Action 10994 10997	Mix
+E180	Action:T180 
+T181	Action 11032 11040	Transfer
+E181	Action:T181 
+T182	Action 11076 11084	Incubate
+E182	Action:T182 
+T183	Action 11114 11119	Place
+E183	Action:T183 
+T184	Action 11200 11206	Remove
+E184	Action:T184 
+T185	Action 11211 11218	discard
+E185	Action:T185 
+T186	Action 11316 11319	add
+E186	Action:T186 
+T187	Action 11399 11407	Incubate
+E187	Action:T187 
+T188	Action 11429 11435	remove
+E188	Action:T188 
+T189	Action 11440 11447	discard
+E189	Action:T189 
+T190	Action 11499 11502	add
+E190	Action:T190 
+T191	Action 11582 11590	Incubate
+E191	Action:T191 
+T192	Action 11612 11618	remove
+E192	Action:T192 
+T193	Action 11659 11666	air-dry
+E193	Action:T193 
+T194	Action 11714 11717	Add
+E194	Action:T194 
+T195	Action 11764 11770	remove
+E195	Action:T195 
+T196	Action 11803 11812	resuspend
+E196	Action:T196 
+T197	Action 11842 11850	Incubate
+E197	Action:T197 
+T198	Action 11891 11896	Place
+E198	Action:T198 
+T199	Action 11982 11990	Transfer
+E199	Action:T199 
+T200	Action 12074 12078	Make
+E200	Action:T200 
+T201	Action 12154 12161	Perform
+E201	Action:T201 
+T202	Modifier 65 69	2-ml
+T203	Device 70 84	screw-cap tube
+T204	Location 88 91	ice
+R1	Mod-Link Arg1:T203 Arg2:T202	
+T205	Reagent 180 185	cells
+T206	Device 193 200	filters
+T207	Amount 213 219	300 µl
+T208	Reagent 220 228	RNAlater
+R2	Measure Arg1:T208 Arg2:T207	
+T209	Amount 256 262	750 µl
+T210	Reagent 272 292	Lysis/Binding buffer
+R3	Measure Arg1:T210 Arg2:T209	
+T211	Reagent 335 340	cells
+T212	Amount 346 351	75 µl
+T213	Reagent 362 387	miRNA Homogenate Additive
+R4	Measure Arg1:T213 Arg2:T212	
+T214	Time 433 439	10 min
+T215	Location 425 428	ice
+T216	Reagent 414 421	mixture
+R5	Setting Arg1:E36 Arg2:T214	
+T217	Amount 454 460	825 µl
+T218	Reagent 461 467	lysate
+R6	Measure Arg1:T218 Arg2:T217	
+T219	Modifier 477 486	Non-stick
+T220	Device 487 502	RNase-free tube
+R7	Mod-Link Arg1:T220 Arg2:T219	
+T221	Amount 508 512	2 mL
+T222	Device 513 517	tube
+R8	Setting Arg1:T222 Arg2:T221	
+T223	Amount 604 610	750 µl
+T224	Reagent 611 633	Acid-Phenol:Chloroform
+R9	Measure Arg1:T224 Arg2:T223	
+T225	Time 646 655	30-60 sec
+R10	Setting Arg1:E37 Arg2:T225	
+T226	Time 679 684	5 min
+T227	Speed 696 706	10,000 X g
+R11	Setting Arg1:E8 Arg2:T226	
+R12	Setting Arg1:E8 Arg2:T227	
+T228	Reagent 736 752	op aqueous phase
+T229	Device 802 812	fresh tube
+T230	Reagent 823 839	Elution Solution
+T231	Temperature 868 872	95ºC
+R13	Setting Arg1:E9 Arg2:T231	
+T232	Amount 878 890	1.25 volumes
+T233	Temperature 894 896	RT
+T234	Concentration 897 901	100%
+T235	Reagent 902 909	ethanol
+R14	Measure Arg1:T235 Arg2:T234	
+R15	Setting Arg1:E10 Arg2:T233	

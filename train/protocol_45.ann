@@ -1,0 +1,133 @@
+T1	Action 31 34	Add
+E1	Action:T1 Acts-on:T3 Site:T4 Creates:T5
+T2	Modifier 35 51	freshly prepared
+T3	Reagent 52 64	PFA fixative
+T4	Reagent 107 119	water sample
+T6	Concentration 148 152	1-2%
+R1	Mod-Link Arg1:T3 Arg2:T2
+T7	Action 190 193	fix
+E2	Action:T7 
+T8	Time 198 209	12-24 hours
+T9	Temperature 213 216	4°C
+R3	Setting Arg1:E2 Arg2:T8
+R4	Setting Arg1:E2 Arg2:T9
+T10	Reagent 172 184	Formaldehyde
+T11	Action 218 223	Place
+E3	Action:T11 Acts-on:T12 Acts-on2:T20 Site:T28
+T12	Device 236 250	support filter
+T14	Reagent 271 288	cellulose nitrate
+T15	Measure-Type 296 304	diameter
+T17	Generic-Measure 290 295	47 mm
+T19	Size 252 259	0.45 μm
+R7	Measure Arg1:T12 Arg2:T19
+R8	Measure Arg1:T12 Arg2:T17
+T20	Device 312 327	membrane filter
+T21	Size 329 335	0.2 μm
+T24	Reagent 347 366	white polycarbonate
+T25	Generic-Measure 375 380	47 mm
+T27	Measure-Type 381 389	diameter
+R12	Setting Arg1:T20 Arg2:T21
+R13	Setting Arg1:T20 Arg2:T25
+T28	Device 398 414	filtration tower
+T29	Amount 438 444	volume
+T30	Action 416 422	Filter
+E4	Action:T30 Acts-on:T31 Using:E5
+T31	Reagent 452 464	fixed sample
+T32	Modifier 477 483	gentle
+T33	Action 484 490	vacuum
+E5	Action:T33 
+T34	Generic-Measure 494 500	5 inch
+R15	Mod-Link Arg1:E5 Arg2:T32
+R16	Setting Arg1:E5 Arg2:T34
+T36	Action 503 508	Place
+E6	Action:T36 Acts-on:T37 Acts-on2:T45 Site:T53
+T37	Device 521 535	support filter
+T38	Size 537 544	0.45 μm
+T41	Reagent 556 573	cellulose nitrate
+T42	Generic-Measure 575 580	25 mm
+T44	Measure-Type 581 589	diameter
+R20	Measure Arg1:T37 Arg2:T38
+R21	Measure Arg1:T37 Arg2:T42
+T45	Device 617 632	membrane filter
+T46	Size 634 640	0.2 μm
+T49	Reagent 652 671	white polycarbonate
+T50	Generic-Measure 680 685	25 mm
+T52	Measure-Type 686 694	diameter
+R24	Setting Arg1:T45 Arg2:T46
+R25	Setting Arg1:T45 Arg2:T50
+T53	Device 733 749	filtration tower
+T54	Action 751 757	Filter
+E7	Action:T54 Acts-on:T56 Using:E8
+T55	Amount 758 762	1 ml
+T56	Reagent 770 782	fixed sample
+T57	Modifier 795 801	gentle
+T58	Action 802 808	vacuum
+E8	Action:T58 
+T59	Generic-Measure 810 817	~5 inch
+R28	Mod-Link Arg1:E8 Arg2:T57
+R29	Setting Arg1:E8 Arg2:T59
+T61	Action 820 826	Filter
+E9	Action:T61 Acts-on:T63 Using:T64
+T62	Amount 827 831	2 ml
+T63	Reagent 839 851	fixed sample
+T64	Device 864 871	filter.
+T65	Action 906 910	wash
+E10	Action:T65 Using:T68
+T66	Amount 916 924	10-20 ml
+T67	Modifier 928 935	sterile
+T68	Reagent 936 939	H2O
+R32	Mod-Link Arg1:T68 Arg2:T67
+T69	Action 941 947	Remove
+E11	Action:T69 Acts-on:T70 Using:T71
+T70	Reagent 948 951	H2O
+T71	Method 955 965	filtration
+T72	Action 967 970	Put
+E12	Action:T72 Acts-on:T73 Site:T74
+T73	Device 971 986	membrane filter
+T74	Device 990 1004	blotting paper
+T75	Action 1009 1015	drying
+E13	Action:T75 Using:E12
+T76	Action 1020 1025	cover
+E14	Action:T76 
+T77	Seal 1041 1044	lid
+T78	Action 1094 1099	Store
+E15	Action:T78 Acts-on:T79 Site:T81
+T79	Device 1100 1111	each filter
+T80	Modifier 1117 1134	separate labelled
+T81	Location 1135 1145	Petri dish
+R33	Mod-Link Arg1:T81 Arg2:T80
+T82	Action 1147 1152	Place
+E16	Action:T82 Acts-on:T83 Site:T84
+T83	Device 1153 1168	membrane filter
+T84	Location 1169 1193	between separator sheets
+T85	Action 1245 1249	Seal
+E17	Action:T85 Acts-on:T86 Using:T87
+T86	Location 1250 1260	Petri dish
+T87	Seal 1266 1274	parafilm
+T88	Action 1276 1281	Store
+E18	Action:T88 
+T89	Temperature 1285 1290	-20°C
+R34	Setting Arg1:E18 Arg2:T89
+R17	Measure Arg1:T31 Arg2:T29	
+R27	Measure Arg1:T56 Arg2:T55	
+R30	Measure Arg1:T63 Arg2:T62	
+R31	Measure Arg1:T68 Arg2:T66	
+T5	Reagent 125 144	final concentration
+R2	Measure Arg1:T5 Arg2:T6	
+R5	Or Arg1:T4 Arg2:T10	
+R6	Of-Type Arg1:T17 Arg2:T15	
+T13	Modifier 226 235	moistened
+R9	Mod-Link Arg1:T12 Arg2:T13	
+R10	Of-Type Arg1:T25 Arg2:T27	
+R11	Meronym Arg1:T24 Arg2:T20	
+R14	Meronym Arg1:T14 Arg2:T12	
+T16	Modifier 426 437	appropriate
+R18	Mod-Link Arg1:T29 Arg2:T16	
+T18	Modifier 511 520	moistened
+R19	Mod-Link Arg1:T37 Arg2:T18	
+R22	Of-Type Arg1:T42 Arg2:T44	
+R23	Meronym Arg1:T41 Arg2:T37	
+R35	Of-Type Arg1:T50 Arg2:T52	
+R26	Meronym Arg1:T49 Arg2:T45	
+T22	Modifier 857 863	second
+R36	Mod-Link Arg1:T64 Arg2:T22	

@@ -1,0 +1,137 @@
+T1	Action 83 90	Prepare
+E1	Action:T1 Acts-on:T7 Using:T3
+T2	Concentration 109 113	0.4%
+T3	Reagent 114 130	GIBCO LM agarose
+T4	Amount 132 136	0.4g
+T5	Reagent 137 144	agarose
+T6	Amount 147 153	100 ml
+R1	Measure Arg1:T5 Arg2:T4	
+R2	Meronym Arg1:T5 Arg2:T3	
+R3	Measure Arg1:T3 Arg2:T2	
+T7	Reagent 91 102	base plates
+T8	Concentration 199 202	75%
+T9	Reagent 203 228	Sargasso Sea Water (SSW).
+T10	Action 157 164	Make up
+E2	Action:T10 Acts-on:T12 Using:T9
+T11	Modifier 178 198	filtered, autoclaved
+R4	Measure Arg1:T9 Arg2:T8	
+T12	Reagent 165 171	plates
+R5	Mod-Link Arg1:T9 Arg2:T11	
+T13	Action 230 233	Add
+E3	Action:T13 Acts-on:T15
+T14	Action 283 286	Add
+E4	Action:T14 Acts-on:T16
+T15	Reagent 234 253	appropriate agarose
+T16	Reagent 287 308	appropriate nutrients
+T17	Action 260 269	microwave
+E5	Action:T17 
+T18	Modifier 270 279	to a boil
+R6	Mod-Link Arg1:E5 Arg2:T18	
+T19	Action 360 374	Vortex / shake
+E6	Action:T19 
+T20	Action 378 381	mix
+E7	Action:T20 Using:E6 Acts-on:T21
+T21	Reagent 382 391	nutrients
+T22	Action 420 424	pour
+E8	Action:T22 Acts-on:T23 Site:T24
+T23	Reagent 425 431	plates
+T24	Location 435 439	hood
+T25	Modifier 392 402	thoroughly
+T26	Modifier 407 419	asceptically
+R7	Mod-Link Arg1:E8 Arg2:T26	
+R8	Mod-Link Arg1:E7 Arg2:T25	
+T27	Action 442 447;455 461	Allow to sit
+E9	Action:T27 Acts-on:T30
+T28	Time 462 471	overnight
+T29	Action 475 483	solidify
+E10	Action:T29 Using:E9
+T30	Reagent 448 454	plates
+R9	Setting Arg1:E9 Arg2:T28	
+T31	Action 491 497	adding
+E11	Action:T31 Acts-on:T32
+T32	Reagent 498 509	top agarose
+T33	Action 512 519	Prepare
+E12	Action:T33 Acts-on:T34
+T34	Reagent 525 545	cyanophage dilutions
+T35	Action 555 562	plating
+E13	Action:T35 Acts-on:T36 Site:T37
+T36	Reagent 563 568	cells
+T37	Reagent 572 583	top agarose
+T38	Size 616 620	5 ml
+T39	Location 621 633	Falcon tubes
+R10	Measure Arg1:T39 Arg2:T38	
+T40	Reagent 593 598	media
+T41	Action 636 643	Prepare
+E14	Action:T41 Acts-on:T42 Creates:T44
+T42	Reagent 644 655	top agarose
+T43	Concentration 659 663	0.5%
+T44	Reagent 664 669	GIBCO
+R11	Measure Arg1:T44 Arg2:T43	
+T45	Concentration 716 719	75%
+T46	Reagent 720 723	SSW
+T47	Action 727 734	make up
+E15	Action:T47 Acts-on:T48 Using:T46
+T48	Reagent 735 741	plates
+T49	Modifier 695 715	filtered, autoclaved
+R12	Measure Arg1:T46 Arg2:T45	
+R13	Mod-Link Arg1:T46 Arg2:T49	
+T50	Reagent 747 766	appropriate agarose
+T51	Concentration 768 782	0.5 g / 100 ml
+T52	Reagent 783 786	SSW
+T53	Action 792 801	microwave
+E16	Action:T53 
+T54	Action 743 746	Add
+E17	Action:T54 Acts-on:T50
+T55	Modifier 802 810	as above
+R14	Mod-Link Arg1:E16 Arg2:T55	
+R15	Measure Arg1:T52 Arg2:T51	
+R16	Meronym Arg1:T52 Arg2:T50	
+T56	Action 813 826	Allow to cool
+E18	Action:T56 Site:T57
+T57	Location 832 853	pre-heated water bath
+T58	Temperature 857 862	~29°C
+R17	Setting Arg1:E18 Arg2:T58	
+T59	Reagent 905 932	filter sterilized nutrients
+T60	Action 901 904	add
+E19	Action:T60 Acts-on:T59
+T61	Modifier 888 900	Asceptically
+R18	Mod-Link Arg1:E19 Arg2:T61	
+T62	Action 1002 1005	Add
+E20	Action:T62 Acts-on:T64 Site:T65
+T63	Amount 1006 1024	appropriate volume
+T64	Reagent 1028 1033	cells
+T65	Reagent 1037 1048	top agarose
+T66	Action 1050 1056	vortex
+E21	Action:T66 
+T67	Action 1071 1074	mix
+E22	Action:T67 
+T68	Action 1079 1084	plate
+E23	Action:T68 
+T69	Modifier 1085 1096	immediately
+T70	Modifier 1060 1070	thoroughly
+R19	Mod-Link Arg1:E22 Arg2:T70	
+R20	Mod-Link Arg1:E23 Arg2:T69	
+R21	Measure Arg1:T64 Arg2:T63	
+T71	Action 1099 1108	Inoculate
+E24	Action:T71 Acts-on:T72 Using:T73
+T72	Reagent 1111 1125	liquid culture
+T73	Reagent 1136 1171	same dilution chosen for the plates
+T74	Action 1260 1268	Incubate
+E25	Action:T74 Acts-on:T75
+T75	Reagent 1273 1279	plates
+T76	Time 1280 1289	overnight
+R22	Setting Arg1:E25 Arg2:T76	
+T77	Generic-Measure 1293 1306	~2-5 uE light
+T78	Modifier 1307 1337	without parafilming the plates
+R23	Setting Arg1:E25 Arg2:T77	
+R24	Mod-Link Arg1:E25 Arg2:T78	
+T79	Action 1341 1346;1363 1374	allow to solidify
+E26	Action:T79 Acts-on:T80 Using:E25
+T80	Reagent 1351 1362	top agarose
+T81	Action 1413 1421	parafilm
+E27	Action:T81 Acts-on:T82
+T82	Reagent 1426 1432	plates
+T83	Action 1456 1461	place
+E28	Action:T83 
+T84	Modifier 1462 1493	at the appropriate light levels
+R25	Mod-Link Arg1:E28 Arg2:T84	

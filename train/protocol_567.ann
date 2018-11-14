@@ -1,0 +1,35 @@
+T1	Action 482 485	mix
+E1	Action:T1 Acts-on:T25
+T2	Action 500 507	Collect
+E2	Action:T2 
+T3	Action 578 585	overlay
+E3	Action:T3 
+T4	Action 659 667	Transfer
+E4	Action:T4 Acts-on:T26 Site:T27
+T5	Amount 101 106	25 µl
+T6	Reagent 107 115	Reaction
+R1	Measure Arg1:T6 Arg2:T5	
+T7	Amount 115 120	50 µl
+T8	Reagent 121 129	Reaction
+R2	Measure Arg1:T8 Arg2:T7	
+T9	Reagent 151 169	Q5 Reaction Buffer
+T10	Concentration 148 150	5X
+R3	Measure Arg1:T9 Arg2:T10	
+T11	Amount 169 172	5 µ
+T12	Amount 173 178	10 µl
+T13	Concentration 178 180	1X
+T14	Concentration 180 185	10 mM
+T15	Reagent 186 190	dNTP
+T16	Amount 191 196	0.5 µ
+T17	Amount 197 201	1 µl
+T18	Concentration 201 207	200 µM
+T19	Concentration 207 212	10 µM
+T20	Reagent 213 227	Forward Primer
+T21	Amount 227 234	1.25 µl
+T22	Amount 234 240	2.5 µl
+T23	Concentration 240 246	0.5 µM
+T24	Concentration 246 251	10 µM
+T25	Reagent 490 498	reaction
+T26	Device 668 677	PCR tubes
+T27	Device 683 694	PCR machine
+T28	Method 705 718	thermocycling
