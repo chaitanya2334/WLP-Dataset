@@ -5,13 +5,13 @@ All of the protocols were collected from [https://www.protocols.io/]() using the
 
 The wet lab protocol dataset annotations were created in brat and are stored in standoff format, very similar to BioNLP Shared Task standoff format: as seen here: [http://2011.bionlp-st.org/home/file-formats]().
 
-##The standoff format:
+## The standoff format:
 
 Each text document in the dataset is acompanied by a corresponding annotation file. The two are associatied by using a simple file naming convention, wherein their base name (file name without the file extention) is the same: for example, the file protocol_30.ann contains annotations for the file protocol_30.txt.
 
 Within the document, individual annotations are connected to specific spans of text through character offsets. For example, in a document beginning "Weigh 5.73 g of TCEP." the text "Weigh" is identified by the offset range 0..5. (All offsets all indexed from 0 and include the character at the start offset but exclude the character at the end offset.)
 
-##Text file:
+## Text file:
 
 Text files are expected to have the file extension .txt and contain the text of the original protocol input into the system.
 
@@ -22,7 +22,7 @@ Text files are expected to have the file extension .txt and contain the text of 
 
 The protocol texts are stored in plain text files encoded using UTF-8 (an extension of ASCII — plain ASCII texts work too). The Protocol texts contain newlines, each line indicating a single step in the protocol. The first line is always the protocol's name/title, as shown in the example above.
 
-##Annotation file:
+## Annotation file:
 
 Annotations are stored in files with the .ann file extension. The various annotation types that may be contained in these files are discussed in the following.
 
@@ -51,7 +51,7 @@ E: event
 
 Detailed descriptions of each of these types of annotations are given below.
 
-###Text bound annotations:
+### Text bound annotations:
 
 Text-bound annotations are an important category of annotation related to both entity and event annotations. Text-bound annotation identifies a specific span of text and assigns it a type.
 
@@ -60,7 +60,7 @@ Text-bound annotations are an important category of annotation related to both e
 
 All text-bound annotations follow the same structure. As in all annotations, the ID occurs first and is delimited from the rest of the line with a TAB character. The primary annotation is given as a SPACE-separated triple (type, start-offset, end-offset). The start-offset is the index of the first character of the annotated span in the text (".txt" file), i.e. the number of characters in the document preceding it. The end-offset is the index of the first character after the annotated span. Thus, the character in the end-offset position is not included in the annotated span. For reference, the text spanned by the annotation is included, separated by a TAB character.
 
-####Entity annotations:
+#### Entity annotations:
 
 Each entity annotation has a unique ID and is defined by type (e.g. Reagent or Amount) and the span of characters containing the entity mention (represented as a "start end" offset pair).
 
@@ -70,7 +70,7 @@ Each entity annotation has a unique ID and is defined by type (e.g. Reagent or A
 
 Each line contains one text-bound annotation identifying the entity mention in text.
 
-####Event annotations
+#### Event annotations
 
 Each event annotation has a unique ID and is defined by type, event trigger (the text stating the event) and arguments. We only have one type of event in our dataset, which is "Action"
 
@@ -81,7 +81,7 @@ The event triggers, annotations marking the word or words stating each event, ar
 
 As for all annotations, the event ID occurs first, separated by a TAB character. The event trigger is specified as TYPE:ID and identifies the event type and its trigger through the ID. By convention, the event type is specified both in the trigger annotation and the event annotation. The event trigger is separated from the event arguments by SPACE. The event arguments are a SPACE-separated set of ROLE:ID pairs, where ROLE is one of the event- and task-specific argument roles (e.g. Acts-on, Creates, Site, etc) and the ID identifies the entity or event filling that role. Note that several events can share the same trigger and that while the event trigger should be specified first, the event arguments can appear in any order.
 
-####Relation annotations:
+#### Relation annotations:
 
 Binary relations have a unique ID and are defined by their type (e.g. Measure, Mod-Link) and their arguments. Relation arguments are always identified simply as Arg1 and Arg2.
 
