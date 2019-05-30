@@ -1,6 +1,17 @@
 # WLP-Dataset
+This repository contains a collection of 622 wet lab protocols, annotated with actions, entities and relations all captured within a given sentence. 
 
-WLP-dataset
+A more detailed description of the wet lab protocol corpus can be found in this paper:
+
+[**An Annotated Corpus for Machine Reading of Instructions in Wet Lab Protocols**](https://arxiv.org/pdf/1805.00195.pdf)  
+Chaitanya Kulkarni, Wei Xu, Alan Ritter, Raghu Machiraju  
+*In Proceedings of 16th Annual Conference of the North American Chapter 
+of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT, 2018)*
+
+Additional information regarding the action, entities and relations can be found [here](http://bionlp.osu.edu:5000/static/appendix.pdf?v=67566c70353bf8eb4bc05df0f615164c).
+
+Also check out a working [demo](http://bionlp.osu.edu:5000/protocols) for sequence tagging and relation extraction using the methods in this repository.
+
 All of the protocols were collected from [https://www.protocols.io/]() using their public APIs.
 
 The wet lab protocol dataset annotations were created in brat and are stored in standoff format, very similar to BioNLP Shared Task standoff format: as seen here: [http://2011.bionlp-st.org/home/file-formats]().
